@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 
 const crews = [
   { name: "Cambridge W8+", pace: "1:33.6", sr: 36, gap: "—", pos: 1, color: "bg-coral" },
-  { name: "Leander M8+", pace: "1:34.2", sr: 35, gap: "+2.4s", pos: 2, color: "bg-teal" },
-  { name: "Hampton 1st VIII", pace: "1:34.8", sr: 34, gap: "+5.1s", pos: 3, color: "bg-amber-400" },
-  { name: "Princeton M8+", pace: "1:35.4", sr: 33, gap: "+8.8s", pos: 4, color: "bg-grey" },
+  { name: "Leander M8+", pace: "1:34.0", sr: 35, gap: "+2.4s", pos: 2, color: "bg-teal" },
+  { name: "Hampton 1st VIII", pace: "1:35.1", sr: 34, gap: "+5.1s", pos: 3, color: "bg-amber-400" },
+  { name: "Princeton M8+", pace: "1:36.4", sr: 33, gap: "+8.8s", pos: 4, color: "bg-grey" },
 ];
 
 function LiveRaceMockup() {
@@ -33,7 +33,7 @@ function LiveRaceMockup() {
           </span>
           <span className="text-sm font-semibold text-white">Ludum Live — Head of the River</span>
         </div>
-        <span className="text-xs font-medium text-grey">6.8km · 4 crews</span>
+        <span className="text-xs font-medium text-grey">Thames · 6.8km Head Race</span>
       </div>
       <div className="flex gap-1 border-b border-dark-border bg-dark px-5">
         {["Map", "Leaderboard", "Crews", "Replay"].map((tab, i) => (
@@ -112,7 +112,7 @@ function SpectatorMockup() {
       </div>
       <div className="px-5 py-4">
         <p className="mb-3 text-[10px] font-semibold uppercase tracking-wider text-grey">
-          Leaderboard at 3.4km Mark
+          Live Leaderboard — 3.4km Mark
         </p>
         <div className="space-y-2">
           {leaderboard.map((row) => (
@@ -152,6 +152,78 @@ const seats = [
   { seat: "Bow", hr: 168, zone: "Z4", color: "bg-orange-500" },
 ];
 
+function Sparkline({
+  data,
+  color,
+  target,
+}: {
+  data: number[];
+  color: string;
+  target?: { value: number; label: string };
+}) {
+  const min = Math.min(...data);
+  const max = Math.max(...data);
+  const range = max - min || 1;
+  const w = 240;
+  const h = 60;
+  const step = w / (data.length - 1);
+  const points = data
+    .map((v, i) => `${i * step},${h - 6 - ((v - min) / range) * (h - 16)}`)
+    .join(" ");
+  const targetY =
+    target !== undefined ? h - 6 - ((target.value - min) / range) * (h - 16) : 0;
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" className="h-full w-full">
+      {target && (
+        <>
+          <line
+            x1="0"
+            x2={w}
+            y1={targetY}
+            y2={targetY}
+            stroke="#808080"
+            strokeWidth="0.6"
+            strokeDasharray="3 3"
+          />
+          <text
+            x={w - 4}
+            y={targetY - 3}
+            fill="#808080"
+            fontSize="6"
+            textAnchor="end"
+            fontFamily="var(--font-sans)"
+          >
+            {target.label}
+          </text>
+        </>
+      )}
+      <polyline
+        fill="none"
+        stroke={color}
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={points}
+      />
+    </svg>
+  );
+}
+
+const paceSeries = [
+  94, 94, 93.8, 94.2, 94, 93.6, 94.1, 94.3, 94, 93.8, 94.2, 94.4, 94.1, 93.9,
+  94, 94.2, 93.8, 94, 94.3, 94.1, 93.7, 94, 94.2, 94, 93.8, 94.1, 94.3, 94,
+  93.9, 94.2, 94, 93.8, 94.1, 94.3, 94, 93.7, 94, 94.2, 94.1, 93.9, 94, 94.2,
+  94, 93.8, 94.1, 94, 93.9, 94.2, 94, 93.8, 94.1, 94, 94.2, 94, 93.9, 94, 94.1,
+  94, 93.8, 94,
+];
+
+const srSeries = [
+  33, 34, 34, 33, 34, 35, 34, 34, 33, 34, 34, 35, 34, 34, 35, 34, 33, 34, 34,
+  34, 35, 34, 34, 33, 34, 35, 34, 34, 34, 35, 34, 33, 34, 34, 35, 34, 34, 34,
+  33, 34, 35, 34, 34, 34, 34, 35, 34, 33, 34, 34, 34, 35, 34, 34, 33, 34, 34,
+  35, 34, 34,
+];
+
 function CoachFeedMockup() {
   return (
     <div className="overflow-hidden rounded-2xl border border-dark-border bg-dark-card shadow-2xl">
@@ -161,7 +233,7 @@ function CoachFeedMockup() {
       </div>
       <div className="grid grid-cols-3 gap-2 border-b border-dark-border bg-dark p-4">
         <div className="rounded-lg bg-black p-3 text-center">
-          <p className="font-mono text-xl font-bold text-white">1:34.0</p>
+          <p className="font-mono text-xl font-bold text-coral">1:34.0</p>
           <p className="mt-1 text-[9px] uppercase tracking-wider text-grey">/500m</p>
         </div>
         <div className="rounded-lg bg-black p-3 text-center">
@@ -175,7 +247,7 @@ function CoachFeedMockup() {
       </div>
       <div className="p-4">
         <p className="mb-3 text-[10px] font-semibold uppercase tracking-wider text-grey">
-          Live HR by Seat
+          Live Heart Rate — By Seat
         </p>
         <div className="space-y-1.5">
           {seats.map((s) => (
@@ -196,17 +268,29 @@ function CoachFeedMockup() {
             </div>
           ))}
         </div>
+        <p className="mb-1.5 mt-4 text-[10px] font-semibold uppercase tracking-wider text-grey">
+          Pace /500m — Last 60 Strokes
+        </p>
+        <div className="h-[60px] overflow-hidden rounded-md border border-dark-border bg-black">
+          <Sparkline data={paceSeries} color="#E53F47" target={{ value: 94, label: "Target 1:34" }} />
+        </div>
+        <p className="mb-1.5 mt-3 text-[10px] font-semibold uppercase tracking-wider text-grey">
+          Stroke Rate — Last 60 Strokes
+        </p>
+        <div className="h-[60px] overflow-hidden rounded-md border border-dark-border bg-black">
+          <Sparkline data={srSeries} color="#0097A1" />
+        </div>
       </div>
     </div>
   );
 }
 
 const events = [
-  { name: "M8+ Heat 1", status: "LIVE", time: "09:30" },
-  { name: "W4+ Heat 2", status: "LIVE", time: "09:45" },
-  { name: "M4x Heat 3", status: "LIVE", time: "10:00" },
-  { name: "W8+ Heat 4", status: "Upcoming", time: "10:15" },
-  { name: "M2- Heat 5", status: "Upcoming", time: "10:30" },
+  { name: "M8+ — Heat 1", meta: "4 crews · 2km · Lane A–D", badge: "LIVE", tone: "live" },
+  { name: "W4+ — Heat 2", meta: "3 crews · 2km · Lane A–C", badge: "LIVE", tone: "live" },
+  { name: "M4x — Semi-Final", meta: "6 crews · 2km · Starting 14:30", badge: "14:30", tone: "upcoming" },
+  { name: "W8+ — Final", meta: "4 crews · 2km · Starting 15:00", badge: "15:00", tone: "upcoming" },
+  { name: "M2x — Heat 1", meta: "5 crews · 2km · Finished 12:45", badge: "DONE", tone: "done" },
 ];
 
 function EventsMockup() {
@@ -219,16 +303,20 @@ function EventsMockup() {
       <div className="divide-y divide-dark-border">
         {events.map((e) => (
           <div key={e.name} className="flex items-center gap-3 px-5 py-3">
-            <span className="font-mono text-xs text-grey">{e.time}</span>
-            <span className="flex-1 text-sm font-semibold text-white">{e.name}</span>
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-white">{e.name}</p>
+              <p className="mt-0.5 text-[10px] text-grey">{e.meta}</p>
+            </div>
             <span
               className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
-                e.status === "LIVE"
+                e.tone === "live"
                   ? "bg-coral/20 text-coral"
-                  : "bg-dark-border text-grey-light"
+                  : e.tone === "done"
+                  ? "bg-green-500/15 text-green-400"
+                  : "bg-white/[.06] text-grey-light"
               }`}
             >
-              {e.status}
+              {e.badge}
             </span>
           </div>
         ))}
@@ -336,7 +424,7 @@ export default function LivePage() {
       <section className="relative overflow-hidden pt-32 pb-20">
         <div className="mx-auto max-w-7xl px-6">
           <nav className="mb-8 text-sm text-grey">
-            <Link href="/" className="hover:text-white">Products</Link>
+            <Link href="/products" className="hover:text-white">Products</Link>
             <span className="mx-2">&gt;</span>
             <span className="text-white">Ludum Live</span>
           </nav>
@@ -370,7 +458,7 @@ export default function LivePage() {
                   <p className="mt-1 text-xs uppercase tracking-wider text-grey">GPS Tracking</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-coral">Every Stroke</p>
+                  <p className="text-3xl font-bold text-white">Every Stroke</p>
                   <p className="mt-1 text-xs uppercase tracking-wider text-grey">Pace</p>
                 </div>
                 <div>
@@ -398,9 +486,9 @@ export default function LivePage() {
         heading="See every crew. Every metre. In real time."
         body="Ludum Live tracks every boat on the course in real time via GPS. As crews move, the map updates — showing position, pace, stroke rate, and gaps between boats. Coaches on the bank see everything. Race officials see everything. No more guessing what's happening out of sight."
         details={[
-          "Real-time GPS position",
-          "Live pace, stroke rate, and distance — updated every stroke",
-          "Automatic gap calculation between crews",
+          "Real-time GPS position for every crew on the course",
+          "Live pace, stroke rate, and distance covered — updated every stroke",
+          "Automatic gap calculation between boats — metres and seconds",
           "Works for head races, side-by-side regattas, and training pieces",
         ]}
         mockup={<LiveRaceMockup />}
@@ -412,10 +500,10 @@ export default function LivePage() {
         heading="One link. Any device. Every spectator."
         body="Share a single link and anyone can follow the race live — on their phone, tablet, or laptop. No app download. No login. Spectators see a real-time leaderboard, live crew positions, and running splits. When the race is over, the full replay is available instantly."
         details={[
-          "Public spectator link (no login, no app)",
-          "Real-time leaderboard with running splits",
-          "Mobile-first responsive design",
-          "Post-race replay available instantly",
+          "Public spectator link — no login or app required",
+          "Real-time leaderboard with live gap calculations",
+          "Mobile-first design — built for the phone in your pocket on the riverbank",
+          "Post-race replay available immediately — share results, not just times",
         ]}
         mockup={<SpectatorMockup />}
         reverse
@@ -428,9 +516,9 @@ export default function LivePage() {
         body="The coach view goes deeper than the spectator feed. See real-time heart rate for every athlete in the crew alongside pace and stroke rate. Know who's in the red zone during a race piece. See if the rate is climbing or dropping. Make coaching decisions with data — not just what you can see from the bank."
         details={[
           "Per-athlete live heart rate with zone indicators",
-          "Stroke rate trend over the last 60 strokes",
-          "Pace vs target overlay",
-          "Secured coach view (authenticated)",
+          "Stroke rate trend — see drift before it becomes a problem",
+          "Pace vs target overlay for structured sessions",
+          "Secured coach view — only authorised coaches see athlete data",
         ]}
         mockup={<CoachFeedMockup />}
       />
@@ -441,10 +529,10 @@ export default function LivePage() {
         heading="Set up live crew tracking in minutes. Not weeks."
         body="Create an event, define the course, assign crews, and go live. Ludum Live uses the GPS data already streaming from Ludum Row and Ludum Paddle — no additional hardware. For head races, regattas, or training pieces, the setup is the same: create, share, track."
         details={[
-          "Define course by dropping markers on the map",
-          "Assign crews from your Ludum Team roster",
-          "Auto-generated spectator link and QR code",
-          "Multi-race support with heat scheduling",
+          "Define a course by dropping start and finish markers on the map",
+          "Assign crews from your Ludum Team roster — no re-entry",
+          "Auto-generates a spectator link and QR code for the event",
+          "Multi-race support — manage a full regatta schedule from one dashboard",
         ]}
         mockup={<EventsMockup />}
         reverse
@@ -456,10 +544,10 @@ export default function LivePage() {
         heading="Add live data to any video stream."
         body="Ludum Live generates a transparent overlay with live crew positions, pace, stroke rate, and gaps — designed for OBS, vMix, or any streaming software. Turn a static camera feed into a professional broadcast. Lower thirds update in real time as crews move through the course."
         details={[
-          "Transparent overlay for OBS, vMix, and streaming software",
-          "Customisable lower third with your branding",
-          "Leaderboard widget for race standings",
-          "Brand-ready with logo and colour options",
+          "Transparent overlay for OBS, vMix, and browser-based streaming tools",
+          "Customisable lower third with crew name, pace, stroke rate, and gap",
+          "Leaderboard widget for multi-crew races",
+          "Brand-ready — add your club or regatta logo to the overlay",
         ]}
         mockup={<BroadcastMockup />}
       />
@@ -506,34 +594,34 @@ export default function LivePage() {
         <div className="mx-auto max-w-7xl px-6">
           <SectionLabel text="Explore the Platform" />
           <h2 className="mb-12 text-4xl font-bold text-white md:text-5xl">
-            Other <span className="text-coral">Ludum products</span>
+            Live works best with the full Ludum ecosystem.
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <ProductCard
               tag="Flagship"
               title="Ludum Team"
-              description="Your coaching command centre. Training, compliance, analytics, and communication in one place."
+              description="Training planning, compliance tracking, athlete management, and data analytics — your coaching command centre."
               image="/images/hero-sunset-bridge.jpg"
               href="/products/team"
             />
             <ProductCard
               tag="Unique to Ludum"
               title="Ludum Telemetry"
-              description="Stroke-by-stroke telemetry data from Peach Powerline, integrated with your training calendar."
+              description="Stroke-by-stroke power, force curves, and catch angles from Peach Powerline — integrated with your training data."
               image="/images/boathouse.jpg"
               href="/products/telemetry"
             />
             <ProductCard
               tag="For Rowers"
               title="Ludum Row"
-              description="The in-boat stroke coach for rowing — automatic session capture and live feeds to the bank."
+              description="Automatic session recording from Concept2, on-water devices, and wearables. The data source for Live."
               image="/images/hero-solo-sunset.jpg"
               href="/products/row"
             />
             <ProductCard
               tag="For Paddlers"
               title="Ludum Paddle"
-              description="Purpose-built for canoe and kayak. Same data capture, adapted for paddle sport."
+              description="Purpose-built for canoe, kayak, and dragon boat with sport-specific workflows."
               image="/images/sky-view-crew.jpg"
               href="/products/paddle"
             />

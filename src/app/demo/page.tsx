@@ -13,17 +13,12 @@ export const metadata: Metadata = {
 
 function CheckCircle() {
   return (
-    <svg
-      className="mt-0.5 h-5 w-5 flex-shrink-0 text-coral"
-      viewBox="0 0 20 20"
-      fill="currentColor"
+    <span
+      className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-[0.7rem] font-bold"
+      style={{ backgroundColor: "rgba(40,200,64,0.12)", color: "#28c840" }}
     >
-      <path
-        fillRule="evenodd"
-        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-        clipRule="evenodd"
-      />
-    </svg>
+      ✓
+    </span>
   );
 }
 
@@ -34,7 +29,9 @@ function CheckCircle() {
 const MARCH_2026 = {
   year: 2026,
   month: "March",
-  startDay: 0, // Sunday
+  // March 1 2026 is a Sunday. With Monday-first weeks, Sunday is column 7,
+  // so there are 6 blank cells before day 1.
+  startDay: 6,
   days: 31,
   available: [3, 4, 5, 10, 11, 12, 17, 18, 19, 24, 25, 26, 31],
   selected: 24,
@@ -95,7 +92,7 @@ export default function DemoPage() {
                 problems you&apos;re trying to solve.
               </p>
 
-              <h3 className="mt-10 text-sm font-semibold uppercase tracking-widest text-white">
+              <h3 className="mt-10 text-base font-semibold text-white">
                 What to expect
               </h3>
               <ul className="mt-5 space-y-4">
@@ -115,18 +112,21 @@ export default function DemoPage() {
               </ul>
 
               {/* Stat badges */}
-              <div className="mt-10 flex gap-6">
+              <div className="mt-12 flex gap-8 border-t border-white/10 pt-7">
                 {[
-                  { value: "30", label: "Minutes" },
-                  { value: "Free", label: "No Obligation" },
-                  { value: "48hrs", label: "To Go Live" },
+                  { value: "30", label: "Minutes", coral: true },
+                  { value: "Free", label: "No Obligation", coral: false },
+                  { value: "48hrs", label: "To Go Live", coral: false },
                 ].map((s) => (
-                  <div
-                    key={s.label}
-                    className="rounded-xl border border-dark-border bg-dark-card px-5 py-4 text-center"
-                  >
-                    <p className="text-2xl font-bold text-coral">{s.value}</p>
-                    <p className="mt-1 text-xs text-grey">{s.label}</p>
+                  <div key={s.label}>
+                    <p
+                      className={`text-2xl font-bold ${s.coral ? "text-coral" : "text-white"}`}
+                    >
+                      {s.value}
+                    </p>
+                    <p className="mt-0.5 text-[0.7rem] uppercase tracking-wide text-grey">
+                      {s.label}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -141,7 +141,13 @@ export default function DemoPage() {
                   <h4 className="text-sm font-semibold text-white">
                     Pick a time that works
                   </h4>
-                  <span className="text-xs text-grey">
+                  <span className="flex items-center gap-1.5 text-xs text-grey">
+                    <span
+                      className="flex h-4 w-4 items-center justify-center rounded-full text-[0.55rem] text-coral"
+                      style={{ backgroundColor: "rgba(229,63,71,0.1)" }}
+                    >
+                      ⏱
+                    </span>
                     30 min &middot; Video Call
                   </span>
                 </div>
@@ -165,7 +171,7 @@ export default function DemoPage() {
 
                 {/* Day labels */}
                 <div className="mt-4 grid grid-cols-7 gap-1 text-center text-xs font-medium text-grey">
-                  {["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"].map((d) => (
+                  {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((d) => (
                     <div key={d} className="py-1">
                       {d}
                     </div>
@@ -179,24 +185,19 @@ export default function DemoPage() {
                 </div>
 
                 {/* Time slots */}
-                <div className="mt-6 space-y-2">
-                  <p className="text-xs font-medium text-grey">
-                    Available times
-                  </p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {TIME_SLOTS.map((slot) => (
-                      <div
-                        key={slot.time}
-                        className={`rounded-lg px-3 py-2.5 text-center text-sm font-medium transition-colors ${
-                          slot.selected
-                            ? "bg-coral text-white"
-                            : "bg-dark border border-dark-border text-grey-light hover:border-coral/40 cursor-pointer"
-                        }`}
-                      >
-                        {slot.time}
-                      </div>
-                    ))}
-                  </div>
+                <div className="mt-6 flex flex-col gap-1.5">
+                  {TIME_SLOTS.map((slot) => (
+                    <div
+                      key={slot.time}
+                      className={`rounded-lg border px-4 py-2.5 text-center text-sm font-medium transition-colors ${
+                        slot.selected
+                          ? "border-coral bg-coral/10 text-white"
+                          : "border-dark-border text-grey-light hover:border-coral/40 hover:bg-coral/5 hover:text-white cursor-pointer"
+                      }`}
+                    >
+                      {slot.time}
+                    </div>
+                  ))}
                 </div>
 
                 {/* Footer note */}

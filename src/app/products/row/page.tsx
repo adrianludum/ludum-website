@@ -45,13 +45,13 @@ function InBoatMockup() {
         {/* Big numbers */}
         <div className="mb-4 grid grid-cols-2 gap-3">
           <div className="rounded-xl bg-dark p-4 text-center">
-            <p className="text-3xl font-bold text-white">22</p>
+            <p className="text-3xl font-bold text-coral">22</p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-grey">
               Stroke Rate
             </p>
           </div>
           <div className="rounded-xl bg-dark p-4 text-center">
-            <p className="text-3xl font-bold text-coral">2:04</p>
+            <p className="text-3xl font-bold text-white">2:04</p>
             <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-grey">
               Split /500m
             </p>
@@ -68,7 +68,9 @@ function InBoatMockup() {
           </div>
           <div className="rounded-lg bg-dark px-3 py-2.5 text-center">
             <p className="text-sm font-bold text-coral">156</p>
-            <p className="text-[9px] uppercase tracking-wider text-grey">HR</p>
+            <p className="text-[9px] uppercase tracking-wider text-grey">
+              Heart Rate
+            </p>
           </div>
           <div className="rounded-lg bg-dark px-3 py-2.5 text-center">
             <p className="text-sm font-bold text-white">38</p>
@@ -336,10 +338,10 @@ export default function RowPage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Real-time SR/pace/split/cadence",
-                "GPS track",
-                "BLE HR support",
-                "Sessions sync to Team dashboard",
+                "Real-time stroke rate, pace, split times, and cadence displayed in the boat",
+                "GPS track with distance and speed captured automatically",
+                "BLE heart rate monitor support — any Bluetooth chest strap",
+                "Sessions flow straight to the coach's Ludum Team dashboard",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -398,10 +400,10 @@ export default function RowPage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Live SR/pace/split/HR for every athlete",
-                "GPS position real-time",
-                "Colour-coded HR zones",
-                "Feeds Ludum Live",
+                "Live stroke rate, pace, split times, and heart rate for every athlete on the water",
+                "GPS position updated in real time — see where they are on the course",
+                "Colour-coded HR zones — instantly see who's in the right training zone",
+                "Same data feeds Ludum Live for spectator and race broadcasting",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -435,10 +437,10 @@ export default function RowPage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "One-tap BLE pairing",
-                "Session history",
-                "Morning monitoring (<30 seconds)",
-                "iOS and Android",
+                "One-tap BLE pairing — connect a heart rate strap once, remembered forever",
+                "Session history with distance, pace, splits, SR, and HR at a glance",
+                "Morning monitoring — wellness check-in takes under 30 seconds",
+                "Available on iOS and Android",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -523,28 +525,28 @@ export default function RowPage() {
           <div className="reveal mb-12 text-center">
             <SectionLabel text="Explore the Platform" />
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Row works even better with the rest of Ludum.
+              Row feeds the full Ludum ecosystem.
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <ProductCard
               tag="Flagship"
               title="Ludum Team"
-              description="Your coaching command centre. Training, compliance, analytics, and communication in one place."
+              description="Training planning, compliance tracking, athlete management, and data analytics — your coaching command centre."
               image="/images/hero-sunset-bridge.jpg"
               href="/products/team"
             />
             <ProductCard
               tag="Unique to Ludum"
               title="Ludum Telemetry"
-              description="Stroke-by-stroke telemetry data from Peach Powerline, integrated with your training calendar."
+              description="Stroke-by-stroke power, force curves, and catch angles from Peach Powerline — integrated with your training data."
               image="/images/boathouse.jpg"
               href="/products/telemetry"
             />
             <ProductCard
               tag="For Paddlers"
               title="Ludum Paddle"
-              description="The in-boat stroke coach for canoe and kayak — same platform, built for paddle sport."
+              description="Purpose-built for canoe, kayak, and dragon boat with sport-specific terminology and workflows."
               image="/images/sky-view-crew.jpg"
               href="/products/paddle"
             />

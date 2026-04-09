@@ -119,8 +119,8 @@ function Star() {
 /* ------------------------------------------------------------------ */
 
 const painPoints = [
-  { icon: <IconFragmented />, title: "Fragmented tools, fragmented picture", desc: "You\u2019re running your programme across spreadsheets, WhatsApp, email, Strava, and Training Peaks. Nothing talks to anything else. You spend more time collecting data than using it." },
-  { icon: <IconCompliance />, title: "You can\u2019t see if athletes follow the plan", desc: "You write the programme. But did they do it? Research shows 93% compliance is the threshold where training actually translates to performance. Right now, you\u2019re guessing." },
+  { icon: <IconFragmented />, title: "Fragmented tools, fragmented picture", desc: "You\u2019re running your programme across spreadsheets, WhatsApp, email, Strava, and training peaks. Nothing talks to anything else. You spend more time collecting data than using it." },
+  { icon: <IconCompliance />, title: "You can\u2019t see if athletes follow the plan", desc: (<>You write the programme. But did they do it? Research shows <span className="text-coral">93% compliance</span> is the threshold where training actually translates to performance. Right now, you&rsquo;re guessing.</>) },
   { icon: <IconWearable />, title: "Wearable data stuck on athletes\u2019 wrists", desc: "Your athletes wear Garmin, Polar, Suunto \u2014 capturing rich training data every session. But it lives on their phone, not your dashboard. The coach is the last to know." },
   { icon: <IconOverload />, title: "Data overload, zero insight", desc: "When you do get data, it\u2019s a wall of numbers with no synthesis. You need answers \u2014 who\u2019s overtraining, who\u2019s underperforming, who\u2019s at risk \u2014 not more spreadsheets." },
   { icon: <IconManual />, title: "Manual recording captures the headline, not the story", desc: "You log the final time and average rate. But automatic capture gives you every stroke \u2014 pacing, consistency, power distribution. The detail that separates good from great." },
@@ -151,12 +151,20 @@ const testimonials = [
 ];
 
 const offRamps = [
-  { label: "Blog", title: "Why Coaches Resist Technology \u2014 and How to Get Past It", desc: "The research behind adoption fear, and what separates tools that stick from tools that fail.", href: "/blog/coaches-resist-technology" },
-  { label: "User Story", title: "How Cambridge Achieved 93% Compliance in One Season", desc: "From fragmented tools to a single platform \u2014 and the performance results that followed.", href: "/stories/cambridge-compliance" },
-  { label: "Video", title: "Ludum Team in 3 Minutes", desc: "See the platform in action \u2014 training planning, compliance tracking, and data analytics walkthrough.", href: "/tutorials/team-walkthrough" },
+  { label: "Blog", title: "Why Coaches Resist Technology \u2014 and How to Get Past It", desc: "The research behind adoption fear, and what separates tools that stick from tools that fail.", href: "/blog/coaches-resist-technology", image: "/images/boathouse.jpg" },
+  { label: "User Story", title: "How Cambridge Achieved 93% Compliance in One Season", desc: "From fragmented tools to a single platform \u2014 and the performance results that followed.", href: "/stories/cambridge-compliance", image: "/images/winning-crew.jpg" },
+  { label: "Video", title: "Ludum Team in 3 Minutes", desc: "See the platform in action \u2014 training planning, compliance tracking, and data analytics walkthrough.", href: "/tutorials/team-walkthrough", image: "/images/hero-sunset-bridge.jpg" },
 ];
 
 const complianceData = [82, 85, 78, 88, 90, 87, 91, 89, 93, 91, 94, 93];
+
+// 36-bar force-curve profile (rise, peak, fall) — static to avoid hydration mismatch
+const strokeProfile = [
+  18, 24, 32, 42, 54, 66, 76, 84, 90, 94,
+  97, 99, 100, 99, 96, 92, 87, 81, 74, 67,
+  60, 53, 47, 41, 36, 31, 27, 23, 20, 17,
+  15, 13, 11, 9, 8, 7,
+];
 
 /* ------------------------------------------------------------------ */
 /*  Page                                                              */
@@ -292,7 +300,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
                   {[
                     { label: "Athletes", value: "47", sub: "+3 this month" },
-                    { label: "Compliance", value: "93%", sub: "up 4% vs last week" },
+                    { label: "Compliance", value: "93%", sub: "\u2191 4% vs last week" },
                     { label: "Sessions This Week", value: "128", sub: "On track" },
                     { label: "Avg Training Load", value: "742", sub: "Within target range" },
                   ].map((stat) => (
@@ -540,6 +548,21 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+                {/* Stroke force profile */}
+                <div className="mt-4 border-t border-dark-border pt-3">
+                  <p className="mb-2 text-[10px] font-medium uppercase tracking-wider text-grey-dim">
+                    Force Curve
+                  </p>
+                  <div className="flex h-12 items-end gap-[2px]">
+                    {strokeProfile.map((h, i) => (
+                      <div
+                        key={i}
+                        className="flex-1 rounded-sm bg-coral"
+                        style={{ height: `${h}%` }}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -653,15 +676,26 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group rounded-2xl border border-dark-border bg-dark-card p-6 transition-colors hover:border-grey-dim"
+                className="group overflow-hidden rounded-2xl border border-dark-border bg-dark-card transition-colors hover:border-grey-dim"
               >
-                <span className="mb-3 inline-block rounded-full bg-dark px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
-                  {item.label}
-                </span>
-                <h3 className="mb-2 text-lg font-bold text-white group-hover:text-coral">
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-grey">{item.desc}</p>
+                <div className="relative aspect-video w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    unoptimized
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <span className="mb-3 inline-block rounded-full bg-dark px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
+                    {item.label}
+                  </span>
+                  <h3 className="mb-2 text-lg font-bold text-white group-hover:text-coral">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-grey">{item.desc}</p>
+                </div>
               </Link>
             ))}
           </div>

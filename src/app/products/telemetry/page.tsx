@@ -16,7 +16,7 @@ const otherProducts = [
     href: "/products/team",
     image: "/images/hero-sunset-bridge.jpg",
     description:
-      "Training management for coaches and squads. Compliance, training load, session analysis, and reporting in one platform.",
+      "Training planning, compliance tracking, athlete management, and data analytics — your coaching command centre.",
   },
   {
     title: "Ludum Row",
@@ -24,7 +24,7 @@ const otherProducts = [
     href: "/products/row",
     image: "/images/hero-solo-sunset.jpg",
     description:
-      "The athlete app for rowing. Automatic session recording from Concept2, on-water devices, and wearables.",
+      "Automatic session recording from Concept2, on-water devices, and wearables.",
   },
   {
     title: "Ludum Paddle",
@@ -32,7 +32,7 @@ const otherProducts = [
     href: "/products/paddle",
     image: "/images/sky-view-crew.jpg",
     description:
-      "Purpose-built for canoe, kayak, and dragon boat. Same powerful data capture adapted for paddle sport.",
+      "Purpose-built for canoe, kayak, and dragon boat with sport-specific workflows.",
   },
   {
     title: "Ludum Live",
@@ -40,7 +40,7 @@ const otherProducts = [
     href: "/products/live",
     image: "/images/winning-crew.jpg",
     description:
-      "Live race broadcasting, spectator tracking, and coach feeds — powered by data from your athletes.",
+      "Live session feeds and real-time athlete data from anywhere.",
   },
 ];
 
@@ -71,14 +71,13 @@ const howItWorks = [
   },
 ];
 
-const calendarDays = (() => {
-  const days: { day: number; hasTelemetry: boolean }[] = [];
-  const telemetryDays = [2, 5, 8, 11, 14, 17, 19, 22, 25, 28];
-  for (let i = 1; i <= 31; i++) {
-    days.push({ day: i, hasTelemetry: telemetryDays.includes(i) });
-  }
-  return days;
-})();
+const calendarData = [
+  0, 0, 1, 0, 1, 0, 0,
+  0, 1, 0, 1, 0, 0, 0,
+  1, 0, 0, 1, 0, 1, 0,
+  0, 1, 0, 0, 1, 0, 0,
+  0, 0, 1, 0, 0, 0, 0,
+];
 
 export default function TelemetryPage() {
   return (
@@ -137,7 +136,7 @@ export default function TelemetryPage() {
             </div>
             <div className="mt-10 flex flex-wrap gap-8">
               <div>
-                <p className="text-2xl font-bold text-white">Analysis</p>
+                <p className="text-2xl font-bold"><span className="text-coral">Analysis</span></p>
                 <p className="text-sm text-grey">Multiple Pieces</p>
               </div>
               <div>
@@ -145,7 +144,7 @@ export default function TelemetryPage() {
                 <p className="text-sm text-grey">2 Crews</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">Share</p>
+                <p className="text-2xl font-bold"><span className="text-coral">Share</span></p>
                 <p className="text-sm text-grey">With Athletes</p>
               </div>
             </div>
@@ -161,6 +160,9 @@ export default function TelemetryPage() {
                 <p className="mt-1 text-lg font-bold text-white">
                   PEACH POWERLINE
                 </p>
+                <p className="mt-1 text-xs text-grey-dim">
+                  100Hz Accelerometer · 9 Athletes · GSM
+                </p>
               </div>
 
               <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
@@ -175,6 +177,9 @@ export default function TelemetryPage() {
                 </p>
                 <p className="mt-1 text-lg font-bold text-white">
                   LUDUM TELEMETRY
+                </p>
+                <p className="mt-1 text-xs text-grey-light">
+                  Auto-group · Analyse · Compare · Share
                 </p>
               </div>
 
@@ -198,9 +203,7 @@ export default function TelemetryPage() {
               <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
 
               <div className="w-full rounded-xl bg-dark px-6 py-4 text-center">
-                <p className="text-xs font-semibold uppercase tracking-wider text-grey">
-                  Integration
-                </p>
+                <p className="text-xs text-grey-light">Integrated into your</p>
                 <p className="mt-1 text-sm font-bold text-white">
                   LUDUM TEAM TRAINING CALENDAR
                 </p>
@@ -233,10 +236,10 @@ export default function TelemetryPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Power comparison stroke by stroke",
-                  "Sessions auto-grouped by time",
-                  "Click any crew for individual athlete data",
-                  "Switch between power/speed/SR/acceleration views",
+                  "Power comparison across all crews in a session — stroke by stroke",
+                  "Sessions auto-grouped by time — plug in, upload, done",
+                  "Click any crew to see individual athlete power, catch slip, effective length",
+                  "Switch between power, speed, stroke rate, and acceleration views",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -285,17 +288,17 @@ export default function TelemetryPage() {
               <p className="mt-6 text-lg leading-relaxed text-grey-light">
                 Ludum automatically detects the most common stroke rate band in
                 each session and shows you the data for that effort. Paddling at
-                18? You see the steady state. Efforts at 32-34? You see the race
+                18? You see the steady state. Efforts at 32–34? You see the race
                 piece. No manual selection required — but you can override and
                 pick any band.
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Auto detection of common SR range",
-                  "Speed/distance/power/acceleration for selected band",
-                  "Per-athlete power with target line",
-                  "Effective length and catch/finish angles with targets",
-                  "Time in deceleration as percentage",
+                  "Automatic detection of the most common stroke rate range",
+                  "Speed, distance, average power, and acceleration for the selected band",
+                  "Per-athlete power with target line — see who's hitting their numbers",
+                  "Effective length and catch/finish angles per athlete with targets",
+                  "Time spent in deceleration — quantified as a percentage",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -333,11 +336,11 @@ export default function TelemetryPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Select efforts by dragging timeline",
-                  "Side-by-side speed/acceleration/power curves",
-                  "SR and power distribution comparison",
-                  "Catch vs finish angle timeline",
-                  "PDF comparison report",
+                  "Select efforts by dragging on the timeline — or import selections from Powerline",
+                  "Side-by-side speed, acceleration, and power curves",
+                  "Stroke rate and power distribution comparison",
+                  "Catch angle vs finish angle timeline — see technique drift over a piece",
+                  "Generate a PDF comparison report to share with the crew",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -379,37 +382,18 @@ export default function TelemetryPage() {
                     {d}
                   </div>
                 ))}
-                {/* March 2026 starts on Sunday — offset 6 empty cells */}
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={`empty-${i}`} />
-                ))}
-                {calendarDays.map(({ day, hasTelemetry }) => (
+                {calendarData.map((v, i) => (
                   <div
-                    key={day}
-                    className={`relative rounded-lg py-2 text-xs font-medium ${
-                      hasTelemetry
-                        ? "bg-coral/10 text-white ring-1 ring-coral/30"
-                        : "text-grey"
+                    key={`cell-${i}`}
+                    className={`flex aspect-square items-center justify-center rounded text-[0.55rem] font-semibold ${
+                      v
+                        ? "bg-coral/15 text-coral"
+                        : "bg-white/[0.03] text-white/30"
                     }`}
                   >
-                    {day}
-                    {hasTelemetry && (
-                      <span className="absolute -top-0.5 right-1 text-[8px] font-bold text-coral">
-                        T
-                      </span>
-                    )}
+                    {v ? "T" : ""}
                   </div>
                 ))}
-              </div>
-              <div className="mt-4 flex items-center gap-3 border-t border-dark-border pt-4 text-xs text-grey">
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-coral" />
-                  Telemetry session
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-grey-dim" />
-                  Regular session
-                </span>
               </div>
             </div>
 
@@ -433,11 +417,11 @@ export default function TelemetryPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Sessions in training calendar",
-                  "Crews auto-grouped by upload time",
-                  'Filter by "Telemetry" tag',
-                  "Dashboard widget",
-                  "More user-friendly than Powerline alone",
+                  "Telemetry sessions live in your training calendar alongside all other data",
+                  "Crews auto-grouped by upload time — one session, all crews",
+                  'Filter calendar by "Telemetry" tag to find any past session instantly',
+                  "Dashboard widget showing today's telemetry sessions with stroke rate distribution",
+                  "Much more user-friendly search and navigation than Powerline alone",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -477,6 +461,9 @@ export default function TelemetryPage() {
       <section className="bg-black py-24">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="reveal text-center">
+            <span className="mb-4 inline-block rounded-full bg-dark-card px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-coral">
+              How It Works
+            </span>
             <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
               Plug in. Upload. See everything.
             </h2>
@@ -503,6 +490,9 @@ export default function TelemetryPage() {
       <section className="bg-dark py-24">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="reveal text-center">
+            <span className="mb-4 inline-block rounded-full bg-dark-card px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-coral">
+              Hardware Compatibility
+            </span>
             <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
               Built for Peach Powerline.
             </h2>
@@ -538,11 +528,16 @@ export default function TelemetryPage() {
               time. My coaches can make adjustments during the session, not after
               it. Nothing else on the market does this.&rdquo;
             </blockquote>
-            <div className="mt-8">
-              <p className="font-semibold text-white">Matt Ryan</p>
-              <p className="text-sm text-grey">
-                Olympic Medallist &amp; Performance Coach
-              </p>
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-coral text-sm font-bold text-white">
+                MR
+              </div>
+              <div className="text-left">
+                <p className="font-semibold text-white">Matt Ryan</p>
+                <p className="text-sm text-grey">
+                  Olympic Medallist &amp; Performance Coach
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -576,12 +571,12 @@ export default function TelemetryPage() {
       <section className="bg-black py-24">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="reveal text-center">
+            <span className="mb-4 inline-block rounded-full bg-dark-card px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-coral">
+              Explore the Platform
+            </span>
             <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Other Products
+              Telemetry integrates with the full Ludum ecosystem.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg text-grey-light">
-              Ludum is a suite of tools for coaches, athletes, and spectators.
-            </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {otherProducts.map((product) => (

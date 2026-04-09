@@ -111,15 +111,21 @@ function InBoatMockup() {
 }
 
 function LiveFeedMockup() {
+  const zoneStyles: Record<string, string> = {
+    Z2: "bg-emerald-500/20 text-emerald-500",
+    Z3: "bg-amber-400/20 text-amber-400",
+    Z4: "bg-orange-500/20 text-orange-500",
+    Z5: "bg-red-500/20 text-red-500",
+  };
   const paddlers = [
-    { name: "Nakamura K.", pace: "4:14", cad: 74, hr: 170, zone: "Z4", color: "bg-orange-500" },
-    { name: "Torres M.", pace: "4:18", cad: 72, hr: 162, zone: "Z3", color: "bg-green-500" },
-    { name: "Jensen L.", pace: "4:22", cad: 70, hr: 155, zone: "Z2", color: "bg-blue-500" },
-    { name: "Nguyen T.", pace: "4:16", cad: 73, hr: 168, zone: "Z3", color: "bg-green-500" },
-    { name: "Williams A.", pace: "4:26", cad: 68, hr: 148, zone: "Z2", color: "bg-blue-500" },
-    { name: "Park S.", pace: "4:20", cad: 71, hr: 165, zone: "Z3", color: "bg-green-500" },
-    { name: "Schmidt F.", pace: "4:28", cad: 66, hr: 142, zone: "Z2", color: "bg-blue-500" },
-    { name: "Da Silva R.", pace: "4:15", cad: 74, hr: 172, zone: "Z4", color: "bg-orange-500" },
+    { name: "Nakamura, K.", pace: "4:14", cad: 74, hr: 170, zone: "Z4" },
+    { name: "Torres, M.", pace: "4:18", cad: 72, hr: 162, zone: "Z3" },
+    { name: "Jensen, L.", pace: "4:22", cad: 70, hr: 155, zone: "Z2" },
+    { name: "Nguyen, T.", pace: "4:16", cad: 73, hr: 168, zone: "Z3" },
+    { name: "Williams, A.", pace: "4:26", cad: 68, hr: 148, zone: "Z2" },
+    { name: "Park, S.", pace: "4:20", cad: 71, hr: 165, zone: "Z3" },
+    { name: "Schmidt, F.", pace: "4:28", cad: 66, hr: 142, zone: "Z2" },
+    { name: "Da Silva, R.", pace: "4:15", cad: 74, hr: 172, zone: "Z4" },
   ];
 
   return (
@@ -187,7 +193,7 @@ function LiveFeedMockup() {
               </span>
               <div className="flex justify-end">
                 <span
-                  className={`rounded-full ${p.color}/20 px-1.5 py-0.5 text-[9px] font-bold ${p.color.replace("bg-", "text-")}`}
+                  className={`rounded-full px-1.5 py-0.5 text-[9px] font-bold ${zoneStyles[p.zone]}`}
                 >
                   {p.zone}
                 </span>
@@ -418,10 +424,10 @@ export default function PaddlePage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Real-time cadence/pace/speed/split times",
-                "GPS track",
-                "BLE HR support",
-                "Sessions sync to Team dashboard",
+                "Real-time cadence, pace, speed, and split times displayed in the boat",
+                "GPS track with distance captured automatically",
+                "BLE heart rate monitor support — any Bluetooth chest strap",
+                "Sessions flow straight to the coach's Ludum Team dashboard",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -461,10 +467,10 @@ export default function PaddlePage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Live cadence/pace/HR",
-                "GPS position",
-                "Colour-coded HR zones",
-                "Feeds Ludum Live",
+                "Live cadence, pace, and heart rate for every paddler on the water",
+                "GPS position updated in real time — see where they are on the course",
+                "Colour-coded HR zones — instantly see who's in the right training zone",
+                "Same data feeds Ludum Live for spectator and race broadcasting",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -498,10 +504,10 @@ export default function PaddlePage() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "One-tap BLE pairing",
-                "Session history",
-                "Morning monitoring (<30 seconds)",
-                "iOS and Android",
+                "One-tap BLE pairing — connect a heart rate strap once, remembered forever",
+                "Session history with distance, pace, cadence, and HR at a glance",
+                "Morning monitoring — wellness check-in takes under 30 seconds",
+                "Available on iOS and Android",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-coral" />
@@ -569,7 +575,7 @@ export default function PaddlePage() {
         logos={[
           "Rowing Australia",
           "Cambridge University",
-          "Leander Club",
+          "University of Kansas",
           "Hampton School",
         ]}
       />
@@ -586,21 +592,21 @@ export default function PaddlePage() {
           <div className="reveal mb-12 text-center">
             <SectionLabel text="Explore the Platform" />
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Paddle works even better with the rest of Ludum.
+              Paddle feeds the full Ludum ecosystem.
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <ProductCard
               tag="Flagship"
               title="Ludum Team"
-              description="Your coaching command centre. Training, compliance, analytics, and communication in one place."
+              description="Training planning, compliance tracking, athlete management, and data analytics — your coaching command centre."
               image="/images/hero-sunset-bridge.jpg"
               href="/products/team"
             />
             <ProductCard
               tag="Unique to Ludum"
               title="Ludum Telemetry"
-              description="Stroke-by-stroke telemetry data from Peach Powerline, integrated with your training calendar."
+              description="Stroke-by-stroke power, force curves, and catch angles from Peach Powerline — integrated with your training data."
               image="/images/boathouse.jpg"
               href="/products/telemetry"
             />

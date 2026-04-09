@@ -16,7 +16,7 @@ const otherProducts = [
     href: "/products/telemetry",
     image: "/images/boathouse.jpg",
     description:
-      "Live stroke-by-stroke data from inside the boat. Force curves, stroke rate, boat speed, and balance in real time.",
+      "Live stroke-by-stroke data from inside the boat. The only platform integrating telemetry with training.",
   },
   {
     title: "Ludum Row",
@@ -24,7 +24,7 @@ const otherProducts = [
     href: "/products/row",
     image: "/images/hero-solo-sunset.jpg",
     description:
-      "The athlete app for rowing. Automatic session recording from Concept2, on-water devices, and wearables.",
+      "Automatic session recording from Concept2, on-water devices, and wearables.",
   },
   {
     title: "Ludum Paddle",
@@ -32,7 +32,7 @@ const otherProducts = [
     href: "/products/paddle",
     image: "/images/sky-view-crew.jpg",
     description:
-      "Purpose-built for canoe, kayak, and dragon boat. Same powerful data capture adapted for paddle sport.",
+      "Purpose-built for canoe, kayak, and dragon boat with sport-specific workflows.",
   },
   {
     title: "Ludum Live",
@@ -40,7 +40,7 @@ const otherProducts = [
     href: "/products/live",
     image: "/images/winning-crew.jpg",
     description:
-      "Live race broadcasting, spectator tracking, and coach feeds — powered by data from your athletes.",
+      "Live session feeds and real-time athlete data from anywhere.",
   },
 ];
 
@@ -76,17 +76,17 @@ const integrations = ["Garmin", "Polar", "Strava", "Suunto", "Concept2"];
 const logoNames = [
   "Rowing Australia",
   "Cambridge University",
-  "Leander Club",
+  "University of Kansas",
   "Hampton School",
 ];
 
 const riskAthletes = [
-  { name: "Mitchell S.", ratio: 0.92, color: "bg-green-500" },
-  { name: "Cooper J.", ratio: 1.05, color: "bg-green-500" },
-  { name: "Ashworth T.", ratio: 1.15, color: "bg-yellow-500" },
-  { name: "Hargreaves B.", ratio: 0.88, color: "bg-green-500" },
-  { name: "Thornton E.", ratio: 1.45, color: "bg-red-500" },
-  { name: "Chen O.", ratio: 0.72, color: "bg-green-500" },
+  { name: "Mitchell, S.", ratio: 0.92, color: "bg-green-500" },
+  { name: "Cooper, J.", ratio: 1.05, color: "bg-green-500" },
+  { name: "Ashworth, T.", ratio: 1.15, color: "bg-yellow-500" },
+  { name: "Hargreaves, B.", ratio: 0.88, color: "bg-green-500" },
+  { name: "Thornton, E.", ratio: 1.45, color: "bg-red-500" },
+  { name: "Chen, O.", ratio: 0.72, color: "bg-green-500" },
 ];
 
 export default function TeamPage() {
@@ -137,7 +137,7 @@ export default function TeamPage() {
             </div>
             <div className="mt-10 flex flex-wrap gap-8">
               <div>
-                <p className="text-2xl font-bold text-white">93.2%</p>
+                <p className="text-2xl font-bold"><span className="text-coral">93.2%</span></p>
                 <p className="text-sm text-grey">Compliance</p>
               </div>
               <div>
@@ -145,7 +145,7 @@ export default function TeamPage() {
                 <p className="text-sm text-grey">Personal Bests</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-white">1hr</p>
+                <p className="text-2xl font-bold"><span className="text-coral">1hr</span></p>
                 <p className="text-sm text-grey">Setup Time</p>
               </div>
             </div>
@@ -186,10 +186,10 @@ export default function TeamPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Colour-coded calendar",
-                  "Squad-wide compliance %",
-                  "Individual compliance history",
-                  "No manual entry",
+                  "Colour-coded calendar shows completed, missed, and partial sessions at a glance",
+                  "Squad-wide compliance percentage updated in real time",
+                  "Individual athlete compliance history over any time period",
+                  "No manual entry — data syncs automatically from connected devices",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -244,11 +244,11 @@ export default function TeamPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Session map",
-                  "Speed/SR breakdown by crew",
-                  "HR zones across all athletes",
-                  "Piece-by-piece ranking with gold medal %",
-                  "Boat speed overlaid with HR",
+                  "Session map showing exactly where crews trained",
+                  "Speed distribution and stroke rate breakdown by crew",
+                  "Heart rate zones across all athletes — see who trained hard and who didn't",
+                  "Piece-by-piece ranking with gold medal percentage",
+                  "Boat speed overlaid with heart rate for single scullers",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -284,10 +284,10 @@ export default function TeamPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Chronic-acute ratio per athlete",
-                  "Green/amber/red indicators",
-                  '"Athletes at Risk" widget',
-                  "Training load distribution",
+                  "Chronic-acute training load ratio visualised per athlete",
+                  "Green / amber / red zone indicators with historical trend",
+                  '"Athletes at Risk" widget on the main dashboard',
+                  "Training load distribution across the squad",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -302,9 +302,6 @@ export default function TeamPage() {
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
                   Athletes at Risk — Chronic:Acute Ratio
                 </h3>
-                <span className="rounded-full bg-dark px-3 py-1 text-xs text-grey">
-                  Last 7 days
-                </span>
               </div>
               <div className="space-y-4">
                 {riskAthletes.map((athlete) => (
@@ -315,7 +312,7 @@ export default function TeamPage() {
                     <div className="relative h-6 flex-1 overflow-hidden rounded-full bg-dark">
                       <div
                         className={`absolute inset-y-0 left-0 rounded-full ${athlete.color}`}
-                        style={{ width: `${Math.min((athlete.ratio / 1.6) * 100, 100)}%` }}
+                        style={{ width: `${Math.min((athlete.ratio / 2) * 100, 100)}%` }}
                       />
                     </div>
                     <span
@@ -331,20 +328,6 @@ export default function TeamPage() {
                     </span>
                   </div>
                 ))}
-              </div>
-              <div className="mt-6 flex items-center gap-4 border-t border-dark-border pt-4 text-xs text-grey">
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-green-500" />
-                  0.80–1.10 Optimal
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-yellow-500" />
-                  1.10–1.30 Caution
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full bg-red-500" />
-                  1.30+ High Risk
-                </span>
               </div>
             </div>
           </div>
@@ -383,11 +366,11 @@ export default function TeamPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Team training summary",
-                  "Indoor rowing report (ergo wattage)",
-                  "Athlete comparison (HR + watts)",
-                  "Health report (morning monitoring)",
-                  "Sport breakdown",
+                  "Team training summary — sessions by athlete across any time period",
+                  "Indoor rowing report — ergo improvement tracked by wattage over time",
+                  "Athlete comparison — select multiple tests, see HR and watts progression",
+                  "Health report — morning monitoring data with colour-coded alerts",
+                  "Sport breakdown — see which sports each athlete has trained across",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -423,11 +406,11 @@ export default function TeamPage() {
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "Training zone distribution",
-                  "Chronic vs acute load",
-                  "Colour-coded compliance calendar",
-                  "Sport-specific summaries",
-                  "Test comparison over time",
+                  "Training zone distribution over any time period",
+                  "Chronic vs acute load comparison — green/yellow/red zones",
+                  "Colour-coded compliance calendar — did the session or missed it",
+                  "Sport-specific performance summaries (rowing, ergo, cross-training)",
+                  "Select multiple tests and compare heart rate + watts over time",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
@@ -447,18 +430,6 @@ export default function TeamPage() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Photo Break */}
-      <section className="relative h-[50vh] min-h-[400px]">
-        <Image
-          src="/images/oar-handle-rower.jpg"
-          alt="Rower on the water"
-          fill
-          unoptimized
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/50" />
       </section>
 
       {/* How It Works */}
@@ -534,11 +505,16 @@ export default function TeamPage() {
               training load, wellness — and I make better decisions because of
               it.&rdquo;
             </blockquote>
-            <div className="mt-8">
-              <p className="font-semibold text-white">Will Reynolds</p>
-              <p className="text-sm text-grey">
-                Head of Rowing, Royal Shrewsbury School
-              </p>
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-coral text-sm font-bold text-white">
+                WR
+              </div>
+              <div className="text-left">
+                <p className="font-semibold text-white">Will Reynolds</p>
+                <p className="text-sm text-grey">
+                  Head of Rowing, Royal Shrewsbury School
+                </p>
+              </div>
             </div>
           </div>
           <div className="mt-16 flex flex-wrap items-center justify-center gap-8">
@@ -584,12 +560,12 @@ export default function TeamPage() {
       <section className="bg-black py-24">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="reveal text-center">
+            <span className="mb-4 inline-block rounded-full bg-dark-card px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-coral">
+              Explore the Platform
+            </span>
             <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Other Products
+              Team works even better with the rest of Ludum.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg text-grey-light">
-              Ludum is a suite of tools for coaches, athletes, and spectators.
-            </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {otherProducts.map((product) => (
