@@ -560,6 +560,7 @@ export default function LivePage() {
       />
 
       <HowItWorks
+        label="How It Works"
         heading="Create. Share. Go live."
         steps={[
           { title: "Create an Event", description: "Name the event, drop course markers on the map, and set up the race schedule." },
