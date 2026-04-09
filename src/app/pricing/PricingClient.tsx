@@ -84,7 +84,7 @@ const PLAN_NAMES: Record<Tier, string> = {
 
 const TIER_COLORS: Record<Tier, string> = {
   bronze: "#B8732A",
-  silver: "#888888",
+  silver: "#C0C0C0",
   gold: "#B8962A",
   plat: "#0097A1",
   telem: "#E53F47",

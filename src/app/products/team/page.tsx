@@ -76,7 +76,7 @@ const integrations = ["Garmin", "Polar", "Strava", "Suunto", "Concept2"];
 const logoNames = [
   "Rowing Australia",
   "Cambridge University",
-  "University of Kansas",
+  "Leander Club",
   "Hampton School",
 ];
 

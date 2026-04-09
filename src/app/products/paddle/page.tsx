@@ -575,7 +575,7 @@ export default function PaddlePage() {
         logos={[
           "Rowing Australia",
           "Cambridge University",
-          "University of Kansas",
+          "Leander Club",
           "Hampton School",
         ]}
       />
