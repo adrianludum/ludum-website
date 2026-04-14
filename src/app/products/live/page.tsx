@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { SectionLabel } from "@/components/SectionLabel";
+import { H1, H2, Eyebrow, Lead, Body } from "@/components/Heading";
 import { PhotoBreak } from "@/components/PhotoBreak";
 import { HowItWorks } from "@/components/HowItWorks";
 import { IntegrationLogos } from "@/components/IntegrationLogos";
 import { ProofSection } from "@/components/ProofSection";
 import { CTASection } from "@/components/CTASection";
-import { ProductCard } from "@/components/ProductCard";
 
 export const metadata: Metadata = {
   title: "Ludum Live — Real-Time Race & Session Broadcasting | Ludum",
@@ -16,11 +15,17 @@ export const metadata: Metadata = {
 };
 
 const crews = [
-  { name: "Cambridge W8+", pace: "1:33.6", sr: 36, gap: "—", pos: 1, color: "bg-coral" },
-  { name: "Leander M8+", pace: "1:34.0", sr: 35, gap: "+2.4s", pos: 2, color: "bg-teal" },
-  { name: "Hampton 1st VIII", pace: "1:35.1", sr: 34, gap: "+5.1s", pos: 3, color: "bg-amber-400" },
-  { name: "Princeton M8+", pace: "1:36.4", sr: 33, gap: "+8.8s", pos: 4, color: "bg-grey" },
+  { name: "Cambridge W8+", pace: "1:33.6", sr: 36, gap: "—", pos: 1, color: "bg-white" },
+  { name: "Leander M8+", pace: "1:34.0", sr: 35, gap: "+2.4s", pos: 2, color: "bg-white/70" },
+  { name: "Hampton 1st VIII", pace: "1:35.1", sr: 34, gap: "+5.1s", pos: 3, color: "bg-white/50" },
+  { name: "Princeton M8+", pace: "1:36.4", sr: 33, gap: "+8.8s", pos: 4, color: "bg-white/30" },
 ];
+
+function Bullet() {
+  return (
+    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-white/80" />
+  );
+}
 
 function LiveRaceMockup() {
   return (
@@ -40,7 +45,7 @@ function LiveRaceMockup() {
           <button
             key={tab}
             className={`px-3 py-2 text-xs font-medium ${
-              i === 0 ? "border-b-2 border-coral text-white" : "text-grey"
+              i === 0 ? "border-b-2 border-white text-white" : "text-grey"
             }`}
           >
             {tab}
@@ -52,22 +57,23 @@ function LiveRaceMockup() {
           <path
             d="M 20 80 Q 100 40 180 80 T 340 80 L 380 90"
             fill="none"
-            stroke="#0097A1"
+            stroke="#ffffff"
             strokeWidth="14"
-            strokeOpacity="0.3"
+            strokeOpacity="0.2"
             strokeLinecap="round"
           />
           <path
             d="M 20 80 Q 100 40 180 80 T 340 80 L 380 90"
             fill="none"
-            stroke="#0097A1"
+            stroke="#ffffff"
+            strokeOpacity="0.5"
             strokeWidth="2"
             strokeDasharray="4 4"
           />
-          <circle cx="220" cy="70" r="6" fill="#E53F47" />
-          <circle cx="205" cy="74" r="5" fill="#0097A1" />
-          <circle cx="190" cy="78" r="5" fill="#fbbf24" />
-          <circle cx="170" cy="82" r="5" fill="#808080" />
+          <circle cx="220" cy="70" r="6" fill="#ffffff" />
+          <circle cx="205" cy="74" r="5" fill="#ffffff" fillOpacity="0.7" />
+          <circle cx="190" cy="78" r="5" fill="#ffffff" fillOpacity="0.5" />
+          <circle cx="170" cy="82" r="5" fill="#ffffff" fillOpacity="0.3" />
         </svg>
       </div>
       <div className="divide-y divide-dark-border">
@@ -77,7 +83,7 @@ function LiveRaceMockup() {
             <span className="flex-1 text-sm font-semibold text-white">{crew.name}</span>
             <span className="font-mono text-xs text-grey-light">{crew.pace}/500m</span>
             <span className="font-mono text-xs text-grey-light">SR {crew.sr}</span>
-            <span className="font-mono text-xs font-semibold text-coral">{crew.gap}</span>
+            <span className="font-mono text-xs font-semibold text-white">{crew.gap}</span>
           </div>
         ))}
       </div>
@@ -99,13 +105,19 @@ function SpectatorMockup() {
       <div className="border-b border-dark-border bg-dark px-5 py-3">
         <div className="flex items-center justify-between">
           <span className="text-sm font-semibold text-white">Spectator View — Head of the River</span>
-          <span className="rounded-full bg-coral/20 px-2 py-0.5 text-[10px] font-bold text-coral">LIVE</span>
+          <span className="flex items-center gap-1.5 rounded-full border border-dark-border bg-black px-2 py-0.5 text-[10px] font-bold text-white">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-coral" />
+            </span>
+            LIVE
+          </span>
         </div>
         <div className="mt-3 flex items-center gap-2 rounded-lg border border-dark-border bg-black px-3 py-2">
           <span className="flex-1 truncate font-mono text-xs text-grey-light">
             live.ludum.com/hotr-2026
           </span>
-          <button className="rounded-md bg-coral px-2 py-1 text-[10px] font-semibold text-white">
+          <button className="rounded-md border border-dark-border bg-dark px-2 py-1 text-[10px] font-semibold text-white">
             Copy Link
           </button>
         </div>
@@ -117,10 +129,10 @@ function SpectatorMockup() {
         <div className="space-y-2">
           {leaderboard.map((row) => (
             <div key={row.pos} className="flex items-center gap-3 rounded-lg bg-dark px-3 py-2">
-              <span className="w-5 font-bold text-coral">{row.pos}</span>
+              <span className="w-5 font-bold text-white">{row.pos}</span>
               <span className="flex-1 text-sm text-white">{row.name}</span>
               <span className="font-mono text-xs text-grey-light">{row.time}</span>
-              {row.gap && <span className="w-12 text-right font-mono text-[10px] text-coral">{row.gap}</span>}
+              {row.gap && <span className="w-12 text-right font-mono text-[10px] text-white/70">{row.gap}</span>}
             </div>
           ))}
         </div>
@@ -128,13 +140,13 @@ function SpectatorMockup() {
       <div className="border-t border-dark-border bg-dark px-5 py-3">
         <div className="flex items-center justify-between text-[10px] font-medium text-grey">
           {["Start", "1km", "2km", "3.4km", "5km", "Finish"].map((m, i) => (
-            <span key={m} className={i === 3 ? "font-bold text-coral" : ""}>
+            <span key={m} className={i === 3 ? "font-bold text-white" : ""}>
               {m}
             </span>
           ))}
         </div>
         <div className="mt-2 h-1 rounded-full bg-dark-border">
-          <div className="h-full w-[57%] rounded-full bg-coral" />
+          <div className="h-full w-[57%] rounded-full bg-white/80" />
         </div>
       </div>
     </div>
@@ -154,11 +166,9 @@ const seats = [
 
 function Sparkline({
   data,
-  color,
   target,
 }: {
   data: number[];
-  color: string;
   target?: { value: number; label: string };
 }) {
   const min = Math.min(...data);
@@ -199,7 +209,8 @@ function Sparkline({
       )}
       <polyline
         fill="none"
-        stroke={color}
+        stroke="#ffffff"
+        strokeOpacity="0.85"
         strokeWidth="1.4"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -229,11 +240,17 @@ function CoachFeedMockup() {
     <div className="overflow-hidden rounded-2xl border border-dark-border bg-dark-card shadow-2xl">
       <div className="flex items-center justify-between border-b border-dark-border bg-dark px-5 py-3">
         <span className="text-sm font-semibold text-white">Coach View — M8+ A Crew (Live)</span>
-        <span className="rounded-full bg-coral/20 px-2 py-0.5 text-[10px] font-bold text-coral">LIVE</span>
+        <span className="flex items-center gap-1.5 rounded-full border border-dark-border bg-black px-2 py-0.5 text-[10px] font-bold text-white">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-coral" />
+          </span>
+          LIVE
+        </span>
       </div>
       <div className="grid grid-cols-3 gap-2 border-b border-dark-border bg-dark p-4">
         <div className="rounded-lg bg-black p-3 text-center">
-          <p className="font-mono text-xl font-bold text-coral">1:34.0</p>
+          <p className="font-mono text-xl font-bold text-white">1:34.0</p>
           <p className="mt-1 text-[9px] uppercase tracking-wider text-grey">/500m</p>
         </div>
         <div className="rounded-lg bg-black p-3 text-center">
@@ -272,13 +289,13 @@ function CoachFeedMockup() {
           Pace /500m — Last 60 Strokes
         </p>
         <div className="h-[60px] overflow-hidden rounded-md border border-dark-border bg-black">
-          <Sparkline data={paceSeries} color="#E53F47" target={{ value: 94, label: "Target 1:34" }} />
+          <Sparkline data={paceSeries} target={{ value: 94, label: "Target 1:34" }} />
         </div>
         <p className="mb-1.5 mt-3 text-[10px] font-semibold uppercase tracking-wider text-grey">
           Stroke Rate — Last 60 Strokes
         </p>
         <div className="h-[60px] overflow-hidden rounded-md border border-dark-border bg-black">
-          <Sparkline data={srSeries} color="#0097A1" />
+          <Sparkline data={srSeries} />
         </div>
       </div>
     </div>
@@ -298,7 +315,7 @@ function EventsMockup() {
     <div className="overflow-hidden rounded-2xl border border-dark-border bg-dark-card shadow-2xl">
       <div className="flex items-center justify-between border-b border-dark-border bg-dark px-5 py-3">
         <span className="text-sm font-semibold text-white">Events — Spring Regatta 2026</span>
-        <span className="rounded-full bg-coral/20 px-2 py-0.5 text-[10px] font-bold text-coral">3 LIVE</span>
+        <span className="rounded-full border border-dark-border bg-black px-2 py-0.5 text-[10px] font-bold text-white">3 LIVE</span>
       </div>
       <div className="divide-y divide-dark-border">
         {events.map((e) => (
@@ -310,7 +327,7 @@ function EventsMockup() {
             <span
               className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
                 e.tone === "live"
-                  ? "bg-coral/20 text-coral"
+                  ? "bg-white/10 text-white"
                   : e.tone === "done"
                   ? "bg-green-500/15 text-green-400"
                   : "bg-white/[.06] text-grey-light"
@@ -341,7 +358,7 @@ function BroadcastMockup() {
         </div>
         <div className="absolute inset-x-4 bottom-4">
           <div className="flex items-center gap-4 rounded-lg border border-white/20 bg-black/70 px-4 py-3 backdrop-blur">
-            <div className="h-8 w-1 rounded-full bg-coral" />
+            <div className="h-8 w-1 rounded-full bg-white" />
             <div className="flex-1">
               <p className="text-sm font-bold text-white">Cambridge W8+</p>
               <p className="text-[10px] text-grey-light">1st Position</p>
@@ -359,7 +376,7 @@ function BroadcastMockup() {
             key={btn}
             className={`rounded-md px-3 py-1.5 text-[10px] font-semibold ${
               i === 0
-                ? "bg-coral text-white"
+                ? "border border-dark-border bg-white/10 text-white"
                 : "bg-black text-grey-light"
             }`}
           >
@@ -373,7 +390,6 @@ function BroadcastMockup() {
 
 function PainSolution({
   label,
-  pain,
   heading,
   body,
   details,
@@ -381,7 +397,6 @@ function PainSolution({
   reverse = false,
 }: {
   label: string;
-  pain: string;
   heading: string;
   body: string;
   details: string[];
@@ -389,28 +404,23 @@ function PainSolution({
   reverse?: boolean;
 }) {
   return (
-    <section className="border-t border-dark-border py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="border-t border-dark-border py-20 lg:py-28">
+      <div className="mx-auto max-w-6xl px-6">
         <div className={`grid items-center gap-12 lg:grid-cols-2 ${reverse ? "lg:grid-flow-col-dense" : ""}`}>
-          <div className={`reveal ${reverse ? "lg:col-start-2" : ""}`}>
-            <SectionLabel text={label} />
-            <p className="mb-6 border-l-2 border-coral pl-4 text-lg italic text-grey-light">
-              &ldquo;{pain}&rdquo;
-            </p>
-            <h2 className="mb-6 text-4xl font-bold leading-tight text-white md:text-5xl">{heading}</h2>
-            <p className="mb-6 text-lg leading-relaxed text-grey-light">{body}</p>
-            <ul className="space-y-3">
+          <div className={reverse ? "lg:col-start-2" : ""}>
+            <Eyebrow>{label}</Eyebrow>
+            <H2>{heading}</H2>
+            <Body className="mt-6 text-lg">{body}</Body>
+            <ul className="mt-6 space-y-3">
               {details.map((d) => (
                 <li key={d} className="flex items-start gap-3 text-sm text-grey-light">
-                  <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
+                  <Bullet />
                   <span>{d}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <div className={`reveal ${reverse ? "lg:col-start-1 lg:row-start-1" : ""}`}>{mockup}</div>
+          <div className={reverse ? "lg:col-start-1 lg:row-start-1" : ""}>{mockup}</div>
         </div>
       </div>
     </section>
@@ -421,53 +431,39 @@ export default function LivePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <nav className="mb-8 text-sm text-grey">
-            <Link href="/products" className="hover:text-white">Products</Link>
-            <span className="mx-2">&gt;</span>
+      <section className="relative overflow-hidden pb-20 pt-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <nav className="mb-8 text-sm text-grey-light">
+            <span>Products</span>
+            <span className="mx-2">/</span>
             <span className="text-white">Ludum Live</span>
           </nav>
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div className="reveal">
-              <SectionLabel text="Real-Time Broadcasting" />
-              <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
-                Broadcast the race.
-                <br />
-                <span className="text-coral">Live.</span>
-              </h1>
-              <p className="mb-8 text-xl leading-relaxed text-grey-light">
-                Real-time GPS tracking, live splits, stroke rate, pace, and heart rate — streamed
-                to coaches on the bank, commentators in the tower, and spectators on their phones.
-                Every crew. Every race. Every training session.
-              </p>
-              <div className="mb-12 flex flex-wrap gap-4">
+            <div>
+              <Eyebrow>Real-Time Broadcasting</Eyebrow>
+              <H1 accent="Live.">Broadcast the race.</H1>
+              <Lead className="mt-6">
+                Real-time GPS tracking, live splits, stroke rate, pace, and
+                heart rate — streamed to coaches on the bank, commentators in
+                the tower, and spectators on their phones. Every crew. Every
+                race. Every training session.
+              </Lead>
+              <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/demo"
-                  className="rounded-full bg-coral px-8 py-4 font-semibold text-white transition hover:bg-coral-dark"
+                  className="rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white transition hover:bg-coral-dark"
                 >
-                  Request a Demo →
+                  Request a Demo &rarr;
                 </Link>
-                <button className="rounded-full border border-dark-border px-8 py-4 font-semibold text-white transition hover:border-grey">
+                <Link
+                  href="#live-race"
+                  className="rounded-full border border-dark-border px-7 py-3 text-sm font-semibold text-white transition hover:border-grey-dim"
+                >
                   See it in action
-                </button>
-              </div>
-              <div className="flex gap-8 border-t border-dark-border pt-8">
-                <div>
-                  <p className="text-3xl font-bold text-coral">Live</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-grey">GPS Tracking</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-white">Every Stroke</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-grey">Pace</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-coral">∞</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-grey">Spectators</p>
-                </div>
+                </Link>
               </div>
             </div>
-            <div className="reveal relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
                 src="/images/winning-crew.jpg"
                 alt="Rowing crew celebrating"
@@ -480,9 +476,10 @@ export default function LivePage() {
         </div>
       </section>
 
+      <div id="live-race" />
+
       <PainSolution
         label="Live Race Tracking"
-        pain="The crews disappear around the bend and I'm just standing there waiting for a time."
         heading="See every crew. Every metre. In real time."
         body="Ludum Live tracks every boat on the course in real time via GPS. As crews move, the map updates — showing position, pace, stroke rate, and gaps between boats. Coaches on the bank see everything. Race officials see everything. No more guessing what's happening out of sight."
         details={[
@@ -496,7 +493,6 @@ export default function LivePage() {
 
       <PainSolution
         label="Spectator Experience"
-        pain="Parents travel hours to watch their kids race. They deserve more than a glimpse at the start and a time at the finish."
         heading="One link. Any device. Every spectator."
         body="Share a single link and anyone can follow the race live — on their phone, tablet, or laptop. No app download. No login. Spectators see a real-time leaderboard, live crew positions, and running splits. When the race is over, the full replay is available instantly."
         details={[
@@ -511,7 +507,6 @@ export default function LivePage() {
 
       <PainSolution
         label="Coach Live Feed"
-        pain="I need to know who's redlining during the piece — not find out after they collapse at the finish."
         heading="Live heart rate, stroke rate, and pace — for every seat."
         body="The coach view goes deeper than the spectator feed. See real-time heart rate for every athlete in the crew alongside pace and stroke rate. Know who's in the red zone during a race piece. See if the rate is climbing or dropping. Make coaching decisions with data — not just what you can see from the bank."
         details={[
@@ -525,7 +520,6 @@ export default function LivePage() {
 
       <PainSolution
         label="Event Management"
-        pain="Setting up live tracking for a regatta takes weeks of planning. And it still doesn't work half the time."
         heading="Set up live crew tracking in minutes. Not weeks."
         body="Create an event, define the course, assign crews, and go live. Ludum Live uses the GPS data already streaming from Ludum Row and Ludum Paddle — no additional hardware. For head races, regattas, or training pieces, the setup is the same: create, share, track."
         details={[
@@ -540,7 +534,6 @@ export default function LivePage() {
 
       <PainSolution
         label="Broadcast Overlay"
-        pain="We livestream our races on YouTube but there's no data — just a camera pointed at the water."
         heading="Add live data to any video stream."
         body="Ludum Live generates a transparent overlay with live crew positions, pace, stroke rate, and gaps — designed for OBS, vMix, or any streaming software. Turn a static camera feed into a professional broadcast. Lower thirds update in real time as crews move through the course."
         details={[
@@ -589,46 +582,6 @@ export default function LivePage() {
         heading="See your races like never before."
         subtext="Book a demo and we'll show you Ludum Live with a real event — live tracking, spectator view, coach feed, and broadcast overlay with your crews."
       />
-
-      {/* Other products */}
-      <section className="border-t border-dark-border bg-dark py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <SectionLabel text="Explore the Platform" />
-          <h2 className="mb-12 text-4xl font-bold text-white md:text-5xl">
-            Live works best with the full Ludum ecosystem.
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <ProductCard
-              tag="Flagship"
-              title="Ludum Team"
-              description="Training planning, compliance tracking, athlete management, and data analytics — your coaching command centre."
-              image="/images/hero-sunset-bridge.jpg"
-              href="/products/team"
-            />
-            <ProductCard
-              tag="Unique to Ludum"
-              title="Ludum Telemetry"
-              description="Stroke-by-stroke power, force curves, and catch angles from Peach Powerline — integrated with your training data."
-              image="/images/boathouse.jpg"
-              href="/products/telemetry"
-            />
-            <ProductCard
-              tag="For Rowers"
-              title="Ludum Row"
-              description="Automatic session recording from Concept2, on-water devices, and wearables. The data source for Live."
-              image="/images/hero-solo-sunset.jpg"
-              href="/products/row"
-            />
-            <ProductCard
-              tag="For Paddlers"
-              title="Ludum Paddle"
-              description="Purpose-built for canoe, kayak, and dragon boat with sport-specific workflows."
-              image="/images/sky-view-crew.jpg"
-              href="/products/paddle"
-            />
-          </div>
-        </div>
-      </section>
     </>
   );
 }

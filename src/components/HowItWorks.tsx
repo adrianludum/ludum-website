@@ -26,7 +26,7 @@ export function HowItWorks({ label, heading, steps }: HowItWorksProps) {
               key={step.title}
               className="rounded-2xl border border-dark-border bg-dark-card p-8"
             >
-              <span className="mb-4 block text-3xl font-bold text-coral">
+              <span className="mb-4 block text-3xl font-bold text-white/80">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="mb-2 text-lg font-bold text-white">

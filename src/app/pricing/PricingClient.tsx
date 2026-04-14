@@ -2,7 +2,7 @@
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
-import { SectionLabel } from "@/components/SectionLabel";
+import { Eyebrow, H1, H2, Lead } from "@/components/Heading";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
@@ -339,17 +339,15 @@ export function PricingClient() {
   const cardTiers: Tier[] = ["bronze", "silver", "gold", "plat", "telem"];
 
   return (
-    <div>
-      {/* ---- Hero (black bg) ---- */}
+    <div className="bg-black">
+      {/* ---- Hero ---- */}
       <section className="bg-black pt-32 pb-16">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <SectionLabel text="Ludum Team \u00B7 Pricing" />
-          <h1 className="mx-auto max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            The right plan for
-            <br />
-            your <span className="text-coral">squad</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-grey-light">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <Eyebrow>Ludum Team · Pricing</Eyebrow>
+          <div className="flex justify-center">
+            <H1 accent="your squad">The right plan for</H1>
+          </div>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-grey-light sm:text-xl">
             Performance data, smarter planning, and seamless communication — for
             clubs of every size.
           </p>
@@ -387,7 +385,7 @@ export function PricingClient() {
             max={USER_STEPS.length - 1}
             value={stepIndex}
             onChange={(e) => setStepIndex(Number(e.target.value))}
-            className="h-1 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-coral"
+            className="pricing-slider h-1 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-coral"
           />
           {/* Slider ticks */}
           <div className="mt-2 flex justify-between text-[10px] text-white/25">
@@ -472,89 +470,71 @@ export function PricingClient() {
         </div>
       </section>
 
-      {/* ---- Pricing Cards (light bg) ---- */}
-      <section className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
+      {/* ---- Pricing Cards (dark) ---- */}
+      <section className="bg-black py-20">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {cardTiers.map((tier) => {
               const isFeatured = tier === "silver";
               const price = getPriceBlock(tier);
               const { sym: psym, number: pnumber, sub: psub } = splitPrice(price.main);
               const plan = PLAN_FEATURES[tier];
-              const dotColor = isFeatured
-                ? "rgba(255,255,255,.3)"
-                : TIER_COLORS[tier];
-              const tierLabelColor = isFeatured
-                ? "rgba(255,255,255,.4)"
-                : TIER_COLORS[tier];
+              const tierColor = TIER_COLORS[tier];
 
               return (
                 <div
                   key={tier}
-                  className={`relative flex flex-col rounded-2xl border p-6 transition-transform ${
+                  className="relative flex flex-col rounded-2xl border border-dark-border bg-dark-card p-6 text-white"
+                  style={
                     isFeatured
-                      ? "scale-[1.03] border-coral bg-black text-white shadow-2xl shadow-coral/10 z-10"
-                      : "border-gray-200 bg-white text-gray-900"
-                  }`}
+                      ? {
+                          borderColor: tierColor,
+                          boxShadow: `0 0 0 1px ${tierColor}22, 0 20px 60px -20px ${tierColor}33`,
+                        }
+                      : { borderTop: `2px solid ${tierColor}` }
+                  }
                 >
                   {/* Most Popular badge — top-right */}
                   {isFeatured && (
-                    <span className="absolute right-3 top-3 rounded-sm bg-coral px-2.5 py-1 text-[9px] font-bold uppercase tracking-widest text-white">
+                    <span
+                      className="absolute right-3 top-3 rounded-sm px-2.5 py-1 text-[9px] font-bold uppercase tracking-widest text-black"
+                      style={{ background: tierColor }}
+                    >
                       Most Popular
                     </span>
                   )}
 
                   {/* Tier label with dot */}
                   <div
-                    className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest"
-                    style={{ color: tierLabelColor }}
+                    className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em]"
+                    style={{ color: tierColor }}
                   >
                     <span
                       className="inline-block h-2 w-2 flex-shrink-0 rounded-full"
-                      style={{ background: dotColor }}
+                      style={{ background: tierColor }}
                     />
                     {PLAN_NAMES[tier]}
                   </div>
 
-                  <p
-                    className={`mt-2 min-h-[72px] text-[12.5px] leading-relaxed ${
-                      isFeatured ? "text-white/40" : "text-gray-500"
-                    }`}
-                  >
+                  <p className="mt-2 min-h-[72px] text-[12.5px] leading-relaxed text-grey-light">
                     {PLAN_DESCRIPTIONS[tier]}
                   </p>
 
                   {/* Price block */}
                   <div className="mt-2 mb-5 min-h-[100px]">
-                    <div
-                      className={`flex items-start text-[38px] font-bold leading-none ${
-                        isFeatured ? "text-white" : "text-gray-900"
-                      }`}
-                    >
+                    <div className="flex items-start text-[38px] font-bold leading-none text-white">
                       <span className="mr-[1px] mt-[6px] align-top text-lg font-medium">
                         {psym}
                       </span>
                       <span>{pnumber}</span>
-                      <span
-                        className={`mb-[3px] self-end text-[13px] font-medium ${
-                          isFeatured ? "text-white/40" : "text-gray-500"
-                        }`}
-                      >
+                      <span className="mb-[3px] self-end text-[13px] font-medium text-grey">
                         {psub}
                       </span>
                     </div>
-                    <p
-                      className={`mt-1.5 text-[11px] font-medium ${
-                        isFeatured ? "text-white/30" : "text-gray-500"
-                      }`}
-                    >
+                    <p className="mt-1.5 text-[11px] font-medium text-grey-light">
                       {price.perUser}
                     </p>
-                    <p
-                      className={`mt-1 min-h-[16px] text-[11px] leading-snug ${
-                        isFeatured ? "text-white/25" : "text-gray-500"
-                      }`}
-                    >
+                    <p className="mt-1 min-h-[16px] text-[11px] leading-snug text-grey">
                       {price.note}
                     </p>
                   </div>
@@ -562,30 +542,16 @@ export function PricingClient() {
                   {/* CTA */}
                   <Link
                     href="/demo"
-                    className={`block rounded-sm border-[1.5px] px-2 py-3 text-center text-[13px] font-semibold tracking-wide transition-colors ${
-                      isFeatured
-                        ? "border-coral bg-coral text-white hover:bg-coral-dark"
-                        : ""
-                    }`}
-                    style={
-                      isFeatured
-                        ? undefined
-                        : {
-                            borderColor: TIER_COLORS[tier],
-                            color: TIER_COLORS[tier],
-                          }
-                    }
+                    className="block rounded-sm border border-white/20 bg-transparent px-2 py-3 text-center text-[13px] font-semibold tracking-wide text-white transition-colors hover:border-white/60 hover:bg-white/5"
                   >
                     Request a Demo
                   </Link>
 
                   {/* Divider */}
                   <p
-                    className={`mt-5 min-h-[32px] border-t pt-3.5 text-[10px] font-bold uppercase tracking-widest ${
-                      isFeatured
-                        ? "border-white/10 text-white/20"
-                        : "border-gray-200 text-gray-400"
-                    } ${plan.divider ? "" : "invisible"}`}
+                    className={`mt-5 min-h-[32px] border-t border-dark-border pt-3.5 text-[10px] font-bold uppercase tracking-[0.2em] text-grey ${
+                      plan.divider ? "" : "invisible"
+                    }`}
                   >
                     {plan.divider || "\u200B"}
                   </p>
@@ -595,20 +561,12 @@ export function PricingClient() {
                     {plan.features.map((f) => (
                       <li key={f} className="flex items-start gap-2">
                         <span
-                          className="mt-[1px] flex h-[15px] w-[15px] flex-shrink-0 items-center justify-center rounded-full text-[8px] font-black text-white"
-                          style={{
-                            background: isFeatured
-                              ? "#E53F47"
-                              : TIER_COLORS[tier],
-                          }}
+                          className="mt-[1px] flex h-[15px] w-[15px] flex-shrink-0 items-center justify-center rounded-full text-white"
+                          style={{ background: tierColor }}
                         >
                           <CheckIcon className="h-2.5 w-2.5" />
                         </span>
-                        <span
-                          className={`text-[12px] leading-snug ${
-                            isFeatured ? "text-white/45" : "text-gray-500"
-                          }`}
-                        >
+                        <span className="text-[12px] leading-snug text-grey-light">
                           {f}
                         </span>
                       </li>
@@ -621,29 +579,27 @@ export function PricingClient() {
         </div>
       </section>
 
-      {/* ---- Feature Comparison Table (light bg) ---- */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-7xl px-6">
+      {/* ---- Feature Comparison Table (dark) ---- */}
+      <section className="bg-black py-20">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Full feature comparison
-            </h2>
-            <p className="mt-4 text-lg text-gray-500">
+            <H2>Full feature comparison</H2>
+            <p className="mx-auto mt-4 text-lg text-grey-light">
               Every feature, across every plan.
             </p>
           </div>
 
-          <div className="overflow-x-auto rounded-xl border border-gray-200 bg-white">
+          <div className="overflow-x-auto rounded-2xl border border-dark-border bg-dark-card">
             <table className="w-full min-w-[760px] text-left text-[13px]">
               <thead>
-                <tr className="border-b-2 border-gray-200">
-                  <th className="px-3 py-3 text-left text-[10px] font-bold uppercase tracking-widest text-gray-500">
+                <tr className="border-b border-dark-border">
+                  <th className="px-4 py-4 text-left text-[10px] font-bold uppercase tracking-[0.2em] text-grey">
                     Feature
                   </th>
                   {TABLE_TIERS.map((t) => (
                     <th
                       key={t}
-                      className="px-3 py-3 text-center text-[10px] font-bold uppercase tracking-widest"
+                      className="px-4 py-4 text-center text-[10px] font-bold uppercase tracking-[0.2em]"
                       style={{ color: TIER_COLORS[t] }}
                     >
                       {PLAN_NAMES[t]}
@@ -657,7 +613,7 @@ export function PricingClient() {
                     <tr>
                       <td
                         colSpan={6}
-                        className="border-t border-gray-200 bg-gray-50 px-3 py-2.5 text-[10px] font-bold uppercase tracking-widest text-gray-500"
+                        className="border-t border-dark-border bg-black/40 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] text-grey"
                       >
                         {cat.category}
                       </td>
@@ -665,21 +621,16 @@ export function PricingClient() {
                     {cat.rows.map((row) => (
                       <tr
                         key={row.name}
-                        className="border-b border-gray-200 hover:bg-gray-50/60"
+                        className="border-b border-dark-border last:border-b-0 hover:bg-white/[0.02]"
                       >
-                        <td className="px-3 py-3 text-gray-900">{row.name}</td>
+                        <td className="px-4 py-3 text-grey-light">{row.name}</td>
                         {row.tiers.map((has, i) => (
-                          <td key={i} className="px-3 py-3 text-center">
+                          <td key={i} className="px-4 py-3 text-center">
                             {has ? (
-                              <span
-                                className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full text-white"
-                                style={{ background: TIER_COLORS[TABLE_TIERS[i]] }}
-                              >
-                                <CheckIcon className="h-2.5 w-2.5" />
-                              </span>
+                              <CheckIcon className="mx-auto h-4 w-4 text-white" />
                             ) : (
-                              <span className="text-base text-black/15">
-                                {"\u2014"}
+                              <span className="text-base text-grey-dim">
+                                {"\u2013"}
                               </span>
                             )}
                           </td>

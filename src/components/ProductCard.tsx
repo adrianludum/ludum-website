@@ -38,7 +38,7 @@ export function ProductCard({
         <p className="mb-4 text-sm leading-relaxed text-grey">
           {description}
         </p>
-        <span className="text-sm font-semibold text-coral transition-colors group-hover:text-coral-dark">
+        <span className="text-sm font-semibold text-white/80 transition-colors group-hover:text-white">
           Learn more &rarr;
         </span>
       </div>

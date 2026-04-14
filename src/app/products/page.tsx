@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { SectionLabel } from "@/components/SectionLabel";
+import { Eyebrow, H1, H2, Lead } from "@/components/Heading";
 import { ProductCard } from "@/components/ProductCard";
-import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "Products — Ludum",
@@ -52,26 +51,124 @@ const products = [
   },
 ];
 
+/* ------------------------------------------------------------------ */
+/*  Comparison matrix                                                  */
+/* ------------------------------------------------------------------ */
+
+const MATRIX_COLS = ["Team", "Telemetry", "Row", "Paddle", "Live"] as const;
+
+const MATRIX_ROWS: { label: string; values: [string, string, string, string, string] }[] = [
+  {
+    label: "For",
+    values: ["Coach", "Analyst", "Athlete", "Athlete", "Coach / Spectator"],
+  },
+  {
+    label: "Primary focus",
+    values: [
+      "Compliance",
+      "Force curves",
+      "Session capture",
+      "Session capture",
+      "Broadcasting",
+    ],
+  },
+  {
+    label: "Delivery",
+    values: ["Web", "Web", "iOS / Android", "iOS / Android", "Web"],
+  },
+  {
+    label: "Data source",
+    values: [
+      "Connected devices",
+      "Peach Powerline",
+      "Phone GPS + BLE",
+      "Phone GPS + BLE",
+      "Live feeds",
+    ],
+  },
+  {
+    label: "Standalone?",
+    values: [
+      "Yes",
+      "Yes",
+      "Works with Team",
+      "Works with Team",
+      "Needs Row / Paddle",
+    ],
+  },
+];
+
 export default function ProductsPage() {
   return (
-    <>
+    <div className="bg-black">
       <section className="pt-32 pb-16">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <SectionLabel text="The Platform" />
-          <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
-            Five products.
-            <br />
-            <span className="text-coral">One connected ecosystem.</span>
-          </h1>
-          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-grey-light">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <Eyebrow>The Platform</Eyebrow>
+          <div className="flex justify-center">
+            <H1 accent="One platform.">Five products.</H1>
+          </div>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-grey-light sm:text-xl">
             Each product solves a specific problem. Together, they give you the
             most complete view of your programme available anywhere.
           </p>
         </div>
       </section>
 
+      {/* ---- Comparison matrix ---- */}
       <section className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-8">
+            <H2>At a glance</H2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-grey-light">
+              What each product does, side by side.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto rounded-2xl border border-dark-border bg-dark-card">
+            <table className="w-full min-w-[760px] text-left text-sm">
+              <thead>
+                <tr className="border-b border-dark-border">
+                  <th className="px-5 py-4 text-[10px] font-bold uppercase tracking-[0.2em] text-grey">
+                    &nbsp;
+                  </th>
+                  {MATRIX_COLS.map((col) => (
+                    <th
+                      key={col}
+                      className="px-5 py-4 text-left text-[11px] font-bold uppercase tracking-[0.2em] text-white"
+                    >
+                      {col}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {MATRIX_ROWS.map((row) => (
+                  <tr
+                    key={row.label}
+                    className="border-b border-dark-border last:border-b-0"
+                  >
+                    <td className="px-5 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-grey">
+                      {row.label}
+                    </td>
+                    {row.values.map((val, i) => (
+                      <td
+                        key={i}
+                        className="px-5 py-4 text-sm text-grey-light"
+                      >
+                        {val}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- Product cards ---- */}
+      <section className="py-16">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <ProductCard key={p.title} {...p} />
@@ -79,11 +176,6 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-
-      <CTASection
-        heading="Not sure which product is right for you?"
-        subtext="Book a 30-minute demo and we'll help you figure out exactly which pieces of the Ludum platform fit your programme — no pressure, no hard sell."
-      />
-    </>
+    </div>
   );
 }

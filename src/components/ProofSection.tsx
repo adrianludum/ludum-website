@@ -42,7 +42,7 @@ export function ProofSection({
 
         {/* Author */}
         <div className="mt-8 flex items-center justify-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-coral text-sm font-bold text-white">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-dark-border bg-dark-card text-sm font-bold text-white">
             {initials}
           </div>
           <div className="text-left">
