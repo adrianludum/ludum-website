@@ -138,8 +138,94 @@ export default function PaddlePage() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-xs">
-            <InBoatMockup />
+          {/* Landscape phone-in-canoe mockup */}
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/paddler-hero.jpg"
+              alt="Canoeist on the water"
+              fill
+              unoptimized
+              className="object-cover brightness-[0.35]"
+              priority
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-[280px] sm:w-[340px]">
+                <div className="overflow-hidden rounded-[1.2rem] border-2 border-white/20 bg-dark-card shadow-[0_0_60px_rgba(229,63,71,0.15)]">
+                  {/* Status bar */}
+                  <div className="flex items-center justify-between bg-dark px-4 py-1.5">
+                    <span className="text-[8px] font-medium text-grey">6:48</span>
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
+                        <span className="relative flex h-1.5 w-1.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
+                          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-coral" />
+                        </span>
+                        <span className="text-[7px] font-bold uppercase tracking-wider text-coral">Rec</span>
+                      </div>
+                      <span className="font-mono text-[10px] font-bold text-white">41:08</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
+                      <span className="text-[7px] text-grey-light">BLE</span>
+                      <div className="ml-1 h-1.5 w-2.5 rounded-sm border border-grey-light" />
+                    </div>
+                  </div>
+                  {/* Landscape layout */}
+                  <div className="flex gap-2 px-3 pb-3 pt-1">
+                    {/* Left: big numbers */}
+                    <div className="grid flex-1 grid-cols-2 gap-1.5">
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-2xl font-bold text-white sm:text-3xl">68</p>
+                        <p className="text-[6px] font-medium uppercase tracking-wider text-grey">Cadence</p>
+                      </div>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-2xl font-bold text-white sm:text-3xl">4:22</p>
+                        <p className="text-[6px] font-medium uppercase tracking-wider text-grey">Pace /km</p>
+                      </div>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-sm font-bold text-white">9.4km</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Distance</p>
+                      </div>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-sm font-bold text-white">162 <span className="text-[8px] text-grey">bpm</span></p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Heart Rate</p>
+                      </div>
+                    </div>
+                    {/* Right: speed + GPS */}
+                    <div className="flex w-[130px] shrink-0 flex-col gap-1.5 sm:w-[160px]">
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-lg font-bold text-white sm:text-xl">3.8 <span className="text-[8px] text-grey">m/s</span></p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Speed</p>
+                      </div>
+                      <div className="flex-1 rounded-lg bg-dark p-2">
+                        <p className="mb-1 text-[6px] font-medium uppercase tracking-wider text-grey">GPS — River Course</p>
+                        <svg className="h-10 w-full" viewBox="0 0 140 40" fill="none">
+                          {/* River banks */}
+                          <path d="M0 10 Q20 6 40 12 Q60 16 80 11 Q100 7 120 13 Q132 16 140 14" stroke="rgba(255,255,255,0.08)" strokeWidth="14" strokeLinecap="round" fill="none" />
+                          {/* River water */}
+                          <path d="M0 10 Q20 6 40 12 Q60 16 80 11 Q100 7 120 13 Q132 16 140 14" stroke="rgba(59,130,246,0.15)" strokeWidth="10" strokeLinecap="round" fill="none" />
+                          {/* Paddle track - blue line */}
+                          <path d="M3 10 Q20 7 40 12 Q60 15 80 11 Q100 8 120 13 Q132 15 138 14" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" fill="none" />
+                          {/* Current position dot */}
+                          <circle cx="138" cy="14" r="3" fill="#3B82F6" />
+                          <circle cx="138" cy="14" r="1.5" fill="white" />
+                        </svg>
+                        <p className="mt-0.5 text-right text-[7px] font-bold text-white">9.4km</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Contextual labels */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+              <span className="rounded-full bg-black/60 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white/80 backdrop-blur-sm">
+                Phone mounted in canoe
+              </span>
+              <span className="rounded-full bg-coral/20 px-3 py-1.5 text-[10px] font-semibold text-coral backdrop-blur-sm">
+                Live to coach &rarr;
+              </span>
+            </div>
           </div>
         </div>
       </section>
