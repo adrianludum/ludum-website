@@ -278,15 +278,79 @@ export default function RowPage() {
             </div>
           </div>
 
+          {/* Phone-in-boat mockup */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/images/sky-view-crew.jpg"
-              alt="Aerial view of rowing crew on the water"
+              alt="Rowing crew on the water"
               fill
               unoptimized
-              className="object-cover"
+              className="object-cover brightness-[0.4]"
               priority
             />
+            {/* Phone overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-[200px] sm:w-[220px]">
+                {/* Phone frame */}
+                <div className="overflow-hidden rounded-[1.5rem] border-2 border-white/20 bg-dark-card shadow-[0_0_60px_rgba(229,63,71,0.15)]">
+                  <div className="flex items-center justify-between bg-dark px-4 pb-1.5 pt-2">
+                    <span className="text-[8px] font-medium text-grey">9:41</span>
+                    <div className="flex items-center gap-1">
+                      <div className="h-1.5 w-2.5 rounded-sm border border-grey-light" />
+                    </div>
+                  </div>
+                  <div className="px-3 pb-4">
+                    <div className="mb-3 flex items-center justify-between">
+                      <div className="flex items-center gap-1.5">
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-coral" />
+                        </span>
+                        <span className="text-[8px] font-bold uppercase tracking-wider text-coral">Recording</span>
+                      </div>
+                      <span className="font-mono text-sm font-bold text-white">32:14</span>
+                    </div>
+                    <div className="mb-2 grid grid-cols-2 gap-2">
+                      <div className="rounded-lg bg-dark p-2.5 text-center">
+                        <p className="text-xl font-bold text-white">22</p>
+                        <p className="text-[7px] font-medium uppercase tracking-wider text-grey">Stroke Rate</p>
+                      </div>
+                      <div className="rounded-lg bg-dark p-2.5 text-center">
+                        <p className="text-xl font-bold text-white">2:04</p>
+                        <p className="text-[7px] font-medium uppercase tracking-wider text-grey">Split /500m</p>
+                      </div>
+                    </div>
+                    <div className="mb-2 grid grid-cols-3 gap-1.5">
+                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
+                        <p className="text-[10px] font-bold text-white">7.8km</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Dist</p>
+                      </div>
+                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
+                        <p className="text-[10px] font-bold text-white">156</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">HR</p>
+                      </div>
+                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
+                        <p className="text-[10px] font-bold text-white">38</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Cad</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1.5 rounded-md border border-dark-border bg-dark px-2 py-1.5">
+                      <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
+                      <span className="text-[7px] text-grey-light">Polar H10 connected</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Contextual labels */}
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+              <span className="rounded-full bg-black/60 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white/80 backdrop-blur-sm">
+                Phone mounted in boat
+              </span>
+              <span className="rounded-full bg-coral/20 px-3 py-1.5 text-[10px] font-semibold text-coral backdrop-blur-sm">
+                Live to coach &rarr;
+              </span>
+            </div>
           </div>
         </div>
       </section>
