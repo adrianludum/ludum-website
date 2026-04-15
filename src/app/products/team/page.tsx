@@ -257,20 +257,54 @@ export default function TeamPage() {
               <span className="text-xs text-green-400">↑ 12% improvement</span>
             </div>
             <p className="mb-6 text-xs text-grey">Cooper, J. — Last 8 tests</p>
-            <div className="flex items-end gap-2" style={{ height: 160 }}>
-              {[245, 252, 248, 261, 258, 270, 275, 282].map((w, i) => (
-                <div key={i} className="flex flex-1 flex-col items-center gap-2">
-                  <span className="text-[10px] text-grey-light">{w}W</span>
-                  <div
-                    className="w-full rounded-t bg-coral"
-                    style={{ height: `${((w - 230) / 60) * 100}%` }}
-                  />
-                  <span className="text-[10px] text-grey-dim">
-                    {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"][i]}
-                  </span>
-                </div>
+            {/* SVG line chart */}
+            <svg viewBox="0 0 400 180" className="w-full" preserveAspectRatio="xMidYMid meet">
+              {/* Grid lines */}
+              {[0, 1, 2, 3, 4].map((i) => (
+                <line key={i} x1="40" y1={20 + i * 30} x2="380" y2={20 + i * 30} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
               ))}
-            </div>
+              {/* Y-axis labels */}
+              <text x="35" y="24" textAnchor="end" fill="#888" fontSize="9">290W</text>
+              <text x="35" y="54" textAnchor="end" fill="#888" fontSize="9">275W</text>
+              <text x="35" y="84" textAnchor="end" fill="#888" fontSize="9">260W</text>
+              <text x="35" y="114" textAnchor="end" fill="#888" fontSize="9">245W</text>
+              <text x="35" y="144" textAnchor="end" fill="#888" fontSize="9">230W</text>
+              {/* Area fill */}
+              <path
+                d="M58,120 L106,108 L155,112 L203,92 L252,96 L300,76 L349,68 L380,56 L380,140 L58,140 Z"
+                fill="url(#coralGrad)"
+              />
+              <defs>
+                <linearGradient id="coralGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="rgba(229,63,71,0.3)" />
+                  <stop offset="100%" stopColor="rgba(229,63,71,0)" />
+                </linearGradient>
+              </defs>
+              {/* Line */}
+              <polyline
+                points="58,120 106,108 155,112 203,92 252,96 300,76 349,68 380,56"
+                fill="none"
+                stroke="#E53F47"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              {/* Data points */}
+              {[
+                [58, 120, 245], [106, 108, 252], [155, 112, 248], [203, 92, 261],
+                [252, 96, 258], [300, 76, 270], [349, 68, 275], [380, 56, 282],
+              ].map(([x, y, w], i) => (
+                <g key={i}>
+                  <circle cx={x} cy={y} r="4" fill="#E53F47" />
+                  <circle cx={x} cy={y} r="2" fill="white" />
+                  <text x={x} y={y - 10} textAnchor="middle" fill="#ccc" fontSize="8" fontWeight="600">{w}W</text>
+                </g>
+              ))}
+              {/* X-axis labels */}
+              {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"].map((m, i) => (
+                <text key={m} x={58 + i * (322 / 7)} y="160" textAnchor="middle" fill="#666" fontSize="9">{m}</text>
+              ))}
+            </svg>
           </div>
         </div>
       </Section>

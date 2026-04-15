@@ -8,42 +8,51 @@ interface IntegrationLogosProps {
 }
 
 function LogoIcon({ name }: { name: string }) {
-  const cls = "h-8 w-8 text-grey-light";
   switch (name) {
     case "Garmin":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.5c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5S3.5 16.687 3.5 12 7.313 3.5 12 3.5zm0 2a6.5 6.5 0 100 13 6.5 6.5 0 000-13zm-1 3h2v4.5l2.5 1.5-.75 1.25L12 14V8.5z" />
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="#007DC5" strokeWidth="1.5" />
+          <circle cx="12" cy="12" r="7" stroke="#007DC5" strokeWidth="1.5" />
+          <path d="M12 7v5.5l3 1.5" stroke="#007DC5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="#007DC5" strokeWidth="1.2" strokeLinecap="round" />
         </svg>
       );
     case "Polar":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3L4 8v8l8 5 8-5V8l-8-5z" fill="#D4002A" opacity="0.15" />
+          <path d="M12 3L4 8v8l8 5 8-5V8l-8-5z" stroke="#D4002A" strokeWidth="1.5" strokeLinejoin="round" />
+          <path d="M12 8v5l4 2.5" stroke="#D4002A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
     case "Strava":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="#FC4C02">
           <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
         </svg>
       );
     case "Suunto":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zM8 9l4 6 4-6" />
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="#E8352D" strokeWidth="1.5" />
+          <path d="M7 14l5-7 5 7" stroke="#E8352D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
     case "Concept2":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M4 12a8 8 0 0116 0h-2a6 6 0 00-12 0H4zm4 0a4 4 0 018 0h-2a2 2 0 00-4 0H8zm3 0a1 1 0 012 0 1 1 0 01-2 0z" />
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+          <path d="M4 12a8 8 0 0116 0" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
+          <path d="M7 12a5 5 0 0110 0" stroke="#E53F47" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="12" cy="12" r="2" fill="#E53F47" />
+          <text x="5" y="20" fill="#888" fontSize="4" fontWeight="700">C2</text>
         </svg>
       );
     case "Peach":
       return (
-        <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2c-1.5 0-3 .5-4.2 1.4C6 4.8 5 7 5 9.5c0 3.5 2 6.5 4 8.5 1 1 2 2 3 4 1-2 2-3 3-4 2-2 4-5 4-8.5 0-2.5-1-4.7-2.8-6.1A7 7 0 0012 2zm0 4a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" />
+        <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
+          <path d="M15 3c-1.5 0-3 1-3 1s-1.5-1-3-1C6.5 3 4 5.5 4 8.5 4 14 12 21 12 21s8-7 8-12.5C20 5.5 17.5 3 15 3z" fill="#FF6B6B" />
+          <path d="M12 4c0-2 2-3 3.5-2" stroke="#4CAF50" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       );
     default:
