@@ -72,65 +72,15 @@ export default function TelemetryPage() {
             </div>
           </div>
 
-          {/* Data flow diagram */}
-          <div className="rounded-2xl border border-dark-border bg-dark-card p-8">
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-full rounded-xl bg-dark px-6 py-4 text-center">
-                <p className="text-xs font-semibold uppercase tracking-wider text-grey-light">
-                  Hardware
-                </p>
-                <p className="mt-1 text-lg font-bold text-white">
-                  PEACH POWERLINE
-                </p>
-                <p className="mt-1 text-xs text-grey-dim">
-                  100Hz Accelerometer · 9 Athletes · GSM
-                </p>
-              </div>
-
-              <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
-              <span className="rounded-full bg-dark px-4 py-1.5 text-xs font-medium text-grey-light">
-                USB Upload
-              </span>
-              <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
-
-              <div className="w-full rounded-xl border border-dark-border bg-dark px-6 py-4 text-center">
-                <p className="text-xs font-semibold uppercase tracking-wider text-grey-light">
-                  Platform
-                </p>
-                <p className="mt-1 text-lg font-bold text-white">
-                  LUDUM TELEMETRY
-                </p>
-                <p className="mt-1 text-xs text-grey-light">
-                  Auto-group · Analyse · Compare · Share
-                </p>
-              </div>
-
-              <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
-
-              <div className="grid w-full grid-cols-3 gap-3">
-                {["Power Overlay", "Stroke Analysis", "Share & Compare"].map(
-                  (label) => (
-                    <div
-                      key={label}
-                      className="rounded-lg bg-dark px-3 py-3 text-center"
-                    >
-                      <p className="text-xs font-semibold text-grey-light">
-                        {label}
-                      </p>
-                    </div>
-                  ),
-                )}
-              </div>
-
-              <div className="flex h-8 w-px border-l border-dashed border-grey-dim" />
-
-              <div className="w-full rounded-xl bg-dark px-6 py-4 text-center">
-                <p className="text-xs text-grey-light">Integrated into your</p>
-                <p className="mt-1 text-sm font-bold text-white">
-                  LUDUM TEAM TRAINING CALENDAR
-                </p>
-              </div>
-            </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/winning-crew.jpg"
+              alt="Rowing crew in action"
+              fill
+              unoptimized
+              priority
+              className="object-cover"
+            />
           </div>
         </div>
       </Section>
@@ -173,49 +123,18 @@ export default function TelemetryPage() {
         </div>
       </Section>
 
-      {/* PS2: Stroke Rate Analysis */}
+      {/* PS2: Head-to-Head Analysis */}
       <Section className="bg-black">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border lg:order-first">
             <Image
-              src="/images/powerline-sr-bands.png"
-              alt="Stroke rate band analysis"
+              src="/images/powerline-force-curves.png"
+              alt="Head-to-head force curve comparison"
               fill
               unoptimized
               className="object-cover"
             />
           </div>
-          <div>
-            <Eyebrow>Stroke Rate Analysis</Eyebrow>
-            <H2>Auto-detected stroke rate bands. Race pace isolated instantly.</H2>
-            <Body className="mt-6 text-lg">
-              Ludum automatically detects the most common stroke rate band in
-              each session and shows you the data for that effort. Paddling at
-              18? You see the steady state. Efforts at 32–34? You see the race
-              piece. No manual selection required — but you can override and
-              pick any band.
-            </Body>
-            <ul className="mt-6 space-y-3">
-              {[
-                "Automatic detection of the most common stroke rate range",
-                "Speed, distance, average power, and acceleration for the selected band",
-                "Per-athlete power with target line — see who's hitting their numbers",
-                "Effective length and catch/finish angles per athlete with targets",
-                "Time spent in deceleration — quantified as a percentage",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
-                  <Bullet />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Section>
-
-      {/* PS3: Head-to-Head Analysis */}
-      <Section className="bg-dark">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
             <Eyebrow>Head-to-Head Analysis</Eyebrow>
             <H2>Pick two crews. Compare everything.</H2>
@@ -242,10 +161,41 @@ export default function TelemetryPage() {
               ))}
             </ul>
           </div>
+        </div>
+      </Section>
+
+      {/* PS3: Stroke Rate Analysis */}
+      <Section className="bg-dark">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <Eyebrow>Stroke Rate Analysis</Eyebrow>
+            <H2>Auto-detected stroke rate bands. Race pace isolated instantly.</H2>
+            <Body className="mt-6 text-lg">
+              Ludum automatically detects the most common stroke rate band in
+              each session and shows you the data for that effort. Paddling at
+              18? You see the steady state. Efforts at 32–34? You see the race
+              piece. No manual selection required — but you can override and
+              pick any band.
+            </Body>
+            <ul className="mt-6 space-y-3">
+              {[
+                "Automatic detection of the most common stroke rate range",
+                "Speed, distance, average power, and acceleration for the selected band",
+                "Per-athlete power with target line — see who's hitting their numbers",
+                "Effective length and catch/finish angles per athlete with targets",
+                "Time spent in deceleration — quantified as a percentage",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
+                  <Bullet />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border">
             <Image
-              src="/images/powerline-force-curves.png"
-              alt="Head-to-head force curve comparison"
+              src="/images/powerline-sr-bands.png"
+              alt="Stroke rate band analysis"
               fill
               unoptimized
               className="object-cover"
@@ -257,35 +207,14 @@ export default function TelemetryPage() {
       {/* PS4: Session Management — Calendar Mockup */}
       <Section className="bg-black">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Calendar mockup */}
-          <div className="rounded-2xl border border-dark-border bg-dark-card p-6 lg:order-first">
-            <div className="mb-4 flex items-center justify-between">
-              <h3 className="text-sm font-semibold text-white">
-                March 2026
-              </h3>
-              <span className="rounded-full border border-dark-border bg-dark px-3 py-1 text-xs font-semibold text-grey-light">
-                TELEMETRY FILTER ON
-              </span>
-            </div>
-            <div className="grid grid-cols-7 gap-1 text-center">
-              {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
-                <div key={`${d}-${i}`} className="py-1 text-xs font-medium text-grey-dim">
-                  {d}
-                </div>
-              ))}
-              {calendarData.map((v, i) => (
-                <div
-                  key={`cell-${i}`}
-                  className={`flex aspect-square items-center justify-center rounded text-[0.55rem] font-semibold ${
-                    v
-                      ? "bg-white/10 text-white"
-                      : "bg-white/[0.03] text-white/30"
-                  }`}
-                >
-                  {v ? "T" : ""}
-                </div>
-              ))}
-            </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border lg:order-first">
+            <Image
+              src="/images/telemetry-session.png"
+              alt="Telemetry session overview"
+              fill
+              unoptimized
+              className="object-cover object-top"
+            />
           </div>
 
           <div>
