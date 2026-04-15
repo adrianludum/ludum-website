@@ -13,8 +13,8 @@ const logoFiles: Record<string, { file: string; invert?: boolean }> = {
   Polar: { file: "/images/logos/polar.svg", invert: true },
   Strava: { file: "/images/logos/strava.svg" },
   Suunto: { file: "/images/logos/suunto.svg", invert: true },
-  Concept2: { file: "/images/logos/concept2.svg" },
-  Peach: { file: "/images/logos/peach.svg" },
+  Concept2: { file: "/images/logos/concept2.png" },
+  Peach: { file: "/images/logos/peach.gif" },
 };
 
 export function IntegrationLogos({
