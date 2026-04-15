@@ -278,7 +278,7 @@ export default function RowPage() {
             </div>
           </div>
 
-          {/* Phone-in-boat mockup */}
+          {/* Landscape phone-in-boat mockup */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/images/sky-view-crew.jpg"
@@ -288,55 +288,68 @@ export default function RowPage() {
               className="object-cover brightness-[0.4]"
               priority
             />
-            {/* Phone overlay */}
+            {/* Landscape phone overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[200px] sm:w-[220px]">
-                {/* Phone frame */}
-                <div className="overflow-hidden rounded-[1.5rem] border-2 border-white/20 bg-dark-card shadow-[0_0_60px_rgba(229,63,71,0.15)]">
-                  <div className="flex items-center justify-between bg-dark px-4 pb-1.5 pt-2">
+              <div className="w-[340px] sm:w-[420px]">
+                <div className="overflow-hidden rounded-[1.2rem] border-2 border-white/20 bg-dark-card shadow-[0_0_60px_rgba(229,63,71,0.15)]">
+                  {/* Status bar - landscape */}
+                  <div className="flex items-center justify-between bg-dark px-4 py-1.5">
                     <span className="text-[8px] font-medium text-grey">9:41</span>
+                    <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
+                        <span className="relative flex h-1.5 w-1.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
+                          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-coral" />
+                        </span>
+                        <span className="text-[7px] font-bold uppercase tracking-wider text-coral">Rec</span>
+                      </div>
+                      <span className="font-mono text-[10px] font-bold text-white">32:14</span>
+                    </div>
                     <div className="flex items-center gap-1">
-                      <div className="h-1.5 w-2.5 rounded-sm border border-grey-light" />
+                      <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
+                      <span className="text-[7px] text-grey-light">BLE</span>
+                      <div className="ml-1 h-1.5 w-2.5 rounded-sm border border-grey-light" />
                     </div>
                   </div>
-                  <div className="px-3 pb-4">
-                    <div className="mb-3 flex items-center justify-between">
-                      <div className="flex items-center gap-1.5">
-                        <span className="relative flex h-2 w-2">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
-                          <span className="relative inline-flex h-2 w-2 rounded-full bg-coral" />
-                        </span>
-                        <span className="text-[8px] font-bold uppercase tracking-wider text-coral">Recording</span>
+                  {/* Main content - landscape layout */}
+                  <div className="flex gap-2 px-3 pb-3 pt-1">
+                    {/* Left: big numbers */}
+                    <div className="grid flex-1 grid-cols-2 gap-1.5">
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-2xl font-bold text-white sm:text-3xl">22</p>
+                        <p className="text-[6px] font-medium uppercase tracking-wider text-grey">Stroke Rate</p>
                       </div>
-                      <span className="font-mono text-sm font-bold text-white">32:14</span>
-                    </div>
-                    <div className="mb-2 grid grid-cols-2 gap-2">
-                      <div className="rounded-lg bg-dark p-2.5 text-center">
-                        <p className="text-xl font-bold text-white">22</p>
-                        <p className="text-[7px] font-medium uppercase tracking-wider text-grey">Stroke Rate</p>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-2xl font-bold text-white sm:text-3xl">2:04</p>
+                        <p className="text-[6px] font-medium uppercase tracking-wider text-grey">Split /500m</p>
                       </div>
-                      <div className="rounded-lg bg-dark p-2.5 text-center">
-                        <p className="text-xl font-bold text-white">2:04</p>
-                        <p className="text-[7px] font-medium uppercase tracking-wider text-grey">Split /500m</p>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-sm font-bold text-white">7.8km</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Distance</p>
                       </div>
-                    </div>
-                    <div className="mb-2 grid grid-cols-3 gap-1.5">
-                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
-                        <p className="text-[10px] font-bold text-white">7.8km</p>
-                        <p className="text-[6px] uppercase tracking-wider text-grey">Dist</p>
-                      </div>
-                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
-                        <p className="text-[10px] font-bold text-white">156</p>
-                        <p className="text-[6px] uppercase tracking-wider text-grey">HR</p>
-                      </div>
-                      <div className="rounded-md bg-dark px-2 py-1.5 text-center">
-                        <p className="text-[10px] font-bold text-white">38</p>
-                        <p className="text-[6px] uppercase tracking-wider text-grey">Cad</p>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-sm font-bold text-white">156 <span className="text-[8px] text-grey">bpm</span></p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">Heart Rate</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1.5 rounded-md border border-dark-border bg-dark px-2 py-1.5">
-                      <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
-                      <span className="text-[7px] text-grey-light">Polar H10 connected</span>
+                    {/* Right: acceleration chart + deceleration */}
+                    <div className="flex w-[130px] shrink-0 flex-col gap-1.5 sm:w-[160px]">
+                      <div className="flex-1 rounded-lg bg-dark p-2">
+                        <p className="mb-1 text-[6px] font-medium uppercase tracking-wider text-grey">Acceleration</p>
+                        <svg className="h-12 w-full" viewBox="0 0 140 50" fill="none">
+                          {/* Zero line */}
+                          <line x1="0" y1="22" x2="140" y2="22" stroke="rgba(255,255,255,0.1)" strokeWidth="0.5" />
+                          {/* Deceleration zone highlight */}
+                          <rect x="25" y="0" width="40" height="50" fill="rgba(229,63,71,0.12)" rx="2" />
+                          <text x="45" y="8" textAnchor="middle" fill="#E53F47" fontSize="5" fontWeight="700">30.2%</text>
+                          {/* Acceleration curve - matches reference shape */}
+                          <path d="M0 18 C8 17 15 18 22 20 C30 24 35 38 42 42 C48 44 52 42 58 36 C62 30 65 24 70 20 C75 17 80 16 85 15 C92 13 98 12 105 14 C112 15 118 17 125 18 C130 18 135 19 140 19" stroke="#22C55E" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+                        </svg>
+                      </div>
+                      <div className="rounded-lg bg-dark p-2 text-center">
+                        <p className="text-lg font-bold text-yellow-400 sm:text-xl">30.2%</p>
+                        <p className="text-[6px] uppercase tracking-wider text-grey">% in Deceleration</p>
+                      </div>
                     </div>
                   </div>
                 </div>
