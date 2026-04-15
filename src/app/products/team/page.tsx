@@ -83,6 +83,15 @@ export default function TeamPage() {
       {/* PS1: Compliance Tracking */}
       <Section id="compliance" className="bg-dark">
         <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border bg-dark-card lg:order-first">
+            <Image
+              src="/images/team-training-zones.png"
+              alt="Compliance tracking dashboard"
+              fill
+              unoptimized
+              className="object-contain"
+            />
+          </div>
           <div>
             <Eyebrow>Compliance Tracking</Eyebrow>
             <H2>See who trained, who didn&apos;t, and who&apos;s falling behind.</H2>
@@ -106,30 +115,12 @@ export default function TeamPage() {
               ))}
             </ul>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border">
-            <Image
-              src="/images/team-training-zones.png"
-              alt="Compliance tracking dashboard"
-              fill
-              unoptimized
-              className="object-cover"
-            />
-          </div>
         </div>
       </Section>
 
       {/* PS2: Session Analysis */}
       <Section className="bg-black">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border lg:order-first">
-            <Image
-              src="/images/team-session-map.png"
-              alt="Session analysis map view"
-              fill
-              unoptimized
-              className="object-cover"
-            />
-          </div>
           <div>
             <Eyebrow>Session Analysis</Eyebrow>
             <H2>Every session. Every crew. Every stroke.</H2>
@@ -155,37 +146,23 @@ export default function TeamPage() {
               ))}
             </ul>
           </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border">
+            <Image
+              src="/images/team-session-map.png"
+              alt="Session analysis map view"
+              fill
+              unoptimized
+              className="object-cover"
+            />
+          </div>
         </div>
       </Section>
 
       {/* PS3: Training Load & Risk */}
       <Section className="bg-dark">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <Eyebrow>Training Load &amp; Risk</Eyebrow>
-            <H2>Chronic-acute ratio. Red, amber, green. No guessing.</H2>
-            <Body className="mt-6 text-lg">
-              Team monitors the balance between chronic training load and acute
-              spikes for every athlete. The dashboard shows you who&apos;s in
-              the green optimal zone, who&apos;s pushing into amber, and
-              who&apos;s in the red before they break down — not after.
-            </Body>
-            <ul className="mt-6 space-y-3">
-              {[
-                "Chronic-acute training load ratio visualised per athlete",
-                "Green / amber / red zone indicators with historical trend",
-                '"Athletes at Risk" widget on the main dashboard',
-                "Training load distribution across the squad",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
-                  <Bullet />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
           {/* Risk mockup card */}
-          <div className="rounded-2xl border border-dark-border bg-dark-card p-6">
+          <div className="rounded-2xl border border-dark-border bg-dark-card p-6 lg:order-first">
             <div className="mb-6 flex items-center justify-between">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
                 Athletes at Risk — Chronic:Acute Ratio
@@ -218,21 +195,35 @@ export default function TeamPage() {
               ))}
             </div>
           </div>
+          <div>
+            <Eyebrow>Training Load &amp; Risk</Eyebrow>
+            <H2>Chronic-acute ratio. Red, amber, green. No guessing.</H2>
+            <Body className="mt-6 text-lg">
+              Team monitors the balance between chronic training load and acute
+              spikes for every athlete. The dashboard shows you who&apos;s in
+              the green optimal zone, who&apos;s pushing into amber, and
+              who&apos;s in the red before they break down — not after.
+            </Body>
+            <ul className="mt-6 space-y-3">
+              {[
+                "Chronic-acute training load ratio visualised per athlete",
+                "Green / amber / red zone indicators with historical trend",
+                '"Athletes at Risk" widget on the main dashboard',
+                "Training load distribution across the squad",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-grey-light">
+                  <Bullet />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Section>
 
       {/* PS4: Reports & Progress */}
       <Section className="bg-black">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border lg:order-first">
-            <Image
-              src="/images/team-improvement.png"
-              alt="Reports and improvement tracking"
-              fill
-              unoptimized
-              className="object-cover"
-            />
-          </div>
           <div>
             <Eyebrow>Reports &amp; Progress</Eyebrow>
             <H2>Track improvement with data, not intuition.</H2>
@@ -257,12 +248,45 @@ export default function TeamPage() {
               ))}
             </ul>
           </div>
+          {/* Improvement mockup */}
+          <div className="rounded-2xl border border-dark-border bg-dark-card p-6">
+            <div className="mb-2 flex items-center justify-between">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+                2k Ergo — Watts Over Time
+              </h3>
+              <span className="text-xs text-green-400">↑ 12% improvement</span>
+            </div>
+            <p className="mb-6 text-xs text-grey">Cooper, J. — Last 8 tests</p>
+            <div className="flex items-end gap-2" style={{ height: 160 }}>
+              {[245, 252, 248, 261, 258, 270, 275, 282].map((w, i) => (
+                <div key={i} className="flex flex-1 flex-col items-center gap-2">
+                  <span className="text-[10px] text-grey-light">{w}W</span>
+                  <div
+                    className="w-full rounded-t bg-coral"
+                    style={{ height: `${((w - 230) / 60) * 100}%` }}
+                  />
+                  <span className="text-[10px] text-grey-dim">
+                    {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"][i]}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </Section>
 
       {/* PS5: Athlete Profiles */}
       <Section className="bg-dark">
         <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border lg:order-first">
+            <Image
+              src="/images/team-athlete-profile.png"
+              alt="Athlete profile dashboard"
+              fill
+              unoptimized
+              className="object-cover object-left"
+            />
+          </div>
           <div>
             <Eyebrow>Athlete Profiles</Eyebrow>
             <H2>Everything about one athlete. One screen.</H2>
@@ -286,15 +310,6 @@ export default function TeamPage() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-dark-border">
-            <Image
-              src="/images/team-athlete-profile.png"
-              alt="Athlete profile dashboard"
-              fill
-              unoptimized
-              className="object-cover"
-            />
           </div>
         </div>
       </Section>
@@ -332,7 +347,7 @@ export default function TeamPage() {
         label="Integrations"
         heading="Connects to what your athletes already use."
         subtext="No new hardware. Ludum syncs automatically with the devices your athletes already own."
-        logos={["Garmin", "Polar", "Strava", "Suunto", "Concept2"]}
+        logos={["Garmin", "Polar", "Strava", "Suunto", "Concept2", "Peach"]}
       />
 
       {/* Proof */}
