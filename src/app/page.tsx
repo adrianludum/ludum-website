@@ -77,8 +77,8 @@ const painPoints = [
 ];
 
 const solutions = [
-  { icon: <IconTraining />, title: "Training Compliance", desc: "See who followed the programme and who didn’t — automatically, across every session, every athlete." },
   { icon: <IconProgramme />, title: "Programme Planning", desc: "Build, schedule, and distribute training programmes to your entire squad. One source of truth for what athletes should be doing." },
+  { icon: <IconTraining />, title: "Training Compliance", desc: "See who followed the programme and who didn’t — automatically, across every session, every athlete." },
   { icon: <IconAutoCapture />, title: "Automatic Data Capture", desc: "Every stroke, every split, every heart rate zone — captured automatically from connected devices. No manual entry required." },
   { icon: <IconInjury />, title: "Injury & Illness Tracking", desc: "Log, monitor, and manage athlete availability. Spot patterns before small issues become season-ending problems." },
   { icon: <IconPerformance />, title: "Performance Tracking", desc: "Track improvement over time with real data — not subjective assessment. Benchmark athletes against each other and against themselves." },
@@ -87,9 +87,9 @@ const solutions = [
 
 const products = [
   { tag: "Flagship", title: "Ludum Team", description: "Your coaching command centre. Training planning, compliance tracking, athlete management, data analytics, and communication — all in one place.", image: "/images/hero-sunset-bridge.jpg", href: "/products/team" },
-  { tag: "Unique to Ludum", title: "Ludum Telemetry", description: "Live stroke-by-stroke data from inside the boat. Force curves, stroke rate, boat speed, and balance in real time — the only platform integrating telemetry with training.", image: "/images/boathouse.jpg", href: "/products/telemetry" },
-  { tag: "For Rowers", title: "Ludum Row", description: "The athlete app for rowing. Automatic session recording from Concept2, on-water devices, and wearables. Your rowers train. Ludum captures everything.", image: "/images/hero-solo-sunset.jpg", href: "/products/row" },
-  { tag: "For Paddlers", title: "Ludum Paddle", description: "Purpose-built for canoe, kayak, and dragon boat. Same powerful data capture and compliance tools, adapted for paddle sport terminology and workflows.", image: "/images/sky-view-crew.jpg", href: "/products/paddle" },
+  { tag: "Unique to Ludum", title: "Ludum Telemetry", description: "Live stroke-by-stroke data from inside the boat. Force curves, stroke rate, boat speed, and balance in real time — the only platform integrating telemetry with training.", image: "/images/powerline-force-curves.png", href: "/products/telemetry" },
+  { tag: "For Rowers", title: "Ludum Row", description: "The athlete app for rowing. Automatic session recording from Concept2, on-water devices, and wearables. Your rowers train. Ludum captures everything.", image: "/images/sky-view-crew.jpg", href: "/products/row" },
+  { tag: "For Paddlers", title: "Ludum Paddle", description: "Purpose-built for canoe, kayak, and dragon boat. Same powerful data capture and compliance tools, adapted for paddle sport terminology and workflows.", image: "/images/boathouse.jpg", href: "/products/paddle" },
   { tag: "Real-Time", title: "Ludum Live", description: "See what’s happening right now. Live session feeds, real-time athlete data, and instant visibility into training as it happens — from the launch, the bank, or the gym.", image: "/images/winning-crew.jpg", href: "/products/live" },
 ];
 
@@ -116,36 +116,36 @@ export default function Home() {
     <>
       {/* 1. Hero */}
       <section className="relative overflow-hidden bg-black pt-[72px]">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:gap-16 lg:py-28">
-          <div className="flex-1 lg:max-w-[55%]">
-            <H1 accent="Start seeing everything.">Stop coaching blind.</H1>
-            <div className="mt-6">
-              <Lead>
-                The performance platform built for coaches and teams in rowing and paddle sport. One system for training, data, compliance, and telemetry — so you can focus on making athletes faster.
-              </Lead>
+        <div className="relative w-full min-h-[85vh]">
+          <Image
+            src="/images/oar-handle-rower.jpg"
+            alt="Rower gripping oar"
+            fill
+            unoptimized
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+          <div className="relative z-10 mx-auto flex max-w-6xl flex-col justify-center px-6 py-20 min-h-[85vh] lg:py-28">
+            <div className="max-w-2xl">
+              <H1 accent="Start seeing everything.">Stop coaching blind.</H1>
+              <div className="mt-6">
+                <Lead>
+                  The performance platform built for coaches and teams in rowing and paddle sport. One system for training, data, compliance, and telemetry — so you can focus on making athletes faster.
+                </Lead>
+              </div>
+              <div className="mt-8">
+                <Link
+                  href="/demo"
+                  className="inline-block rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
+                >
+                  Request a Demo &rarr;
+                </Link>
+              </div>
+              <p className="mt-12 text-sm text-grey-light">
+                Trusted by Rowing Australia · Princeton · Leander · Hampton
+              </p>
             </div>
-            <div className="mt-8">
-              <Link
-                href="/demo"
-                className="inline-block rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
-              >
-                Request a Demo &rarr;
-              </Link>
-            </div>
-            <p className="mt-12 text-sm text-grey-light">
-              Trusted by Rowing Australia · Cambridge · Leander · Hampton
-            </p>
-          </div>
-
-          <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl lg:max-w-[45%]">
-            <Image
-              src="/images/hero-solo-sunset.jpg"
-              alt="Rower at sunset"
-              fill
-              unoptimized
-              priority
-              className="object-cover"
-            />
           </div>
         </div>
       </section>
@@ -179,35 +179,53 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Main content — one story */}
-            <div className="flex-1 p-8">
-              <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
+            {/* Main content — v1 dashboard */}
+            <div className="flex-1 p-6 sm:p-8">
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
                 <h3 className="text-lg font-bold text-white">
                   Squad Overview — Week 12
                 </h3>
-                <span className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-grey-light">
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-coral" />
+                <span className="rounded-full bg-coral/10 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-wider text-coral">
                   Live
                 </span>
               </div>
 
-              <div className="mb-10 text-center">
-                <p className="text-sm uppercase tracking-wider text-grey">Compliance</p>
-                <p className="mt-2 text-7xl font-bold text-white sm:text-8xl">93%</p>
+              {/* Stat cards */}
+              <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+                <div className="rounded-lg border border-dark-border bg-white/[0.03] p-4">
+                  <p className="text-[0.7rem] uppercase tracking-wider text-grey">Athletes</p>
+                  <p className="mt-1 text-2xl font-bold text-white">47</p>
+                  <p className="mt-1 text-[0.7rem] text-green-400">+3 this month</p>
+                </div>
+                <div className="rounded-lg border border-dark-border bg-white/[0.03] p-4">
+                  <p className="text-[0.7rem] uppercase tracking-wider text-grey">Compliance</p>
+                  <p className="mt-1 text-2xl font-bold text-coral">93%</p>
+                  <p className="mt-1 text-[0.7rem] text-green-400">↑ 4% vs last week</p>
+                </div>
+                <div className="rounded-lg border border-dark-border bg-white/[0.03] p-4">
+                  <p className="text-[0.7rem] uppercase tracking-wider text-grey">Sessions This Week</p>
+                  <p className="mt-1 text-2xl font-bold text-white">128</p>
+                  <p className="mt-1 text-[0.7rem] text-green-400">On track</p>
+                </div>
+                <div className="rounded-lg border border-dark-border bg-white/[0.03] p-4">
+                  <p className="text-[0.7rem] uppercase tracking-wider text-grey">Avg Training Load</p>
+                  <p className="mt-1 text-2xl font-bold text-white">742</p>
+                  <p className="mt-1 text-[0.7rem] text-green-400">Within target range</p>
+                </div>
               </div>
 
-              <div>
-                <p className="mb-4 text-sm font-medium text-grey-light">
+              {/* Chart */}
+              <div className="rounded-lg border border-dark-border bg-white/[0.02] p-5">
+                <p className="mb-4 text-[0.7rem] uppercase tracking-wider text-grey">
                   Weekly Compliance — Last 12 Weeks
                 </p>
-                <div className="flex items-end gap-2">
+                <div className="flex items-end gap-1.5" style={{ height: 100 }}>
                   {complianceData.map((val, i) => (
                     <div key={i} className="flex flex-1 flex-col items-center gap-1">
                       <div
-                        className="w-full rounded-t bg-white/80"
-                        style={{ height: `${(val / 100) * 160}px` }}
+                        className="w-full rounded-t bg-coral"
+                        style={{ height: `${val}%` }}
                       />
-                      <span className="text-[10px] text-grey-dim">W{i + 1}</span>
                     </div>
                   ))}
                 </div>

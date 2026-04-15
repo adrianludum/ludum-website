@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const products = [
   { name: "Team", href: "/products/team", description: "Training management for coaches and squads" },
@@ -53,11 +54,14 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="text-xl font-bold uppercase tracking-[3px] text-white"
-        >
-          LUDUM
+        <Link href="/" className="relative block h-8 w-[140px]">
+          <Image
+            src="/images/ludum-logo.png"
+            alt="Ludum"
+            fill
+            unoptimized
+            className="object-contain"
+          />
         </Link>
 
         {/* Desktop */}
