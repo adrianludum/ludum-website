@@ -30,60 +30,100 @@ function Bullet() {
 function LiveRaceMockup() {
   return (
     <div className="overflow-hidden rounded-2xl border border-dark-border bg-dark-card shadow-2xl">
+      {/* Header */}
       <div className="flex items-center justify-between border-b border-dark-border bg-dark px-5 py-3">
         <div className="flex items-center gap-2">
           <span className="relative flex h-2.5 w-2.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral opacity-75" />
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-coral" />
           </span>
-          <span className="text-sm font-semibold text-white">Ludum Live — Head of the River</span>
+          <span className="text-sm font-semibold text-white">Head of the River</span>
         </div>
-        <span className="text-xs font-medium text-grey">Thames · 6.8km Head Race</span>
+        <span className="text-xs font-medium text-grey">Thames · 6.8km</span>
       </div>
-      <div className="flex gap-1 border-b border-dark-border bg-dark px-5">
-        {["Map", "Leaderboard", "Crews", "Replay"].map((tab, i) => (
-          <button
-            key={tab}
-            className={`px-3 py-2 text-xs font-medium ${
-              i === 0 ? "border-b-2 border-white text-white" : "text-grey"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
-      <div className="relative h-48 bg-gradient-to-b from-slate-900 to-slate-950 p-5">
-        <svg viewBox="0 0 400 160" className="absolute inset-0 h-full w-full">
-          <path
-            d="M 20 80 Q 100 40 180 80 T 340 80 L 380 90"
-            fill="none"
-            stroke="#ffffff"
-            strokeWidth="14"
-            strokeOpacity="0.2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M 20 80 Q 100 40 180 80 T 340 80 L 380 90"
-            fill="none"
-            stroke="#ffffff"
-            strokeOpacity="0.5"
-            strokeWidth="2"
-            strokeDasharray="4 4"
-          />
-          <circle cx="220" cy="70" r="6" fill="#ffffff" />
-          <circle cx="205" cy="74" r="5" fill="#ffffff" fillOpacity="0.7" />
-          <circle cx="190" cy="78" r="5" fill="#ffffff" fillOpacity="0.5" />
-          <circle cx="170" cy="82" r="5" fill="#ffffff" fillOpacity="0.3" />
+      {/* Race visualisation */}
+      <div className="relative bg-gradient-to-b from-slate-900 via-blue-950/30 to-slate-950 px-5 py-6">
+        {/* Course with lanes */}
+        <svg viewBox="0 0 400 200" className="w-full" preserveAspectRatio="xMidYMid meet">
+          {/* River water */}
+          <defs>
+            <linearGradient id="river" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="rgba(59,130,246,0.08)" />
+              <stop offset="50%" stopColor="rgba(59,130,246,0.15)" />
+              <stop offset="100%" stopColor="rgba(59,130,246,0.05)" />
+            </linearGradient>
+          </defs>
+          <rect x="0" y="20" width="400" height="160" fill="url(#river)" rx="8" />
+
+          {/* Lane markers */}
+          {[50, 80, 110, 140].map((y) => (
+            <line key={y} x1="30" y1={y} x2="380" y2={y} stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" strokeDasharray="4 4" />
+          ))}
+
+          {/* Start/Finish */}
+          <line x1="35" y1="30" x2="35" y2="170" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" />
+          <text x="35" y="185" textAnchor="middle" fill="#666" fontSize="8">START</text>
+          <line x1="375" y1="30" x2="375" y2="170" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" strokeDasharray="3 3" />
+          <text x="375" y="185" textAnchor="middle" fill="#666" fontSize="8">FINISH</text>
+
+          {/* Distance markers */}
+          {[1, 2, 3, 4, 5, 6].map((km) => {
+            const x = 35 + (km / 6.8) * 340;
+            return (
+              <g key={km}>
+                <line x1={x} y1="170" x2={x} y2="175" stroke="rgba(255,255,255,0.15)" strokeWidth="0.5" />
+                <text x={x} y="185" textAnchor="middle" fill="#555" fontSize="6">{km}km</text>
+              </g>
+            );
+          })}
+
+          {/* Crew 1 - Leading */}
+          <g>
+            <line x1="40" y1="50" x2="260" y2="50" stroke="#E53F47" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+            <circle cx="260" cy="50" r="6" fill="#E53F47" />
+            <circle cx="260" cy="50" r="3" fill="white" />
+            <text x="270" y="53" fill="white" fontSize="8" fontWeight="700">1st</text>
+            <text x="295" y="53" fill="#aaa" fontSize="7">Cambridge W8+</text>
+          </g>
+
+          {/* Crew 2 */}
+          <g>
+            <line x1="40" y1="80" x2="248" y2="80" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+            <circle cx="248" cy="80" r="5" fill="#3B82F6" />
+            <circle cx="248" cy="80" r="2.5" fill="white" />
+            <text x="258" y="83" fill="white" fontSize="8" fontWeight="700">2nd</text>
+            <text x="283" y="83" fill="#aaa" fontSize="7">+2.4s</text>
+          </g>
+
+          {/* Crew 3 */}
+          <g>
+            <line x1="40" y1="110" x2="232" y2="110" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+            <circle cx="232" cy="110" r="5" fill="#22C55E" />
+            <circle cx="232" cy="110" r="2.5" fill="white" />
+            <text x="242" y="113" fill="white" fontSize="8" fontWeight="700">3rd</text>
+            <text x="267" y="113" fill="#aaa" fontSize="7">+5.1s</text>
+          </g>
+
+          {/* Crew 4 */}
+          <g>
+            <line x1="40" y1="140" x2="218" y2="140" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+            <circle cx="218" cy="140" r="5" fill="#F59E0B" />
+            <circle cx="218" cy="140" r="2.5" fill="white" />
+            <text x="228" y="143" fill="white" fontSize="8" fontWeight="700">4th</text>
+            <text x="253" y="143" fill="#aaa" fontSize="7">+8.8s</text>
+          </g>
         </svg>
       </div>
-      <div className="divide-y divide-dark-border">
-        {crews.map((crew) => (
-          <div key={crew.name} className="flex items-center gap-4 px-5 py-3">
-            <div className={`h-3 w-3 rounded-full ${crew.color}`} />
-            <span className="flex-1 text-sm font-semibold text-white">{crew.name}</span>
-            <span className="font-mono text-xs text-grey-light">{crew.pace}/500m</span>
-            <span className="font-mono text-xs text-grey-light">SR {crew.sr}</span>
-            <span className="font-mono text-xs font-semibold text-white">{crew.gap}</span>
+      {/* Live stats strip */}
+      <div className="grid grid-cols-4 gap-px border-t border-dark-border bg-dark-border">
+        {crews.map((crew, i) => (
+          <div key={crew.name} className="bg-dark-card px-3 py-3 text-center">
+            <div className={`mx-auto mb-1.5 h-2 w-2 rounded-full ${
+              i === 0 ? "bg-[#E53F47]" : i === 1 ? "bg-[#3B82F6]" : i === 2 ? "bg-[#22C55E]" : "bg-[#F59E0B]"
+            }`} />
+            <p className="truncate text-[10px] font-semibold text-white">{crew.name.split(" ")[0]}</p>
+            <p className="mt-0.5 font-mono text-xs font-bold text-white">{crew.pace}</p>
+            <p className="text-[9px] text-grey">SR {crew.sr}</p>
           </div>
         ))}
       </div>
@@ -344,47 +384,35 @@ function EventsMockup() {
 
 function BroadcastMockup() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-dark-border bg-dark-card shadow-2xl">
-      <div className="flex items-center justify-between border-b border-dark-border bg-dark px-5 py-3">
-        <span className="text-sm font-semibold text-white">Broadcast Overlay — Preview</span>
-      </div>
-      <div className="relative aspect-video bg-gradient-to-b from-slate-900 via-slate-950 to-black">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/10 backdrop-blur">
-            <svg viewBox="0 0 24 24" className="h-7 w-7 fill-white">
+    <a
+      href="https://www.youtube.com/watch?v=Z5VV3b7VF-Y&t=7337"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block overflow-hidden rounded-2xl border border-dark-border shadow-2xl"
+    >
+      <div className="relative aspect-video">
+        <Image
+          src="https://img.youtube.com/vi/Z5VV3b7VF-Y/maxresdefault.jpg"
+          alt="Ludum Live broadcast overlay in action"
+          fill
+          unoptimized
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors group-hover:bg-black/20">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-coral shadow-lg transition-transform group-hover:scale-110">
+            <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7 fill-white">
               <path d="M8 5v14l11-7z" />
             </svg>
           </div>
         </div>
-        <div className="absolute inset-x-4 bottom-4">
-          <div className="flex items-center gap-4 rounded-lg border border-white/20 bg-black/70 px-4 py-3 backdrop-blur">
-            <div className="h-8 w-1 rounded-full bg-white" />
-            <div className="flex-1">
-              <p className="text-sm font-bold text-white">Cambridge W8+</p>
-              <p className="text-[10px] text-grey-light">1st Position</p>
-            </div>
-            <div className="text-right">
-              <p className="font-mono text-sm font-bold text-white">1:33.6 /500m</p>
-              <p className="text-[10px] text-grey-light">36 SR · +2.4s</p>
-            </div>
-          </div>
+        <div className="absolute bottom-3 right-3 rounded-md bg-black/70 px-2 py-1 font-mono text-xs font-semibold text-white backdrop-blur-sm">
+          2:02:17
+        </div>
+        <div className="absolute bottom-3 left-3 rounded-md bg-black/70 px-2 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+          Watch the broadcast overlay live
         </div>
       </div>
-      <div className="flex gap-2 border-t border-dark-border bg-dark px-5 py-3">
-        {["Lower Third", "Leaderboard", "Mini Map", "Timer"].map((btn, i) => (
-          <button
-            key={btn}
-            className={`rounded-md px-3 py-1.5 text-[10px] font-semibold ${
-              i === 0
-                ? "border border-dark-border bg-white/10 text-white"
-                : "bg-black text-grey-light"
-            }`}
-          >
-            {btn}
-          </button>
-        ))}
-      </div>
-    </div>
+    </a>
   );
 }
 
@@ -463,15 +491,30 @@ export default function LivePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <a
+              href="https://www.youtube.com/watch?v=et4BBlshJk4&list=PLgHoN6LLDp_-K_YKMMdA64UbwEZhPfX_6&t=209"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block aspect-video overflow-hidden rounded-2xl border border-dark-border"
+            >
               <Image
-                src="/images/winning-crew.jpg"
-                alt="Rowing crew celebrating"
+                src="https://img.youtube.com/vi/et4BBlshJk4/maxresdefault.jpg"
+                alt="Ludum Live demo video"
                 fill
                 unoptimized
-                className="object-cover"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-            </div>
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors group-hover:bg-black/20">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-coral shadow-lg transition-transform group-hover:scale-110">
+                  <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7 fill-white">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="absolute bottom-3 right-3 rounded-md bg-black/70 px-2 py-1 text-xs font-mono font-semibold text-white backdrop-blur-sm">
+                3:29
+              </div>
+            </a>
           </div>
         </div>
       </section>
