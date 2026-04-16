@@ -541,7 +541,7 @@ export function PricingClient() {
 
                   {/* CTA */}
                   <Link
-                    href="/demo"
+                    href="/demo/"
                     className="block rounded-sm border border-white/20 bg-transparent px-2 py-3 text-center text-[13px] font-semibold tracking-wide text-white transition-colors hover:border-white/60 hover:bg-white/5"
                   >
                     Request a Demo
@@ -690,7 +690,7 @@ export function PricingClient() {
             pressure, just clarity.
           </p>
           <Link
-            href="/demo"
+            href="/demo/"
             className="mt-8 inline-block rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-coral transition-colors hover:bg-gray-100"
           >
             Request a Demo

@@ -54,7 +54,7 @@ export default function TeamPage() {
             </Lead>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
-                href="/demo"
+                href="/demo/"
                 className="rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
               >
                 Request a Demo &rarr;

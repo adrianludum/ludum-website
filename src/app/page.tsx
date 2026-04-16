@@ -136,7 +136,7 @@ export default function Home() {
               </div>
               <div className="mt-8">
                 <Link
-                  href="/demo"
+                  href="/demo/"
                   className="inline-block rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
                 >
                   Request a Demo &rarr;
@@ -358,7 +358,7 @@ export default function Home() {
           </div>
           <div className="mt-8">
             <Link
-              href="/demo"
+              href="/demo/"
               className="inline-block rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
             >
               Request a Demo &rarr;

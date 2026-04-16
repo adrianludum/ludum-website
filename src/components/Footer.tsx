@@ -9,18 +9,18 @@ const socialLinks = [
 ];
 
 const productLinks = [
-  { label: "Ludum Team", href: "/products/team" },
-  { label: "Ludum Telemetry", href: "/products/telemetry" },
-  { label: "Ludum Row", href: "/products/row" },
-  { label: "Ludum Paddle", href: "/products/paddle" },
-  { label: "Ludum Live", href: "/products/live" },
+  { label: "Ludum Team", href: "/products/team/" },
+  { label: "Ludum Telemetry", href: "/products/telemetry/" },
+  { label: "Ludum Row", href: "/products/row/" },
+  { label: "Ludum Paddle", href: "/products/paddle/" },
+  { label: "Ludum Live", href: "/products/live/" },
 ];
 
 const companyLinks = [
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Request a Demo", href: "/demo" },
+  { label: "About", href: "/about/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Pricing", href: "/pricing/" },
+  { label: "Request a Demo", href: "/demo/" },
 ];
 
 export function Footer() {

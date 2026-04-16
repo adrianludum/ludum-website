@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <Section>
         <div className="mx-auto max-w-3xl">
           <Link
-            href="/blog"
+            href="/blog/"
             className="inline-flex items-center gap-2 text-sm text-grey-light transition-colors hover:text-white"
           >
             <svg

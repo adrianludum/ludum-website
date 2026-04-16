@@ -5,17 +5,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 const products = [
-  { name: "Team", href: "/products/team", description: "Training management for coaches and squads" },
-  { name: "Telemetry", href: "/products/telemetry", description: "Real-time boat and athlete data capture" },
-  { name: "Row", href: "/products/row", description: "Purpose-built tools for rowing programmes" },
-  { name: "Paddle", href: "/products/paddle", description: "Performance tracking for paddle sport" },
-  { name: "Live", href: "/products/live", description: "Live race tracking and broadcasting" },
+  { name: "Team", href: "/products/team/", description: "Training management for coaches and squads" },
+  { name: "Telemetry", href: "/products/telemetry/", description: "Real-time boat and athlete data capture" },
+  { name: "Row", href: "/products/row/", description: "Purpose-built tools for rowing programmes" },
+  { name: "Paddle", href: "/products/paddle/", description: "Performance tracking for paddle sport" },
+  { name: "Live", href: "/products/live/", description: "Live race tracking and broadcasting" },
 ];
 
 const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "About", href: "/about/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Pricing", href: "/pricing/" },
 ];
 
 export function Navbar() {
@@ -123,7 +123,7 @@ export function Navbar() {
           ))}
 
           <Link
-            href="/demo"
+            href="/demo/"
             className="rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
           >
             Request a Demo
@@ -188,7 +188,7 @@ export function Navbar() {
 
             <div className="pt-2">
               <Link
-                href="/demo"
+                href="/demo/"
                 onClick={() => setMobileOpen(false)}
                 className="block w-full rounded-full bg-coral py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
               >

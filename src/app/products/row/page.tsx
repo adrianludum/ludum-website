@@ -264,7 +264,7 @@ export default function RowPage() {
             </Lead>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/demo"
+                href="/demo/"
                 className="inline-flex items-center gap-2 rounded-full bg-coral px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-coral-dark"
               >
                 Request a Demo <span>&rarr;</span>

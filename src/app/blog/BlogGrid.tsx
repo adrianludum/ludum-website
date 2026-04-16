@@ -80,7 +80,7 @@ export function BlogGrid({ posts, categories }: BlogGridProps) {
         {visible.map((post) => (
           <Link
             key={post.slug}
-            href={`/blog/${post.slug}`}
+            href={`/blog/${post.slug}/`}
             className="group overflow-hidden rounded-2xl border border-dark-border bg-dark-card transition-colors hover:border-grey-mid"
           >
             {post.featuredImage && (

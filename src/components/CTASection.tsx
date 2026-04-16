@@ -15,7 +15,7 @@ export function CTASection({
   headingAccent,
   subtext,
   buttonText = "Request a Demo \u2192",
-  buttonHref = "/demo",
+  buttonHref = "/demo/",
   bgImage,
 }: CTASectionProps) {
   return (
