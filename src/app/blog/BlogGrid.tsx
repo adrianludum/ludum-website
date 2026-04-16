@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost } from "@/lib/blog";
 
+type BlogPostSummary = Omit<BlogPost, "content">;
+
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
   return date.toLocaleDateString("en-GB", {
@@ -17,7 +19,7 @@ function formatDate(dateStr: string): string {
 const POSTS_PER_PAGE = 12;
 
 interface BlogGridProps {
-  posts: BlogPost[];
+  posts: BlogPostSummary[];
   categories: string[];
 }
 
