@@ -388,9 +388,9 @@ export function PricingClient() {
             className="pricing-slider h-1 w-full cursor-pointer appearance-none rounded-full bg-white/10 accent-coral"
           />
           {/* Slider ticks */}
-          <div className="mt-2 flex justify-between text-[10px] text-white/25">
+          <div className="mt-2 flex justify-between px-[10px] text-[10px] text-white/25">
             {USER_STEPS.map((u) => (
-              <span key={u}>{u === 60 ? "60+" : u}</span>
+              <span key={u} className="w-0 text-center">{u === 60 ? "60+" : u}</span>
             ))}
           </div>
 

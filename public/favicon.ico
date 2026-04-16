@@ -1,0 +1,1504 @@
+
+<!DOCTYPE html>
+<html class="no-ie" lang="en-US"> <!--<![endif]-->
+	<head> <script type="text/javascript"> if(!gform){document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0});var gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),null==t&&(t=10),gform.hooks[o][n].push({tag:i,callable:r,priority:t})},doHook:function(o,n,r){if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[o][n]){var t,i=gform.hooks[o][n];i.sort(function(o,n){return o.priority-n.priority});for(var e=0;e<i.length;e++)"function"!=typeof(t=i[e].callable)&&(t=window[t]),"action"==o?t.apply(null,r):r[0]=t.apply(null,r)}if("filter"==o)return r[0]},removeHook:function(o,n,r,t){if(null!=gform.hooks[o][n])for(var i=gform.hooks[o][n],e=i.length-1;0<=e;e--)null!=t&&t!=i[e].tag||null!=r&&r!=i[e].priority||i.splice(e,1)}}} </script>		
+		<meta charset="UTF-8">			<link rel="icon" type="image/png" href="https://ludum.com/wp-content/uploads/2019/09/favicon-2.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+		<link rel="stylesheet" href="https://use.typekit.net/mqu0fru.css">
+	<link rel="alternate" type="application/rss+xml" title="Ludum Feed" href="https://ludum.com/feed/">
+<title>Page not found - Ludum</title>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- This site is optimized with the Yoast SEO plugin v13.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Page not found - Ludum" />
+<meta property="og:site_name" content="Ludum" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Page not found - Ludum" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ludum.com/#website","url":"https://ludum.com/","name":"Ludum","inLanguage":"en-US","description":"Just another WordPress site","potentialAction":{"@type":"SearchAction","target":"https://ludum.com/?s={search_term_string}","query-input":"required name=search_term_string"}}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//platform-api.sharethis.com' />
+<link rel='dns-prefetch' href='//ricostacruz.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Ludum &raquo; Feed" href="https://ludum.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ludum &raquo; Comments Feed" href="https://ludum.com/comments/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/dfd-extensions/assets/fonts/dfd_icon_set/dfd_icon_set.css?ver=5.2.24">
+<link rel="stylesheet" href="https://ludum.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.24">
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=2.7.3">
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.7.3">
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6">
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8.3">
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.3">
+<![endif]-->
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.0.3">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/css/app.css">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/scss/site2020.css?ver=5.4">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/scss/features_landing.css?ver=4.5">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/scss/blog.css?ver=4.6">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/css/woocommerce.css">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/assets/css/mobile-responsive.css">
+<link rel="stylesheet" href="//ludum.com/wp-content/uploads/redux/options.css">
+<link rel="stylesheet" href="https://ludum.com/wp-content/themes/dfd-native/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CMontserratExtraBold%3A700%7CRoboto%3A100%2C300%2C400%2C500%2C700%2C900%2C100italic%2C300italic%2C400italic%2C500italic%2C700italic%2C900italic%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&#038;subset=latin&#038;ver=1640080048">
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://ludum.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var dfd_header_b_DefaultPresets = [{"name":"Default header 1","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false},{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Wishlist","type":"wishlist","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Inner Page","type":"inner_page","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_1_def","active":""},{"name":"Default header 2","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false},{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Wishlist","type":"wishlist","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Inner Page","type":"inner_page","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{\"color\":\"rgba(255,255,255,0.1)\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_2_def","active":"","overlayContent":"1"},{"name":"Default header 3","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false},{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[],[],[]],[[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Logo","type":"logo","isfullwidth":false},{"name":"Second Menu","type":"second_menu","isfullwidth":false}],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"on","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_3_def","active":""},{"name":"Default header 4","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false},{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[],[],[]],[[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Logo","type":"logo","isfullwidth":false},{"name":"Second Menu","type":"second_menu","isfullwidth":false}],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"on","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{\"color\":\"rgba(255,255,255,0.1)\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_4_def","active":""},{"name":"Default header 5","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false}]],[[],[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Wishlist","type":"wishlist","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Inner Page","type":"inner_page","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"on","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_5_def","active":""},{"name":"Default header 6","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Info","type":"info","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Login on site","type":"login","isfullwidth":false}],[],[{"name":"Social Icon","type":"socicon","isfullwidth":false}]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Additional Menu","type":"additional_menu","isfullwidth":false}]],[[],[],[{"name":"Menu","type":"menu","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Wishlist","type":"wishlist","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Inner Page","type":"inner_page","isfullwidth":false},{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Side Area","type":"side_area","isfullwidth":false}]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"on","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{\"color\":\"transparent\",\"is_transparent\":\"true\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{\"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{\"color\":\"rgba(255,255,255,0.1)\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"mobile":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"490","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"horizontal","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_6_def","active":""},{"name":"Default header 7","isActive":"","isDefault":true,"presetValues":{"desktop":[[[{"name":"Spacer","type":"spacer","isfullwidth":false},{"name":"Spacer","type":"spacer","isfullwidth":false},{"name":"Logo","type":"logo","isfullwidth":false},{"name":"Telephone","type":"telephone","isfullwidth":false},{"name":"Info","type":"info","isfullwidth":false}],[],[]],[[{"name":"Menu","type":"menu","isfullwidth":false}],[],[]],[[{"name":"Login on site","type":"login","isfullwidth":true},{"name":"Social Icon","type":"socicon","isfullwidth":true},{"name":"Language","type":"language","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Spacer","type":"spacer","isfullwidth":false},{"name":"Copyright message","type":"text","isfullwidth":true},{"name":"Spacer","type":"spacer","isfullwidth":false}],[],[]]],"tablet":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Language","type":"language","isfullwidth":false},{"name":"Search","type":"search","isfullwidth":false},{"name":"Cart","type":"cart","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]],"mobile":[[[],[],[]],[[],[],[]],[[{"name":"Logo","type":"logo","isfullwidth":false}],[],[{"name":"Delimiter","type":"delimiter","isfullwidth":false},{"name":"Language","type":"language","isfullwidth":false},{"name":"Mobile Menu","type":"mobile_menu","isfullwidth":false}]]]},"settings":{"desktop":[{"id":"show_top_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"on","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"on","def":"off","isGlobal":"false"},{"id":"header_top_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_mid_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_bot_background_color_build","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"false"},{"id":"header_top_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_mid_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_bot_text_color_build","type":"colorpicker","value":"{ \"color\":\"#313131\",\"is_transparent\":\"false\"}","def":"#313131","isGlobal":"false","hidetransparent":"true"},{"id":"header_border_color_build","type":"colorpicker","value":"{ \"color\":\"#e7e7e7\",\"is_transparent\":\"false\"}","def":"#e7e7e7","isGlobal":"false"}],"tablet":[{"id":"show_top_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_mid_panel_builder","type":"trigger","value":"off","def":"on","isGlobal":"false"},{"id":"show_bot_panel_builder","type":"trigger","value":"","def":"on","isGlobal":"false"},{"id":"set_top_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_mid_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"},{"id":"set_bot_panel_abstract_builder","type":"trigger","value":"","def":"off","isGlobal":"false"}],"mobile":[{"type":"trigger","id":"show_top_panel_builder","value":"off","def":"on","isGlobal":"false"},{"type":"trigger","id":"show_mid_panel_builder","value":"off","def":"on","isGlobal":"false"},{"type":"trigger","id":"show_bot_panel_builder","value":"","def":"on","isGlobal":"false"},{"type":"trigger","id":"set_top_panel_abstract_builder","value":"","def":"off","isGlobal":"false"},{"type":"trigger","id":"set_mid_panel_abstract_builder","value":"","def":"off","isGlobal":"false"},{"type":"trigger","id":"set_bot_panel_abstract_builder","value":"","def":"off","isGlobal":"false"}],"globals":[{"id":"header_copyright_builder","type":"text","value":"@DFD","def":"","isGlobal":"true"},{"id":"header_telephone_builder","type":"telephone","value":"+(032) 323-323-32","def":"","isGlobal":"true"},{"id":"header_button_text_builder","type":"text","value":"Button","def":"","isGlobal":"true"},{"id":"header_button_url_builder","type":"text","value":"#","def":"","isGlobal":"true"},{"id":"header_side_background_color_builder","type":"colorpicker","value":"{ \"color\":\"#ffffff\",\"is_transparent\":\"false\"}","def":"#ffffff","isGlobal":"true"},{"id":"bg_image_side_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"header_side_bar_width_builder","type":"slider","value":"320","def":"","isGlobal":"true"},{"id":"header_alignment_builder","type":"radio","value":"left","def":"","isGlobal":"true"},{"id":"header_bg_repeat_builder","type":"radio","value":"no-repeat","def":"","isGlobal":"true"},{"id":"header_bg_size_builder","type":"radio","value":"cover","def":"","isGlobal":"true"},{"id":"header_bg_position_builder","type":"radio","value":"center-center","def":"","isGlobal":"true"},{"id":"header_content_alignment_builder","type":"radio","value":"alignleft","def":"","isGlobal":"true"},{"id":"style_header_builder","type":"image_select","value":"side","def":"","isGlobal":"true"},{"id":"logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"retina_logo_header_builder","type":"image","value":"{\"id\":\"\",\"thumb\":\"\"}","def":"","isGlobal":"true"},{"id":"top_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"mid_header_height_builder","type":"slider","value":"40","def":"","isGlobal":"true"},{"id":"bot_header_height_builder","type":"slider","value":"70","def":"","isGlobal":"true"},{"id":"header_sticky_builder","type":"trigger","value":"","def":"on","isGlobal":"true"}]},"id":"dfd_header_7_def","active":""}];
+var dfd_header_b_local_settings = {"logo_url":"https:\/\/ludum.com\/wp-content\/uploads\/2020\/07\/Ludum-138-1-1.png","retina_url":"https:\/\/ludum.com\/wp-content\/uploads\/2020\/07\/Ludum-276-1-1.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8.3'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8.3'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/ludum.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.3.6'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.0.3'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.5.9.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mon","tuesday":"Tue","wednesday":"Wed","thursday":"Thu","friday":"Fri","saturday":"Sat","sunday":"Sun"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+if(!gform){document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0});var gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),null==t&&(t=10),gform.hooks[o][n].push({tag:i,callable:r,priority:t})},doHook:function(o,n,r){if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[o][n]){var t,i=gform.hooks[o][n];i.sort(function(o,n){return o.priority-n.priority});for(var e=0;e<i.length;e++)"function"!=typeof(t=i[e].callable)&&(t=window[t]),"action"==o?t.apply(null,r):r[0]=t.apply(null,r)}if("filter"==o)return r[0]},removeHook:function(o,n,r,t){if(null!=gform.hooks[o][n])for(var i=gform.hooks[o][n],e=i.length-1;0<=e;e--)null!=t&&t!=i[e].tag||null!=r&&r!=i[e].priority||i.splice(e,1)}}}
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.5.9.3'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/gravityforms/js/chosen.jquery.min.js?ver=2.5.9.3'></script>
+<link rel='https://api.w.org/' href='https://ludum.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ludum.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ludum.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.24" />
+<meta name="generator" content="WooCommerce 4.3.6" />
+<meta property="og:image" content="https://ludum.com/wp-content/uploads/2020/12/LudumLIVE_banner.png" /><meta property="og:image:width" content="562" /><meta property="og:image:height" content="500" /><meta property="og:url" content="https://ludum.com/ludum-live/" /><meta property="og:title" content="Ludum LIVE" /><meta name="facebook-domain-verification" content="wsjb9wi812y0fe6mgtil9adquy92wn" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>//<![CDATA[
+	var dataLayer_content = [];
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53G5SW4');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+<!-- Facebook Pixel Code -->
+<script type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+<!-- End Facebook Pixel Code -->
+<script type='text/javascript'>
+  fbq('init', '1529009374143257', {}, {
+    "agent": "wordpress-5.2.24-3.0.5"
+});
+</script><script type='text/javascript'>
+  fbq('track', 'PageView', []);
+</script>
+<!-- Facebook Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=1529009374143257&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			/**/
+.dfd-content-title-big, .dfd-countdown .number, .dfd-countdown .dot, #layout.single-post .dfd-content-wrap.dfd-post_single > article.post.format-audio > .cover h3.entry-title, .dfd-audio-box .pp_fade #pp_full_res .pp_audio_container h3.entry-title, .dfd-related-posts-wrap article.post h3.entry-title, .pp_details .ppt, .woocommerce-page #reviews .comment-text .meta strong, .products.upsells h2, .products.related h2, .single-product .cart .reset_variations, .dfd-hotspot-shortcode .HotspotPlugin_Hotspot > div > .Hotspot_Title {
+	color: #db3333;
+}
+
+.dfd-pricing-block .block-head .price-wrap .currency-symbol, .dfd-pricing-block .block-head .price-wrap .time-interval {
+    letter-spacing: -2px;
+}
+
+/*-- Forms --*/
+body .custom-form .fserv-container {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 630px !important;
+}
+
+.custom-form .fserv-container .powered-by {
+	display: none !important;
+}
+
+/* title */
+.custom-form .fserv-container .fserv-form-name {
+    font-size: 30px !important;
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: #2d2d2d !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.custom-form .fserv-container .fserv-form-description {
+    font-size: 14px !important;
+    color: #606060 !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+/* label */
+.custom-form .fserv-container .fserv-label {
+    color: #5c5c5c !important;
+    padding: 0 15px !important;
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    line-height: 10px !important;
+    letter-spacing: .6px !important;
+}
+
+/* form */
+.custom-form .fserv-container form {
+    padding-top: 0 !important;
+}
+
+.custom-form .fserv-container div {
+	margin: 0 !important;
+}
+
+/* input */
+.custom-form .fserv-container .fserv-field {
+  padding: 0 !important;
+	margin-bottom: 15px !important;
+}
+
+.custom-form .fserv-container .fserv-input-text {
+  border: 1px solid #d9d9d9 !important;
+  background-color: #f2f2f2 !important;
+  border-radius: 4px !important;
+  height: 43px !important;
+	margin-bottom: 0 !important;
+  min-height: 43px !important;
+  line-height: 1em !important;
+  padding: 0 15px !important;
+}
+
+.custom-form .fserv-container .fserv-input-text.error {
+	border-color: #db3333!important;
+}
+
+.custom-form .fserv-container input::placeholder {
+  overflow: visible !important;
+  line-height: 1.2em !important;
+}
+
+/* error */
+.custom-form .fserv-field label.error {
+	padding: 0 15px !important;
+  margin: 0 !important;
+  line-height: 1em !important;
+  text-transform: uppercase !important;
+}
+
+/* button */
+.custom-form .fserv-field+div:not(.fserv-field) {
+	border-top: none !important;
+	text-align: center !important;
+	padding: 0 !important;
+}
+
+.custom-form .fserv-container button[type=submit].fserv-button-submit {
+	font-size: 13px !important;
+  font-weight: 400 !important;
+  letter-spacing: .3px !important;
+  background: #da3038 !important;
+  margin: 0 !important;
+  height: 51px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.custom-form .fserv-container button[type=submit].fserv-button-submit:hover,
+.custom-form .fserv-container button[type=submit].fserv-button-submit:focus {
+  background: #c42b32 !important;
+}
+
+/* checkbox */
+.custom-form .checkbox .fserv-form-optin-checkbox-text {
+	color: #5c5c5c !important;
+  padding-left: 28px !important;
+  margin-bottom: 15px !important;
+}
+
+.custom-form .checkbox .fserv-form-optin-checkbox-text input[type=checkbox] {
+	margin-top: 8px !important;
+}
+
+/*-- header title --*/
+div#stuning-header,
+div#stuning-header .dfd-stuning-header-bg-container {
+	min-height: 400px !important;
+}
+
+/*-- 404 --*/
+.error404 .nothing-found .container-shortcodes {
+	display: none !important;
+}
+
+.error404 div#stuning-header .dfd-stuning-header-bg-container {
+	background-image: url('http://ludum.com/wp-content/uploads/2019/09/Header9.jpg') !important;
+	background-position: top center;
+	background-attachment: initial;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error404 #stuning-header div.page-title-inner {
+	min-height: 329px !important;
+}
+
+.error404 div.page-title-inner .dfd-page-title {
+	color: #fff !important;
+}
+
+.comment-respond {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/*-- Header --*/
+.nav-button--coral {
+    padding: 0 !important;
+}
+
+.nav-button--coral:before {
+    display: none !important;
+}
+
+.nav-button--coral .menu-link span {
+    background-color: #db3333 !important;
+    padding: 10px 15px !important;
+    border-radius: 36px !important;
+}
+
+.nav-button--teal {
+    padding: 0 !important;
+}
+
+.nav-button--teal:before {
+    display: none !important;
+}
+
+.nav-button--teal .menu-link span {
+    background-color: #0097A1 !important;
+    padding: 10px 15px !important;
+    border-radius: 36px !important;
+}
+
+/*-- Free trial and Contact --*/
+.page-id-20081 div.page-title-inner.dfd-background-dark h2.dfd-page-subtitle,
+.page-id-22405 div.page-title-inner.dfd-background-dark h2.dfd-page-subtitle {
+    font-weight: 500;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 5px;
+}
+
+/*- Single blog post - temp styles --*/
+
+.single-post .dfd-blog-share-fixed-wrap {
+	display: none;
+}
+
+.single-post .dfd-single-categories {
+	display: none;
+}
+
+.single-post .entry-meta {
+	display: none;
+}
+
+.single-post h3.entry-title {
+	display: none;
+}
+
+#layout.single-post .dfd-content-wrap.dfd-post_single > article.post .entry-meta + .cover, #layout.single-post .dfd-content-wrap.dfd-post_single > article.post .entry-meta + .entry-content {
+	margin-top: 0px;
+}
+
+.single-post article p {
+	margin-bottom: 25px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.single-post article h2 {
+	font-family: "Montserrat";
+	letter-spacing: -0.5px;
+	margin-bottom: 10px;
+	font-size: 35px;
+}
+
+.single-post article h3 {
+	font-family: "Montserrat";
+	letter-spacing: -0.5px;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.single-post article h4 {
+	font-family: "Montserrat";
+	letter-spacing: -0.5px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.home .dfd-info-box.style-2.layout-3.text-left h5 {
+  font-family: Montserrat!important;
+  letter-spacing: -0.5px!important;
+  font-weight: 900!important;
+  font-size: 20px!important;
+}
+
+.home .dfd-background-dark .dfd-info-box .description, .home .row .background--dark .dfd-info-box .description {
+  font-family: "Roboto"!important;
+  margin-bottom: 10px!important;
+  line-height: 25px!important;
+  margin-top: 15px!important;
+  font-size: 16px!important;
+}
+
+.home .dfd-info-box.style-2 .icon-wrapper .module-icon {
+  background: #0097A1!important;
+}
+
+#blog.single_blog_article #main_page_content_area #content_blocks section.image_wraparound_text h3 {
+	float: none!important;
+}
+
+.page-id-20081 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(https://ludum.com/wp-content/uploads/2021/05/contactheader.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-24991 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(https://ludum.com/wp-content/uploads/2020/12/LudumLIVE_banner.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+
+/** CLIENT STORIES **/
+
+.postid-25902 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(https://ludum.com/wp-content/uploads/2020/02/blog-generic-1.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22574 .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-8.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22567 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-7.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22494 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-6.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22490 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-5.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-18187 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-4.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+
+/** PRODUCT UPDATES **/
+
+.postid-22890 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(https://ludum.com/wp-content/uploads/2020/02/blog-generic-1.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22884 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/10.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+.postid-22678 div#stuning-header .dfd-stuning-header-bg-container {
+background-image: url(http://ludum.com/wp-content/uploads/2019/09/Blog-7.jpg);
+background-size: cover;
+background-position: top center;
+background-attachment: initial;
+background-repeat: no-repeat;
+}
+
+/** H1 **/
+
+@media (min-width: 1685px) {
+	.page-id-26793 #inner_banner .overlay .overlay_inner h1 {
+		margin-bottom: 120px;
+	}
+}
+
+@media (max-width: 1684px) {
+	.page-id-26793 #inner_banner .overlay .overlay_inner h1 {
+		margin-bottom: 120px;
+	}
+}
+
+
+/** CONTENT **/
+
+@media (min-width: 1685px) {
+.page-id-26793 #inner_banner .overlay .overlay_inner .below_banner_content {
+	margin-bottom: -85px;
+	}
+}
+
+@media (max-width: 1684px) {
+.page-id-26793 #inner_banner .overlay .overlay_inner .below_banner_content {
+	margin-bottom: -85px;
+	}
+}
+
+@media (max-width: 1100px) {
+.page-id-26793 #inner_banner .overlay .overlay_inner .below_banner_content {
+	margin-bottom: 0px;
+	}
+}
+
+.page-id-26793 #inner_banner .overlay .overlay_inner .below_banner_content {
+max-width: 550px;
+}
+
+.page-id-26793 #ludum_story .section_header {
+	display: none!important;
+}
+
+.page-id-26793 #founders,
+.page-id-26793 #ludum_story_cont,
+.page-id-26793 #how_we_help_video,
+.page-id-26793 #quote_section {
+	display: none!important;
+}
+
+.page-id-26793 .cta-wrap {
+	width: 100%;
+	float: left;
+	display: flex;
+	flex-direction: row;
+	margin-top: -35px;
+	margin-bottom: 40px;
+}
+
+@media (max-width:940px) {
+.page-id-26793 .cta-wrap {
+	margin-top: -10px;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+}
+
+.page-id-26793 .cta-wrap a {
+background-color: #db3333;
+padding: 10px 15px;
+border-radius: 36px;
+color: #FFF;
+margin-right: 20px;
+font-weight: 700;
+font-size: 18px;
+}
+
+.page-id-27117 .section_header {
+	display: none!important;
+}
+
+.page-id-27117 #founders {
+	display: none!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+		<script>(function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+		for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+		MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+		mixpanel.init("207b3d9ccdf3ad2c52f4c86405069739", {"api_host": "https://api-eu.mixpanel.com", batch_requests: true})</script>
+	</head>
+
+	<body class="error404 theme-dfd-native woocommerce-no-js dfd-smooth-scroll wpb-js-composer js-comp-ver-6.0.3 vc_responsive">
+			<script type="text/javascript">
+				jQuery(document).ready(function() {
+
+					var viewport_width = jQuery(window).width();
+
+					jQuery('.search_icon a').click(function(e) {
+						e.preventDefault();
+
+						jQuery('html').addClass('search_open');
+						jQuery('#search_overlay').fadeIn();
+					});
+
+					jQuery('.close_search').click(function(e) {
+						e.preventDefault();
+
+						jQuery('html').removeClass('search_open');
+						jQuery('#search_overlay').fadeOut();
+					});
+
+					jQuery('#open_nav_mobile').click(function(e) {
+						e.preventDefault();
+						jQuery('#blog_banner #blog_nav ul').toggle();
+					});
+
+					jQuery('#show_user_stories_categories').click(function(e) {
+						e.preventDefault();
+						jQuery('#blog_nav ul').toggle();
+					});
+
+					if(viewport_width > '980') {
+						jQuery('.product_main_menu_link').click(function(e) {
+							e.preventDefault();
+
+							jQuery('.resources_main_menu_link').data("clicks2", '');
+
+							var clicks = jQuery(this).data('clicks');
+
+							if(clicks) {
+								jQuery('.menu_dropdown').hide();
+								jQuery('#nav_back_fade').fadeOut();
+								jQuery('#product_dropdown').fadeOut();
+							}
+							else {
+								jQuery('.menu_dropdown').hide();
+								jQuery('#nav_back_fade').fadeIn();
+								jQuery('#product_dropdown').fadeIn();
+							}
+
+							jQuery(this).data("clicks", !clicks);
+						});
+
+						jQuery('.resources_main_menu_link').click(function(e) {
+							e.preventDefault();
+
+							jQuery('.product_main_menu_link').data("clicks", '');
+
+							var clicks2 = jQuery(this).data('clicks2');
+
+							if(clicks2) {
+								jQuery('.menu_dropdown').hide();
+								jQuery('#nav_back_fade').fadeOut();
+								jQuery('#resources_dropdown').fadeOut();
+							}
+							else {
+								jQuery('.menu_dropdown').hide();
+								jQuery('#nav_back_fade').fadeIn();
+								jQuery('#resources_dropdown').fadeIn();
+							}
+
+							jQuery(this).data("clicks2", !clicks2);
+						});
+
+						jQuery(document).on('keyup', function(event) {
+							if(event.key == "Escape") {
+								jQuery('.menu_dropdown').hide();
+								jQuery('#nav_back_fade').fadeOut();
+							}
+						});
+					}
+
+					else if(viewport_width <= '980') {
+						jQuery('.menu_toggle button').click(function(e) {
+							e.preventDefault();
+
+							var clicks = jQuery(this).data('clicks');
+
+							if(clicks) {
+								jQuery('.menu_toggle').fadeOut();
+								jQuery('.menu_toggle').removeClass('close');
+								jQuery('.menu_toggle').fadeIn();
+								jQuery('.menu_section').fadeOut();
+							}
+							else {
+								jQuery('.menu_toggle').fadeOut();
+								jQuery('.menu_toggle').addClass('close');
+								jQuery('.menu_toggle').fadeIn();
+								jQuery('.menu_section').fadeIn();
+							}
+
+							jQuery(document).on('keyup', function(event) {
+								if(event.key == "Escape") {
+									jQuery('.menu_toggle').fadeOut();
+									jQuery('.menu_toggle').removeClass('close');
+									jQuery('.menu_toggle').fadeIn();
+									jQuery('.menu_section').fadeOut();
+									jQuery('.menu_toggle button').data("clicks", '');
+								}
+							});
+
+							jQuery(this).data("clicks", !clicks);
+						});
+					}
+
+					jQuery(window).scroll(function() {
+						if(jQuery(window).scrollTop() > 20) {
+							jQuery("#site_header").addClass('scrolling');
+						}
+						else {
+							jQuery("#site_header").removeClass("scrolling");
+						}
+					});
+				});
+			</script>
+
+			<div id="search_overlay">
+				<div class="inner">
+					<button class="close_search">Close</button>
+					<form id="blog_search_form" role="search" method="get" action="https://ludum.com/">
+						<input type="text" name="s" id="search_field" data-default="search" placeholder="I'm Looking For..." />
+						<button class="search_form_submit" id="search_submit" type="submit">Submit</button>
+					</form>
+				</div>
+			</div><div id="sidr" style="left: -260px;" data-sidr-side="left"><div class="sidr-inner"><a href="#sidr-close" class="dl-trigger dfd-sidr-close dfd-socicon-cross-24"></a></div><div class="sidr-widgets"><div class="widget soc-icons" style="display: none;"><a href="http://dribbble.com" class="dr dfd-socicon-dribbble" title="Dribbble" target="_blank"></a><a href="http://facebook.com" class="fb dfd-socicon-facebook" title="Facebook" target="_blank"></a><a href="http://twitter.com" class="tw dfd-socicon-twitter" title="Twitter" target="_blank"></a><a href="https://vimeo.com/" class="vi dfd-socicon-vimeo" title="Vimeo" target="_blank"></a></div><div class="sidr-buttons-container" style="display: none;"><div class="total_cart_header"><a class="woo-cart-contents" href="https://ludum.com/cart/" title=""><span class="woo-cart-items"><i class="dfd-socicon-icon-ios7-cart"></i><!-- <span class="dfd-header-cart-handle"></span> --></span><span class="woo-cart-details">0</span></a></div></div></div></div><a href="#sidr-close" class="dl-trigger dfd-sidr-close"></a><div id="header-container" class="header-style-1 header-layout-boxed menu-position-top logo-position-left sticky-header-enabled simple dfd-enable-headroom dfd-enable-mega-menu dfd-hide-menu-icons"><div id="header"><div class="header-wrap"><div class="row"><div class="twelve columns"><div class="dfd-header-logos"><div class="dfd-logo-wrap"><a href="https://ludum.com/" title="Site logo"><img src="https://ludum.com/wp-content/uploads/2020/07/Ludum-138-1-1.png" class="main-logo" width="138" height="40" alt="Site logo"  data-retina="https://ludum.com/wp-content/uploads/2020/07/Ludum-276-1-1.png" /></a></div><div class="dfd-logo-wrap mobile-sticky-logos sticky-logo-wrap"><a href="https://ludum.com/" title="Site logo"><img src="https://ludum.com/wp-content/uploads/2020/07/Ludum-138-1-1.png" width="138" height="40" class="sticky-logo" data-retina="https://ludum.com/wp-content/uploads/2020/07/Ludum-276-1-1.png" alt="Sticky header logo" /></a></div><div class="dfd-logo-wrap mobile-sticky-logos"><a href="https://ludum.com/" title="Site logo"><img src="https://ludum.com/wp-content/uploads/2020/07/Ludum-138-1-1.png" class="mobile-logo" data-retina="https://ludum.com/wp-content/uploads/2020/07/Ludum-276-1-1.png" alt="Mobile logo" /></a></div></div><div class="dfd-header-buttons-wrap"><div class="dl-menuwrapper"><a href="#sidr" class="dl-trigger icon-mobile-menu" id="mobile-menu"><span class="icon-wrap dfd-middle-line"></span><span class="icon-wrap dfd-top-line"></span><span class="icon-wrap dfd-bottom-line"></span></a></div></div><nav class="mega-menu  text-right" id="main_mega_menu">
+	<ul id="menu-primary-navigation" class="nav-menu menu-primary-navigation menu-clonable-for-mobiles"><li id="nav-menu-item-26141-69e0afe8d2343" class="mega-menu-item nav-item menu-item-depth-0 has-submenu "><a href="#" class="menu-link main-menu-link item-title"><span>Product</span></a>
+<div class="sub-nav"><ul class="menu-depth-1 sub-menu sub-nav-group"  >
+	<li id="nav-menu-item-22121-69e0afe8d23f9" class="mega-menu-item sub-nav-item menu-item-depth-1 "><a href="https://ludum.com/features/" class="menu-link sub-menu-link">Rowing</a></li>
+	<li id="nav-menu-item-25891-69e0afe8d2477" class="mega-menu-item sub-nav-item menu-item-depth-1 "><a href="https://ludum.com/features-paddle-sports/" class="menu-link sub-menu-link">Paddle Sports</a></li>
+</ul></div>
+</li>
+<li id="nav-menu-item-26097-69e0afe8d250c" class="mega-menu-item nav-item menu-item-depth-0 "><a href="https://ludum.com/team-pricing/" class="menu-link main-menu-link item-title"><span>Pricing</span></a></li>
+<li id="nav-menu-item-22412-69e0afe8d2589" class="mega-menu-item nav-item menu-item-depth-0 has-submenu "><a href="#" class="menu-link main-menu-link item-title"><span>Resources</span></a>
+<div class="sub-nav"><ul class="menu-depth-1 sub-menu sub-nav-group"  >
+	<li id="nav-menu-item-24076-69e0afe8d25f5" class="mega-menu-item sub-nav-item menu-item-depth-1 "><a href="https://ludum.com/our-blog/" class="menu-link sub-menu-link">Blog</a></li>
+	<li id="nav-menu-item-26342-69e0afe8d2669" class="mega-menu-item sub-nav-item menu-item-depth-1 "><a href="https://ludum.com/user-stories/" class="menu-link sub-menu-link">User Stories</a></li>
+</ul></div>
+</li>
+<li id="nav-menu-item-22039-69e0afe8d2721" class="mega-menu-item nav-item menu-item-depth-0 "><a href="https://ludum.com/about/" class="menu-link main-menu-link item-title"><span>About Us</span></a></li>
+<li id="nav-menu-item-22095-69e0afe8d2791" class="mega-menu-item nav-item menu-item-depth-0 "><a target="_blank" href="https://app.ludum.com/" class="menu-link main-menu-link item-title"><span>Log In</span></a></li>
+<li id="nav-menu-item-26736-69e0afe8d2802" class="mega-menu-item nav-item menu-item-depth-0 nav-button--coral"><a href="https://ludum.com/free-trial/" class="menu-link main-menu-link item-title"><span>Start your Trial</span></a></li>
+</ul></nav>
+</div></div></div></div></div>
+			<div id="main-wrap" class="" data-lazy-load-offset="140%" data-appear-offset="98%">
+
+				<div id="change_wrap_div"><div id="stuning-header"><div class="dfd-stuning-header-bg-container " ></div><div class="stuning-header-inner"><div class="row"><div class="twelve columns"><div class="page-title-inner  dfd-background-dark text-center"><div class="page-title-inner-wrap"><h1 class="dfd-page-title">Whoops!</h1></div></div></div></div></div></div><section id="layout" class="nothing-found 404" ><div class="row full-width"><div class="blog-section no-sidebars"><section id="main-content" role="main" class="twelve columns"><div class="dfd-content-wrap dfd-nothing isotope-columns-3" >			<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d371d" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d371b" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+		<!--fwp-loop-->
+			<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d3df5" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d3df3" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d44d1" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d44cf" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d4a8d" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d4a8c" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d4e63" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d4e62" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d51c4" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d51c3" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d558b" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d558a" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d5ad6" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d5ad5" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d5daa" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d5da9" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+					<article id="post-0" class="page-not-found clearfix  page404">
+				<div class="info-wrap-empty text-center">
+					<div class="number-decoration"><h1 class="namber404">404</h1></div>
+					<div class="title-container">
+						<div class="icon-wrap">
+							<i class="dfd-socicon-konus"></i>						</div>
+						<div class="title-wrap text-left">
+							<h3 class="empty-title">Nothing was found</h3>
+							<p class="empty-subttitle">Perhaps searching, or one of the links below, can help.</p>
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="empty-button button" href="https://ludum.com/">Back to homepage<i class="dfd-socicon-reply"></i></a>
+					</div>
+				</div>
+				<div class="container-shortcodes">
+					<div class="delimeter-empty text-center"><span class="dfd-widget-list-content">or</span></div>
+					<div class="columns six">
+						<div class="widget-arhives-empty">
+							<p class="label-form dfd-content-title-small">Search in archives</p>
+							<div class="arhives">
+								<select name="archive-menu" onChange="document.location.href = this.options[this.selectedIndex].value;">
+									<option value=""></option>
+										<option value='https://ludum.com/2020/12/'> December 2020 </option>
+	<option value='https://ludum.com/2020/04/'> April 2020 </option>
+	<option value='https://ludum.com/2020/03/'> March 2020 </option>
+	<option value='https://ludum.com/2019/12/'> December 2019 </option>
+	<option value='https://ludum.com/2019/11/'> November 2019 </option>
+	<option value='https://ludum.com/2019/10/'> October 2019 </option>
+	<option value='https://ludum.com/2019/09/'> September 2019 </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="columns six">
+						<div class="widget-search-empty">
+							<p class="label-form dfd-content-title-small">Search on site</p>
+							<form role="search" method="get" id="searchform_69e0afe8d60a5" class="form-search" action="https://ludum.com/">
+	<input type="text" value="" name="s" id="s_69e0afe8d60a4" class="search-query" placeholder="Search on site...">
+	<span class="dfd-background-main" style="display: none;"></span>
+	<input type="submit" value="Search" class="btn">
+	<i class="dfd-socicon-Search inside-search-icon"></i>
+	<i class="header-search-switcher close-search"></i>
+	</form>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div><nav class="page-nav text-center"><div class="dfd-pagination dfd-pagination-style-1"><div class="dfd-prev-page"><span>Prev</span><i class="dfd-socicon-arrow-left-01"></i></div>
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><ul class='page-numbers'>
+	<li><span aria-current='page' class='page-numbers current'>1</span></li>
+	<li><a class='page-numbers' href='https://ludum.com/wp-content/uploads/2020/07/cropped-Ludum-138-1-1-1-32x32.png/page/2/'>2</a></li>
+</ul>
+</div>
+	</nav><div class="dfd-next-page"><a href="https://ludum.com/wp-content/uploads/2020/07/cropped-Ludum-138-1-1-1-32x32.png/page/2/"><span>Next</span><i class="dfd-socicon-arrow-right-01"></i></a></div></div><!--// end .pagination --></nav> </section></div></div></section>
+			<footer>
+				<div class="footer_top">
+					<div class="inner">
+						<div class="left">
+							<a class="brand" href="/">Ludum</a>
+							<ul class="social">
+								<li class="facebook">
+									<a href="https://www.facebook.com/ludumHQ/" target="_blank" title="View us on Facebook">
+										<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+	  										<g id="Group_344" data-name="Group 344" transform="translate(-499.862 -8408.583)">
+											    <g id="Group_339" data-name="Group 339" transform="translate(499.862 8408.583)">
+											      <path id="Path_204" data-name="Path 204" d="M954.2,366.313h0A17.453,17.453,0,0,1,936.75,348.86h0A17.453,17.453,0,0,1,954.2,331.407h0a17.453,17.453,0,0,1,17.453,17.453h0A17.453,17.453,0,0,1,954.2,366.313Z" transform="translate(-936.75 -331.407)" fill="#0097a1"/>
+											      <g id="Group_129" data-name="Group 129" transform="translate(12.954 7.757)">
+											        <path id="Path_237" data-name="Path 237" d="M968.773,355.114h-2.7V364.8h-4.034v-9.685H960.13V351.7h1.906v-2.216a4.8,4.8,0,0,1,.31-1.751,3.4,3.4,0,0,1,1.219-1.618,4.255,4.255,0,0,1,2.527-.709l2.992.022v3.324h-2.172a.859.859,0,0,0-.554.177.933.933,0,0,0-.288.754V351.7h3.058Z" transform="translate(-960.13 -345.407)" fill="#fff"/>
+											      </g>
+											    </g>
+											</g>
+										</svg>
+									</a>
+								</li>
+
+								<li class="twitter">
+									<a href="https://twitter.com/LudumHQ" target="_blank" title="Follow us on Twitter">
+										<svg id="Group_338" data-name="Group 338" xmlns="http://www.w3.org/2000/svg" width="34.907" height="34.906" viewBox="0 0 34.907 34.906">
+										<g id="Group_336" data-name="Group 336" transform="translate(0 0)">
+										<path id="Path_145" data-name="Path 145" d="M954.7,1158.476h0a17.453,17.453,0,0,1-17.453-17.453h0A17.453,17.453,0,0,1,954.7,1123.57h0a17.453,17.453,0,0,1,17.453,17.453h0A17.452,17.452,0,0,1,954.7,1158.476Z" transform="translate(-937.25 -1123.57)" fill="#0097a1"/>
+										</g>
+										<g id="Group_195" data-name="Group 195" transform="translate(7.746 9.574)">
+										<path id="Path_303" data-name="Path 303" d="M968.65,1144.794v.51a11.521,11.521,0,0,1-.731,3.989,11.894,11.894,0,0,1-2.172,3.635,10.779,10.779,0,0,1-3.546,2.66,11.567,11.567,0,0,1-4.854,1.02,11.352,11.352,0,0,1-3.236-.465,11,11,0,0,1-2.881-1.308q.465.045.953.044a7.915,7.915,0,0,0,2.637-.443,8.268,8.268,0,0,0,2.3-1.241,3.979,3.979,0,0,1-2.3-.809,3.839,3.839,0,0,1-1.4-1.961,3.957,3.957,0,0,0,.731.066,4.111,4.111,0,0,0,1.042-.133,3.844,3.844,0,0,1-1.618-.742,3.951,3.951,0,0,1-1.141-1.4,4.149,4.149,0,0,1-.432-1.762v-.066a3.733,3.733,0,0,0,1.817.51,4.008,4.008,0,0,1-1.3-1.429,3.9,3.9,0,0,1-.476-1.895,3.958,3.958,0,0,1,.532-1.995,11.366,11.366,0,0,0,8.2,4.166,4.6,4.6,0,0,1-.089-.909,3.877,3.877,0,0,1,.532-1.995,4.017,4.017,0,0,1,1.452-1.452,3.836,3.836,0,0,1,1.984-.543,3.946,3.946,0,0,1,2.9,1.264,7.745,7.745,0,0,0,2.526-.975,3.853,3.853,0,0,1-.676,1.274,4.1,4.1,0,0,1-1.075.942,8.1,8.1,0,0,0,2.3-.643A8.332,8.332,0,0,1,968.65,1144.794Z" transform="translate(-951.23 -1140.849)" fill="#fff"/>
+										</g>
+										</svg>
+
+									</a>
+								</li>
+
+								<li class="instagram">
+									<a href="https://www.instagram.com/ludumhq/" target="_blank" title="Follow us on Instagram">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34.907" height="34.906" viewBox="0 0 34.907 34.906">
+										  <g id="Group_340" data-name="Group 340" transform="translate(0 0)">
+										    <path id="Path_188" data-name="Path 188" d="M810.5,583.48h0a17.453,17.453,0,0,1-17.453-17.453h0A17.453,17.453,0,0,1,810.5,548.574h0a17.453,17.453,0,0,1,17.454,17.453h0A17.453,17.453,0,0,1,810.5,583.48Z" transform="translate(-793.043 -548.574)" fill="#0097a1"/>
+										    <g id="Group_145" data-name="Group 145" transform="translate(7.79 7.756)">
+										      <path id="Path_253" data-name="Path 253" d="M809.5,567.36V563.17a.591.591,0,0,1,.044-.3.874.874,0,0,1,.31-.144l.2-.044v4.676h.8v-4.766h.51v4.766h.8v-4.787h10.483a3.61,3.61,0,0,1,1.851.5,3.926,3.926,0,0,1,1.374,1.341,3.558,3.558,0,0,1,.543,1.817q.022.554.022,1.33-.022,1.641-.022,1.351h-5.94a.382.382,0,0,1-.31-.133,5.1,5.1,0,0,0-2.194-1.2,4.784,4.784,0,0,0-2.438.012,5.193,5.193,0,0,0-2.194,1.208.319.319,0,0,1-.222.111h-5.873l-.111-.022v-.842q-.022.265-.022-1.02a9.848,9.848,0,0,1,.044-1.019,3.59,3.59,0,0,1,1.485-2.682l.089-.022v4.056h.776Zm11.3,2.149h5.607v8.709a3.641,3.641,0,0,1-.51,1.884,3.743,3.743,0,0,1-1.374,1.363,3.705,3.705,0,0,1-1.884.5H810.893a3.5,3.5,0,0,1-1.884-.488,3.913,3.913,0,0,1-1.385-1.374,3.581,3.581,0,0,1-.521-1.884v-8.688h5.607a4.877,4.877,0,0,0-.621,4.477,5.038,5.038,0,0,0,3.978,3.247,5,5,0,0,0,2.117-.167,4.844,4.844,0,0,0,1.862-1.042,4.706,4.706,0,0,0,1.241-1.773,4.993,4.993,0,0,0,.377-2.3A5.369,5.369,0,0,0,820.8,569.509Zm-4.034,6.649a3.865,3.865,0,0,1-1.928-.5,3.665,3.665,0,0,1-1.4-1.373,3.818,3.818,0,0,1,0-3.811,3.833,3.833,0,0,1,1.4-1.4,3.722,3.722,0,0,1,1.917-.52,3.665,3.665,0,0,1,1.906.52,3.867,3.867,0,0,1,1.385,1.4,3.817,3.817,0,0,1,0,3.811,3.686,3.686,0,0,1-1.385,1.373A3.759,3.759,0,0,1,816.766,576.158Zm2.793-3.789a2.835,2.835,0,0,0-1.4-2.438,2.817,2.817,0,0,0-2.815,0,2.813,2.813,0,0,0-1.019,1.02,2.816,2.816,0,0,0,0,2.815,2.884,2.884,0,0,0,1.019,1.031,2.671,2.671,0,0,0,1.407.388,2.731,2.731,0,0,0,1.407-.377,2.807,2.807,0,0,0,1.02-1.02A2.752,2.752,0,0,0,819.559,572.368Zm5.1-6.538v-1.02a.613.613,0,0,0-.166-.454.585.585,0,0,0-.432-.166q-1.02-.022-2.061,0a.557.557,0,0,0-.443.177.682.682,0,0,0-.155.465v2.04a.611.611,0,0,0,.166.454.585.585,0,0,0,.432.167h2.039a.575.575,0,0,0,.621-.62Z" transform="translate(-807.103 -562.572)" fill="#fff"/>
+										    </g>
+										  </g>
+										</svg>
+									</a>
+								</li>
+
+								<li class="linkedin">
+									<a href="https://www.linkedin.com/company/ludumteam/" target="_blank" title="View our profile on LinkedIn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="34.907" height="34.906" viewBox="0 0 34.907 34.906">
+										  <g id="Group_342" data-name="Group 342" transform="translate(0 0)">
+										    <path id="Path_182" data-name="Path 182" d="M810.7,653.979h0a17.453,17.453,0,0,1-17.453-17.453h0A17.453,17.453,0,0,1,810.7,619.073h0a17.453,17.453,0,0,1,17.453,17.453h0A17.453,17.453,0,0,1,810.7,653.979Z" transform="translate(-793.249 -619.073)" fill="#0097a1"/>
+										    <g id="Group_151" data-name="Group 151" transform="translate(7.813 7.757)">
+										      <path id="Path_259" data-name="Path 259" d="M825.19,633.073a1.408,1.408,0,0,1,1.02.409,1.33,1.33,0,0,1,.421.986v16.622a1.291,1.291,0,0,1-.421.975,1.4,1.4,0,0,1-1,.4H808.767a1.4,1.4,0,0,1-1-.4,1.29,1.29,0,0,1-.421-.975V634.469a1.328,1.328,0,0,1,.421-.986,1.408,1.408,0,0,1,1.02-.409h16.4Zm-12.256,5.861a1.552,1.552,0,0,0,0-2.172,1.61,1.61,0,0,0-1.175-.432,1.651,1.651,0,0,0-1.186.432,1.436,1.436,0,0,0-.454,1.086,1.452,1.452,0,0,0,.443,1.086,1.579,1.579,0,0,0,1.152.432h.022A1.636,1.636,0,0,0,812.934,638.934Zm.266,1.63h-2.9v8.754h2.9Zm10.483,3.723a4.246,4.246,0,0,0-.953-2.969,3.442,3.442,0,0,0-4.144-.466,3.433,3.433,0,0,0-.864.954v-1.241h-2.9q.022.509,0,4.676v4.077h2.9v-4.9a2.176,2.176,0,0,1,.089-.709,1.766,1.766,0,0,1,.532-.731,1.472,1.472,0,0,1,.975-.333,1.277,1.277,0,0,1,1.13.554,2.584,2.584,0,0,1,.332,1.419v4.7h2.9Z" transform="translate(-807.349 -633.073)" fill="#fff"/>
+										    </g>
+										  </g>
+										</svg>
+									</a>
+								</li>
+
+								<li class="youtube">
+									<a href="https://www.youtube.com/c/LudumHQ" target="_blank" title="Watch our videos on YouTube">
+										<svg id="Group_341" data-name="Group 341" xmlns="http://www.w3.org/2000/svg" width="34.907" height="34.906" viewBox="0 0 34.907 34.906">
+										  <g id="Group_337" data-name="Group 337" transform="translate(0 0)">
+										    <path id="Path_162" data-name="Path 162" d="M882.95,1374.5h0a17.453,17.453,0,0,1-17.453-17.453h0a17.453,17.453,0,0,1,17.453-17.453h0a17.453,17.453,0,0,1,17.454,17.453h0A17.456,17.456,0,0,1,882.95,1374.5Z" transform="translate(-865.497 -1339.59)" fill="#0097a1"/>
+										  </g>
+										  <g id="Group_212" data-name="Group 212" transform="translate(9.394 7.762)">
+										    <path id="Path_320" data-name="Path 320" d="M898.492,1369.955a5.053,5.053,0,0,1-.41,1.74,1.934,1.934,0,0,1-.876.875,2.261,2.261,0,0,1-.654.21q-.344.055-1.252.122-.976.044-4.011.067t-4.377-.022q-1.342-.045-2.05-.133a4.052,4.052,0,0,1-1.119-.3,1.709,1.709,0,0,1-.654-.566,3.424,3.424,0,0,1-.277-.654,5.66,5.66,0,0,1-.211-.809,25.373,25.373,0,0,1-.144-3.568,17,17,0,0,1,.255-3.191,2.417,2.417,0,0,1,.7-1.307,2.287,2.287,0,0,1,1.352-.521q.853-.077,2.826-.122t4.1-.022a37.157,37.157,0,0,1,5.1.233,1.865,1.865,0,0,1,1.152.8,4.158,4.158,0,0,1,.532,1.785q.066.554.089,2.3A26.7,26.7,0,0,1,898.492,1369.955Zm-11.3-5.319v-1.02H883.8v1.02h1.13v6.2h1.086v-6.2h1.175Zm-1.707-11.015.532-.022a1.585,1.585,0,0,1,.565.044q.033.045.388,1.374t.377,1.33q.022,0,.31-1.108l.465-1.641h.554c.236,0,.391,0,.465.012s.1.026.089.055l-1.33,4.234v2.969h-1.086v-2.992Zm4.41,11.835h-1.019v4.1l-.244.243a.789.789,0,0,1-.3.222.2.2,0,0,1-.188-.067.884.884,0,0,1-.078-.454q-.012-.387-.011-1.85v-2.194h-1.02v2.327q0,1.4.022,1.883a3.038,3.038,0,0,0,.067.8.632.632,0,0,0,.211.31.751.751,0,0,0,.432.122.885.885,0,0,0,.454-.078,2.156,2.156,0,0,0,.41-.31l.244-.222v.554h1.019v-5.385Zm-.72-5.363a1.947,1.947,0,0,1-.1-.621q-.022-.332-.022-1.3t.022-1.318a2.083,2.083,0,0,1,.1-.632,1.726,1.726,0,0,1,.255-.41,1.2,1.2,0,0,1,.654-.387,1.624,1.624,0,0,1,.82.011,1.269,1.269,0,0,1,.654.4,1.477,1.477,0,0,1,.244.41,2.493,2.493,0,0,1,.089.632q.022.355.022,1.285,0,1.042-.022,1.363a3.693,3.693,0,0,1-.067.521,1.537,1.537,0,0,1-.366.51,1.457,1.457,0,0,1-1.008.411,2.1,2.1,0,0,1-.465-.1,1.137,1.137,0,0,1-.532-.377A1.626,1.626,0,0,1,889.172,1360.093Zm.875-1.928q0,.953.022,1.285a1.082,1.082,0,0,0,.1.488.342.342,0,0,0,.3.111.661.661,0,0,0,.211-.034.237.237,0,0,0,.144-.166,2.364,2.364,0,0,0,.066-.51q.022-.332.022-1.152a9.628,9.628,0,0,0-.066-1.662.413.413,0,0,0-.731,0A9.169,9.169,0,0,0,890.048,1358.165Zm3.524,8.333a2.005,2.005,0,0,0-.2-.753.8.8,0,0,0-.288-.277.718.718,0,0,0-.366-.122.971.971,0,0,0-.388.1,1.319,1.319,0,0,0-.4.277l-.266.221v-2.327h-.975v7.225h.975v-.488l.222.2a1.556,1.556,0,0,0,.4.277,1.024,1.024,0,0,0,.454.066.95.95,0,0,0,.432-.1.8.8,0,0,0,.288-.355,1.452,1.452,0,0,0,.111-.465q.022-.266.022-1.574C893.608,1367.446,893.6,1366.808,893.572,1366.5Zm-1.075-.011a2.112,2.112,0,0,1,.078.542v1.241l-.022,1.507-.155.133a.388.388,0,0,1-.233.111.707.707,0,0,1-.3-.111l-.2-.111v-3.3l.244-.133c.1-.044.177-.074.222-.088a.266.266,0,0,1,.177.022A.3.3,0,0,1,892.5,1366.487Zm.233-6.471q-.022-.41-.022-2.138l-.022-2.46h1.02v2.26q0,1.463.022,1.873a1.182,1.182,0,0,0,.067.454c.133.1.31.036.532-.2l.2-.2v-4.189h1.02v5.452h-1.02v-.554l-.266.222a1.374,1.374,0,0,1-.41.31,1.094,1.094,0,0,1-.41.067.753.753,0,0,1-.377-.078.7.7,0,0,1-.244-.277A1.633,1.633,0,0,1,892.729,1360.016Zm4.521,8.943h-1.064v.332a1.577,1.577,0,0,1-.044.432.459.459,0,0,1-.188.243.333.333,0,0,1-.31.044.516.516,0,0,1-.277-.233,1.15,1.15,0,0,1-.066-.288,4.9,4.9,0,0,1-.022-.554v-.621h1.95v-.8a4.551,4.551,0,0,0-.089-1.074,1.491,1.491,0,0,0-.321-.588,1.419,1.419,0,0,0-.487-.377,1.315,1.315,0,0,0-.61-.089,1.605,1.605,0,0,0-.532.078,1.333,1.333,0,0,0-.443.277,1.209,1.209,0,0,0-.321.443,2.684,2.684,0,0,0-.144.731q-.022.444-.022,1.4c.014.591.029.994.044,1.208a1.3,1.3,0,0,0,.089.454,1.372,1.372,0,0,0,.687.776,1.3,1.3,0,0,0,.665.155,1.729,1.729,0,0,0,.665-.111,1.234,1.234,0,0,0,.587-.5,1.89,1.89,0,0,0,.211-.875Zm-1.973-1.463v-.4a1.153,1.153,0,0,1,.144-.687.441.441,0,0,1,.465-.11c.214.044.321.31.321.8v.4Z" transform="translate(-882.451 -1353.599)" fill="#fff"/>
+										  </g>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="right">
+							<p>Ludum enables you and your team to keep winning and achieving better results through the power of performance data, better organisation and smooth communication.</p>
+							<p>Empower athletes to train at the right intensity levels, helping to prevent injury and illness and get the edge that sets the winners apart from others, while a coach has a convenient way of adapting training plans to achieve high performance and a steady athlete development pace.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer_bottom old_style">
+					<div class="inner">							<ul>
+								<li class="menu_item">
+									<a href="/features/" class="menu_header">Features</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/client-stories/" class="menu_header">Client Stories</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/team-pricing/" class="menu_header">Pricing</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/our-blog/" class="menu_header">Our Blog</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/about/" class="menu_header">About</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/contact-us/" class="menu_header">Contact Us</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="https://challenges.ludum.com/" target="_blank" class="menu_header">Challenges</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="https://app.ludum.com/" target="_blank" class="menu_header">Log in</a>
+								</li>
+
+								<li class="menu_item">
+									<a href="/free-trial/" class="menu_header">Request a demo</a>
+								</li>
+							</ul>
+						<div class="signoff">
+							<p class="credits">&copy; 2020 Endurance Sports Research Limted. All Rights Reserved.<br />
+							Endurance Sports Research Limted is a registerd company in England<br />
+							and Wales (Company No. 09996733) 10 Wellington Street, Cambridge, CB1 1HW</p>
+
+							<div class="policy">
+								<a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+								<a href="/privacy-policy/">Privacy Policy</a>
+								<a href="mailto:info@ludum.com">info@ludum.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			</div>				
+		</div>
+
+		<div class="body-back-to-top align-right "><i class=""></i></div>
+		<span class="hide dfd-dynamic-styles-container">div#stuning-header .dfd-stuning-header-bg-container {background-image: url(https://ludum.com/wp-content/uploads/2020/02/blog-generic-1.jpg);background-size: cover;background-position: top center;background-attachment: initial;background-repeat: no-repeat;}#stuning-header div.page-title-inner {min-height: 330px;}#layout.nothing-found {background-color: transparent;}.page-not-found .info-wrap-empty .number-decoration {background-image: url(https://ludum.com/wp-content/uploads/2019/09/Header6.jpg); background-size: initial; background-position: center; background-repeat: no-repeat;}.page-not-found .info-wrap-empty .number-decoration {-webkit-text-fill-color: transparent; -webkit-background-clip: text;}</span><script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+var colomatpauseInit = '';
+var colomattouchstart = '';
+</script>
+<style>
+.collapseomatic {
+    background-image: none;
+    border-radius: 43px;
+    padding: 0 40px;
+    height: 45px !important;
+    min-height: 45px !important;
+    line-height: 41px;
+    font-weight: 700;
+}
+.collapseomatic_content {
+margin-left: 0;
+padding-top: 10px;
+}
+</style>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53G5SW4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <!-- Facebook Pixel Event Code -->
+    <script type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Facebook Pixel Event Code -->
+    	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/dfd-extensions/redux_extensions/extensions/header_builder/frontend/css/header-styles.css?ver=5.2.24">
+<script type='text/javascript' src='https://ludum.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.19'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.3.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_893bfe5e86cf525b9002cc0665bb9249","fragment_name":"wc_fragments_893bfe5e86cf525b9002cc0665bb9249","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.3.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mailchimp_public_data = {"site_url":"https:\/\/ludum.com","ajax_url":"https:\/\/ludum.com\/wp-admin\/admin-ajax.php","language":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/plugins/mailchimp-for-woocommerce/public/js/mailchimp-woocommerce-public.min.js?ver=2.4.5'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/themes/dfd-native/assets/js/gform-contact.js?ver=1.85'></script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ef060131618590012a0e515&#038;product=inline-share-buttons&#038;cms=sop'></script>
+<script type='text/javascript' src='https://ricostacruz.com/jquery.transit/jquery.transit.min.js'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/themes/dfd-native/assets/js/velocity.js'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/themes/dfd-native/assets/js/velocity.ui.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/ludum.com\/wp-admin\/admin-ajax.php","nonce":"bf99dddaa7"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ludum.com/wp-content/themes/dfd-native/assets/js/plugins.min.js'></script>
+<script type='text/javascript' src='https://ludum.com/wp-content/themes/dfd-native/assets/js/woocommerce.js'></script>
+<link rel="stylesheet" href="https://ludum.com/wp-content/plugins/dfd-extensions/assets/fonts/fonts.css" /><script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){return}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){return}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://ludum.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>	</body>
+</html>

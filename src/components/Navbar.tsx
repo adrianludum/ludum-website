@@ -13,6 +13,8 @@ const products = [
 ];
 
 const navLinks = [
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
   { label: "Pricing", href: "/pricing" },
 ];
 
