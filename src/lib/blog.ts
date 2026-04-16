@@ -12,6 +12,7 @@ export interface BlogPost {
   categories: string[];
   excerpt: string;
   featuredImage: string | null;
+  youtubeId: string | null;
   originalUrl: string;
   content: string;
 }
@@ -31,6 +32,7 @@ function parseMdxFile(filename: string): BlogPost {
       : [data.category || "Uncategorised"],
     excerpt: data.excerpt || "",
     featuredImage: data.featuredImage || null,
+    youtubeId: data.youtubeId || null,
     originalUrl: data.originalUrl || "",
     content,
   };

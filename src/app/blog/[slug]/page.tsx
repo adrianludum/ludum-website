@@ -81,7 +81,19 @@ export default async function BlogPostPage({ params }: PageProps) {
             <time dateTime={post.date}>{formatDate(post.date)}</time>
           </div>
 
-          {post.featuredImage && (
+          {post.youtubeId && (
+            <div className="mt-8 aspect-video overflow-hidden rounded-xl">
+              <iframe
+                src={`https://www.youtube.com/embed/${post.youtubeId}`}
+                title={post.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="h-full w-full"
+              />
+            </div>
+          )}
+
+          {!post.youtubeId && post.featuredImage && (
             <div className="mt-8 overflow-hidden rounded-xl">
               <Image
                 src={post.featuredImage}
